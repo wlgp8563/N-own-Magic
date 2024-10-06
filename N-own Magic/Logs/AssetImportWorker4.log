@@ -15,7 +15,7 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker4.log
 -srvPort
-60000
+56045
 Successfully changed project path to: C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 69.99 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 70.03 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,39 +63,39 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56020
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014566 seconds.
+Registered in 0.010060 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 65.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 65.35 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.492 seconds
+- Completed reload, in  0.478 seconds
 Domain Reload Profiling:
-	ReloadAssembly (492ms)
-		BeginReloadAssembly (75ms)
+	ReloadAssembly (478ms)
+		BeginReloadAssembly (72ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (322ms)
-			LoadAssemblies (73ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (319ms)
+			LoadAssemblies (69ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (74ms)
+			SetupTypeCache (67ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (190ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (194ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (65ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (80ms)
+				ProcessInitializeOnLoadAttributes (82ms)
 				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -103,326 +103,52 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.012932 seconds.
+Registered in 0.010943 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 65.84 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 61.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.900 seconds
+- Completed reload, in  0.868 seconds
 Domain Reload Profiling:
-	ReloadAssembly (901ms)
-		BeginReloadAssembly (96ms)
+	ReloadAssembly (869ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (712ms)
-			LoadAssemblies (94ms)
+		EndReloadAssembly (677ms)
+			LoadAssemblies (98ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (171ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (44ms)
-			SetupLoadedEditorAssemblies (377ms)
+			SetupTypeCache (160ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (34ms)
+			SetupLoadedEditorAssemblies (357ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (66ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (182ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (10ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4081 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (56.4 KB). Loaded Objects now: 4536.
-Memory consumption went from 152.1 MB to 152.0 MB.
-Total: 2.556800 ms (FindLiveObjects: 0.172900 ms CreateObjectMapping: 0.084700 ms MarkObjects: 2.238700 ms  DeleteObjects: 0.059800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2325.244010 seconds.
-  path: Assets/Background
-  artifactKey: Guid(370a7e000ad2e3647b53bc830cdcbed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Background using Guid(370a7e000ad2e3647b53bc830cdcbed3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '842749824da26faf87a68353ec358ba8') in 0.010616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.782588 seconds.
-  path: Assets/Background/GUI
-  artifactKey: Guid(73812583f6c80bb4387f94fe0874d6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Background/GUI using Guid(73812583f6c80bb4387f94fe0874d6e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aabaa5552ec73d62e2a23699a0050578') in 0.007135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.870161 seconds.
-  path: Assets/Gentleland
-  artifactKey: Guid(f16af11574b8b3447923408128d58651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland using Guid(f16af11574b8b3447923408128d58651) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd435c21b5be96c234b296a14d4530f29') in 0.008479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.890600 seconds.
-  path: Assets/Gentleland/SteampunkUI
-  artifactKey: Guid(0ea58a6d01807874a9e13bc127a44ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI using Guid(0ea58a6d01807874a9e13bc127a44ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d364a8b80d1dd32e2f1266bc948e99') in 0.007994 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.090463 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art
-  artifactKey: Guid(a313d260f79604c409da75399ebbe528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art using Guid(a313d260f79604c409da75399ebbe528) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e13477008d1467b83598d146a3b4e69c') in 0.008023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.042209 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art/BackGround.png
-  artifactKey: Guid(b464ee8350ce3984aa31ea54d12d9236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art/BackGround.png using Guid(b464ee8350ce3984aa31ea54d12d9236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '704ff33defad83084540a743fcedf96e') in 0.264812 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_settings_icons_2.png
-  artifactKey: Guid(78d1f73ae35a549409595d6b7e60fe56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_settings_icons_2.png using Guid(78d1f73ae35a549409595d6b7e60fe56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e5b8e64a0d2534eaf021e5c15cc8fc0') in 0.179935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_gameplay_icons_4.png
-  artifactKey: Guid(a15945b5646387a4c8b90129c87a53dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_gameplay_icons_4.png using Guid(a15945b5646387a4c8b90129c87a53dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd131fcc61923b37643d8d173291cd387') in 0.098657 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_1.png
-  artifactKey: Guid(9291b39306d4ce640bf255c16c6ddf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_1.png using Guid(9291b39306d4ce640bf255c16c6ddf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e04e4ed9ccfa7ee9782fb3ebc26a7bf2') in 0.112241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_5.png
-  artifactKey: Guid(55ced046069247c4d929b27fb4e2536b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Frames_5.png using Guid(55ced046069247c4d929b27fb4e2536b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8aa6b66427443dcf70e37eb20cffe82') in 0.088675 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png
-  artifactKey: Guid(c164cff5d531b924cab23980fd978595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Gentleland/SteampunkUI/Art/Steampunk_UI_Buttons_3.png using Guid(c164cff5d531b924cab23980fd978595) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aa587a1cf56705a0934dc234430b79c') in 0.083611 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.351499 seconds.
-  path: Assets/Fantasy Wooden GUI  Free
-  artifactKey: Guid(795f298e422eb0148843798cbb760268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Wooden GUI  Free using Guid(795f298e422eb0148843798cbb760268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d153dfa60c38f6ff87063b490e4e19a') in 0.008607 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.060676 seconds.
-  path: Assets/Fantasy Wooden GUI  Free/normal_ui_set A
-  artifactKey: Guid(fb0793ba43ead8c4a89d62e19ce3e04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Wooden GUI  Free/normal_ui_set A using Guid(fb0793ba43ead8c4a89d62e19ce3e04e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b524c97d082d39d69040c1ad085ac59a') in 0.008420 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.051552 seconds.
-  path: Assets/Fantasy Wooden GUI  Free/normal_ui_set A/1_normal_ui_set free.psd
-  artifactKey: Guid(1ab331a196bae1046b7a75ed7e3f6b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Wooden GUI  Free/normal_ui_set A/1_normal_ui_set free.psd using Guid(1ab331a196bae1046b7a75ed7e3f6b46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afa51c8c6a2a9e6c16f578ae076dbd6b') in 0.258345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png
-  artifactKey: Guid(90a2dde0942123c4ebb9c4af580c5818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Fantasy Wooden GUI  Free/normal_ui_set A/UI board Large Set.png using Guid(90a2dde0942123c4ebb9c4af580c5818) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c083fd81470f32288124d4bae76a1a09') in 0.041841 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.082645 seconds.
-  path: Assets/Book
-  artifactKey: Guid(cc4e6e3bb5e915547aa39c0a70536dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Book using Guid(cc4e6e3bb5e915547aa39c0a70536dd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ec9a0a7675d41debb59ddd093774662') in 0.008387 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012757 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.62 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-Gentleland.Utils.SteampunkUI.OpenWindowsOnLoad:.cctor () (at Assets/Gentleland/SteampunkUI/Utils/Editor/OpenWindowsOnLoad.cs:23)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/Gentleland/SteampunkUI/Utils/Editor/OpenWindowsOnLoad.cs line 23]
-
-UnityEngine.UnityException: Creating asset at path Assets/GentlelandSettings/GentlelandSettings_SteampunkUI.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at Gentleland.Utils.SteampunkUI.OpenWindowsOnLoad..cctor () [0x00036] in C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Assets\Gentleland\SteampunkUI\Utils\Editor\OpenWindowsOnLoad.cs:23 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.828 seconds
-Domain Reload Profiling:
-	ReloadAssembly (828ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (30ms)
-		EndReloadAssembly (587ms)
-			LoadAssemblies (126ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (255ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (132ms)
-				ProcessInitializeOnLoadMethodAttributes (24ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.02 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4593.
-Memory consumption went from 156.0 MB to 156.0 MB.
-Total: 2.325700 ms (FindLiveObjects: 0.192900 ms CreateObjectMapping: 0.093700 ms MarkObjects: 2.022100 ms  DeleteObjects: 0.016400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 15.911153 seconds.
-  path: Assets/CharactorS
-  artifactKey: Guid(3d742e2ab1977824e916c8e0087fede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CharactorS using Guid(3d742e2ab1977824e916c8e0087fede2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b407d6a463c6df3e2aee40eeb0e46296') in 0.012905 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.283608 seconds.
-  path: Assets/Background/GUI/GentlelandSettings
-  artifactKey: Guid(be0d5e59b1849274d859e455d8cfcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Background/GUI/GentlelandSettings using Guid(be0d5e59b1849274d859e455d8cfcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f198c0db7e54182665ebb18bfcfbbf3') in 0.008470 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.054280 seconds.
-  path: Assets/Background/GUI/GentlelandSettings/GentlelandSettings_SteampunkUI.asset
-  artifactKey: Guid(d8e307e312de41a41aabc6327bfe1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Background/GUI/GentlelandSettings/GentlelandSettings_SteampunkUI.asset using Guid(d8e307e312de41a41aabc6327bfe1032) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '706eba13b16701c6842ab07737253562') in 0.015365 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 198.540919 seconds.
-  path: Assets/GentlelandSettings
-  artifactKey: Guid(8fe1e559d5b026444ad32d3067236226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GentlelandSettings using Guid(8fe1e559d5b026444ad32d3067236226) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2a9299b5c2c4c1a445ee7c2a2ac8de7') in 0.006435 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.041047 seconds.
-  path: Assets/GentlelandSettings/GentlelandSettings_SteampunkUI.asset
-  artifactKey: Guid(4b3d8892e2a9aa64980176e871b490d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/GentlelandSettings/GentlelandSettings_SteampunkUI.asset using Guid(4b3d8892e2a9aa64980176e871b490d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17c68c146bef20a61ed738358a9c729e') in 0.006757 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008892 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-Gentleland.Utils.SteampunkUI.OpenWindowsOnLoad:.cctor () (at Assets/Background/Gentleland/SteampunkUI/Utils/Editor/OpenWindowsOnLoad.cs:23)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/Background/Gentleland/SteampunkUI/Utils/Editor/OpenWindowsOnLoad.cs line 23]
-
-UnityEngine.UnityException: Creating asset at path Assets/GentlelandSettings/GentlelandSettings_SteampunkUI.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at Gentleland.Utils.SteampunkUI.OpenWindowsOnLoad..cctor () [0x00036] in C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Assets\Background\Gentleland\SteampunkUI\Utils\Editor\OpenWindowsOnLoad.cs:23 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.708 seconds
-Domain Reload Profiling:
-	ReloadAssembly (709ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (521ms)
-			LoadAssemblies (93ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (144ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (237ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (64ms)
-				ProcessInitializeOnLoadAttributes (127ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (13ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.84 ms, found 4 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.86 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4597.
-Memory consumption went from 156.0 MB to 156.0 MB.
-Total: 2.327500 ms (FindLiveObjects: 0.179200 ms CreateObjectMapping: 0.086300 ms MarkObjects: 2.042600 ms  DeleteObjects: 0.018400 ms)
+Unloading 4089 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.3 KB). Loaded Objects now: 4546.
+Memory consumption went from 154.3 MB to 154.3 MB.
+Total: 2.403600 ms (FindLiveObjects: 0.199400 ms CreateObjectMapping: 0.108200 ms MarkObjects: 2.032100 ms  DeleteObjects: 0.063200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -437,66 +163,49 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.011281 seconds.
+Registered in 0.011985 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-CreateSerializedAsset is not supported while importing out-of-process
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-Gentleland.Utils.SteampunkUI.OpenWindowsOnLoad:.cctor () (at Assets/Background/GUI/Gentleland/SteampunkUI/Utils/Editor/OpenWindowsOnLoad.cs:23)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Assets/Background/GUI/Gentleland/SteampunkUI/Utils/Editor/OpenWindowsOnLoad.cs line 23]
-
-UnityEngine.UnityException: Creating asset at path Assets/GentlelandSettings/GentlelandSettings_SteampunkUI.asset failed.
-  at (wrapper managed-to-native) UnityEditor.AssetDatabase.CreateAsset(UnityEngine.Object,string)
-  at Gentleland.Utils.SteampunkUI.OpenWindowsOnLoad..cctor () [0x00036] in C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Assets\Background\GUI\Gentleland\SteampunkUI\Utils\Editor\OpenWindowsOnLoad.cs:23 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
 Mono: successfully reloaded assembly
-- Completed reload, in  0.707 seconds
+- Completed reload, in  0.805 seconds
 Domain Reload Profiling:
-	ReloadAssembly (708ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (806ms)
+		BeginReloadAssembly (144ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (524ms)
-			LoadAssemblies (92ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (579ms)
+			LoadAssemblies (120ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (140ms)
+			SetupTypeCache (162ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (242ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (245ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (12ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (57ms)
-				ProcessInitializeOnLoadAttributes (140ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (10ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (130ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4070 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4601.
-Memory consumption went from 156.0 MB to 156.0 MB.
-Total: 2.262200 ms (FindLiveObjects: 0.178700 ms CreateObjectMapping: 0.082500 ms MarkObjects: 1.983500 ms  DeleteObjects: 0.016800 ms)
+Unloading 4063 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (24.7 KB). Loaded Objects now: 4547.
+Memory consumption went from 152.3 MB to 152.2 MB.
+Total: 2.269700 ms (FindLiveObjects: 0.181800 ms CreateObjectMapping: 0.091400 ms MarkObjects: 1.974300 ms  DeleteObjects: 0.021300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -508,80 +217,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 145.882785 seconds.
-  path: Assets/Homeless
-  artifactKey: Guid(1f155e4f03338d94083b2c7b9ece8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless using Guid(1f155e4f03338d94083b2c7b9ece8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5471dc8fdbe6954296dc7168f2924bd3') in 0.010889 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.447941 seconds.
-  path: Assets/Homeless/UI Assets
-  artifactKey: Guid(d267d3142cb69f84dbdcace1ad533564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets using Guid(d267d3142cb69f84dbdcace1ad533564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b562469b5e3ed928d0bd7c2bea2a2a05') in 0.008138 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.641728 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons
-  artifactKey: Guid(3e142115d3ad93d4399f5ce67b685a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons using Guid(3e142115d3ad93d4399f5ce67b685a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '869559a6b1b29c32b9d7cbdeb61695e6') in 0.011383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.046395 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Arrow_Barrage.png
-  artifactKey: Guid(125bb49b217257347be09ede099b888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Arrow_Barrage.png using Guid(125bb49b217257347be09ede099b888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c61bd809ef174c8390be7bfac592a60d') in 0.069647 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Blackhole.png
-  artifactKey: Guid(eed44235dcbd621438f7c0c4f05e2356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Blackhole.png using Guid(eed44235dcbd621438f7c0c4f05e2356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b16f0c2384f31ea98c1fd88e6129b298') in 0.022199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Slide.png
-  artifactKey: Guid(6960c6bd5088317429f7e0e033bee813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Slide.png using Guid(6960c6bd5088317429f7e0e033bee813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86ebe0d1420b63ae76891d602b41c24f') in 0.021615 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Claw.png
-  artifactKey: Guid(0389074d1deba1c448d45812db40c0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Claw.png using Guid(0389074d1deba1c448d45812db40c0df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5c2f011a34f8d47b60cac95beed07c') in 0.023457 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Dash.png
-  artifactKey: Guid(c67fbf9375ad5c34399c2849430ca7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Dash.png using Guid(c67fbf9375ad5c34399c2849430ca7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442856cc84d660c2d0c261f032ea0ca0') in 0.028762 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Heal.png
-  artifactKey: Guid(bb67b03c2969d104caba950c446f8c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Heal.png using Guid(bb67b03c2969d104caba950c446f8c8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '295c7bf30f3b5b6efe2f60dc040b1190') in 0.018280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Fly.png
-  artifactKey: Guid(ee40d72ece864764f9d17d015aedb524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Fly.png using Guid(ee40d72ece864764f9d17d015aedb524) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c359a7366e352b34dcc187c68980955') in 0.022198 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_PsycicAttack.png
-  artifactKey: Guid(bbe833a9207e7fa41bbd3ce71ad09605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_PsycicAttack.png using Guid(bbe833a9207e7fa41bbd3ce71ad09605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8745f20e54d4d65675c7aeb766ee0a8') in 0.020782 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Recon.png
-  artifactKey: Guid(37de44bcb59b8174497def1957cc490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Recon.png using Guid(37de44bcb59b8174497def1957cc490b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baba8406602609e4661a1e29c411e520') in 0.025831 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
 AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
