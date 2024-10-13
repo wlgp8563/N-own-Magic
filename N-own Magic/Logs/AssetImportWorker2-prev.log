@@ -15,7 +15,7 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-13817
+7690
 Successfully changed project path to: C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 305.77 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 229.39 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,211 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56652
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56856
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.026824 seconds.
+Registered in 0.016698 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 199.30 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 211.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.464 seconds
+- Completed reload, in  1.351 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1466ms)
-		BeginReloadAssembly (267ms)
+	ReloadAssembly (1352ms)
+		BeginReloadAssembly (194ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (957ms)
-			LoadAssemblies (263ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (915ms)
+			LoadAssemblies (187ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (194ms)
+			SetupTypeCache (216ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (49ms)
-			SetupLoadedEditorAssemblies (609ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (552ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (16ms)
+				InitializePlatformSupportModulesInManaged (15ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (199ms)
+				RefreshPlugins (212ms)
 				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (259ms)
-				ProcessInitializeOnLoadMethodAttributes (131ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (102ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.033427 seconds.
+Registered in 0.026637 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 187.15 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 162.61 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.630 seconds
+- Completed reload, in  2.613 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2632ms)
-		BeginReloadAssembly (296ms)
+	ReloadAssembly (2614ms)
+		BeginReloadAssembly (350ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (38ms)
-		EndReloadAssembly (2066ms)
-			LoadAssemblies (329ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1967ms)
+			LoadAssemblies (292ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (477ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (1118ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (11ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (187ms)
-				BeforeProcessingInitializeOnLoad (199ms)
-				ProcessInitializeOnLoadAttributes (601ms)
-				ProcessInitializeOnLoadMethodAttributes (91ms)
-				AfterProcessingInitializeOnLoad (28ms)
-				EditorAssembliesLoaded (1ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (35ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 3.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4111 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (56.2 KB). Loaded Objects now: 4567.
-Memory consumption went from 155.0 MB to 154.9 MB.
-Total: 6.007000 ms (FindLiveObjects: 0.526200 ms CreateObjectMapping: 0.242600 ms MarkObjects: 5.022500 ms  DeleteObjects: 0.213200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 275553.747985 seconds.
-  path: Assets/Effects/JMO Assets
-  artifactKey: Guid(12a1b1d9a5c4c8244bd7b139f5a603cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Effects/JMO Assets using Guid(12a1b1d9a5c4c8244bd7b139f5a603cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb4595fa288b5b787629b78cc856a0ad') in 0.049388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000074 seconds.
-  path: Assets/coins.png
-  artifactKey: Guid(933c480f014a142f59f7d98300639fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/coins.png using Guid(933c480f014a142f59f7d98300639fc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a194b283e252a91f5260731a9b9e2b36') in 0.584807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/book_closed_red.png
-  artifactKey: Guid(01e77d20268c10549970c6e3787cd10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/book_closed_red.png using Guid(01e77d20268c10549970c6e3787cd10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e880bb784e6f14247ec27753ad1a0d') in 0.102452 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.545557 seconds.
-  path: Assets/Effects/Particle System Color Changer/Example
-  artifactKey: Guid(9df7321c3181bb34a885f824f770b956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Effects/Particle System Color Changer/Example using Guid(9df7321c3181bb34a885f824f770b956) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c3325a00efa905d9872be271db1bc17') in 0.014837 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.730336 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(0eade46812232b74281df859933bb31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(0eade46812232b74281df859933bb31c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c590f7aa5dec957738a6b9867a2f7c3d') in 0.010896 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.004177 seconds.
-  path: Assets/Scripts/CardScripts
-  artifactKey: Guid(055ea20874a180d4f84c0e9e24d59cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CardScripts using Guid(055ea20874a180d4f84c0e9e24d59cca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd794ed71218849291ce9b2788013c3') in 0.009412 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.417534 seconds.
-  path: Assets/Scripts/CardScripts/Card.cs
-  artifactKey: Guid(1fd3456a422e6d249a577b1d8ddcdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CardScripts/Card.cs using Guid(1fd3456a422e6d249a577b1d8ddcdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87a892e9e8cad58e5464964b6a2cab8a') in 0.015126 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.454825 seconds.
-  path: Assets/Scripts/CardScripts/CardDataBase.cs
-  artifactKey: Guid(1024f3354a751f8449029d25bd3e1982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CardScripts/CardDataBase.cs using Guid(1024f3354a751f8449029d25bd3e1982) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57ed370d2854eb07d1e44a44486d8ddb') in 0.011241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.362938 seconds.
-  path: Assets/Scripts/Character.cs
-  artifactKey: Guid(4cfc8ca026ff1e946bd191b382c45165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Character.cs using Guid(4cfc8ca026ff1e946bd191b382c45165) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f6590889c39b20e12b09b9f86c774e4') in 0.011310 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.111732 seconds.
-  path: Assets/Scripts/CardScripts/CardCategoryManager.cs
-  artifactKey: Guid(7b4453c61df5125418530bdc9179cd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CardScripts/CardCategoryManager.cs using Guid(7b4453c61df5125418530bdc9179cd58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c8a31ae4f7d69e1c1a1364b628fdf3') in 0.010392 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 706.412067 seconds.
-  path: Assets/Scripts/CardScripts/Card.cs
-  artifactKey: Guid(1fd3456a422e6d249a577b1d8ddcdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/CardScripts/Card.cs using Guid(1fd3456a422e6d249a577b1d8ddcdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e47c3deb78b19cc38903c2d6bc9f91e') in 0.017013 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015081 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.725 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2727ms)
-		BeginReloadAssembly (409ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (76ms)
-		EndReloadAssembly (2096ms)
-			LoadAssemblies (350ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1181ms)
+			SetupTypeCache (626ms)
 			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (581ms)
+			RebuildScriptCaches (148ms)
+			SetupLoadedEditorAssemblies (861ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (23ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (134ms)
-				ProcessInitializeOnLoadAttributes (334ms)
-				ProcessInitializeOnLoadMethodAttributes (71ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (163ms)
+				BeforeProcessingInitializeOnLoad (171ms)
+				ProcessInitializeOnLoadAttributes (420ms)
+				ProcessInitializeOnLoadMethodAttributes (81ms)
 				AfterProcessingInitializeOnLoad (16ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 4.37 ms, found 4 plugins.
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4085 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 26 unused Assets / (24.6 KB). Loaded Objects now: 4579.
-Memory consumption went from 157.1 MB to 157.1 MB.
-Total: 3.191000 ms (FindLiveObjects: 0.318700 ms CreateObjectMapping: 0.149300 ms MarkObjects: 2.693200 ms  DeleteObjects: 0.028500 ms)
+Unloading 4111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (56.1 KB). Loaded Objects now: 4568.
+Memory consumption went from 155.0 MB to 155.0 MB.
+Total: 4.605100 ms (FindLiveObjects: 0.497000 ms CreateObjectMapping: 0.283100 ms MarkObjects: 3.710100 ms  DeleteObjects: 0.113500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -281,232 +159,64 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 312.127321 seconds.
-  path: Assets/Cards
-  artifactKey: Guid(a1c5a0b651acc004db855e703e4d127f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards using Guid(a1c5a0b651acc004db855e703e4d127f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9bef000ad0409a594b2608b6e1cf96f') in 0.016208 seconds 
+  Time since last request: 441995.576780 seconds.
+  path: Assets/Background/GUI/Dark_Brown_GUI_kit/background/big/big_circle_background1.png
+  artifactKey: Guid(c8fb4a68481c7c6468647dce81289816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/GUI/Dark_Brown_GUI_kit/background/big/big_circle_background1.png using Guid(c8fb4a68481c7c6468647dce81289816) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b8ee87dd4c6feb7209b16d7acc07d91') in 0.373332 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.939005 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design
-  artifactKey: Guid(9db48c670b998284c90d59221f5b7795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design using Guid(9db48c670b998284c90d59221f5b7795) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bef4fef1a9a58725b04568d85c800c5') in 0.008357 seconds 
+  Time since last request: 61.559132 seconds.
+  path: Assets/Background/Dark Forest/prefab/camera.prefab
+  artifactKey: Guid(92fe84c627d2279479b753e044ae5936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Dark Forest/prefab/camera.prefab using Guid(92fe84c627d2279479b753e044ae5936) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc2856c607b9c08203f662aff4284505') in 0.033113 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.688296 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons
-  artifactKey: Guid(5c104f99ca3a9ce429dd5401942907da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons using Guid(5c104f99ca3a9ce429dd5401942907da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b1f46acd011fb58f38b5c32d9f9899b') in 0.010361 seconds 
+  Time since last request: 0.000035 seconds.
+  path: Assets/Background/Dark Forest/prefab/Global Volume.prefab
+  artifactKey: Guid(0bb8356ae2ad9a9498112a131fbe83bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Dark Forest/prefab/Global Volume.prefab using Guid(0bb8356ae2ad9a9498112a131fbe83bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a451ed21f94efe3be2c195d20e4d8254') in 0.026775 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.050373 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_1.png
-  artifactKey: Guid(05dd19a9caaab8d4bb5df992c9b3a459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_1.png using Guid(05dd19a9caaab8d4bb5df992c9b3a459) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a29388c6624d8d73b54ad000b3628efb') in 0.112958 seconds 
+  Time since last request: 10.218284 seconds.
+  path: Assets/Background/Freeui/ZOSMA/Main/Coin.png
+  artifactKey: Guid(8b83783dea58a794dab09a649cdab33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Freeui/ZOSMA/Main/Coin.png using Guid(8b83783dea58a794dab09a649cdab33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8977582dd19e878a99be7b90492e46d') in 0.060133 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_3.png
-  artifactKey: Guid(ebcc51c43eda8b349a03dfd6428903d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_3.png using Guid(ebcc51c43eda8b349a03dfd6428903d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74b04b78e370d808aba37c1acf74cbf5') in 0.056490 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_4.png
-  artifactKey: Guid(125fd67cbfec6e14e8c9f0f581b82de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_4.png using Guid(125fd67cbfec6e14e8c9f0f581b82de1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38d5dbffb44989fa99f2393063035911') in 0.052456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_5.png
-  artifactKey: Guid(7a8762f712d1482428a274f0e6b2d8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Attack_Icons/Attack_Icons_Color_5.png using Guid(7a8762f712d1482428a274f0e6b2d8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bc62bce9507707ff6d2ec3a522a0226') in 0.063013 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.729086 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01
-  artifactKey: Guid(5c7d9db098427a54eb6605897563e091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01 using Guid(5c7d9db098427a54eb6605897563e091) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920fca3d432586e158d76566305f8216') in 0.014690 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.085565 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Back_Card_Color_01
-  artifactKey: Guid(e89d9cd27be229245a028871300b12bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Back_Card_Color_01 using Guid(e89d9cd27be229245a028871300b12bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63d0c13025fc661f2485b699ff996bc8') in 0.015232 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.150597 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Back_Card_Color_01/Back_Card_Color_01.png
-  artifactKey: Guid(48d30acab2a467144984669df33b928c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Back_Card_Color_01/Back_Card_Color_01.png using Guid(48d30acab2a467144984669df33b928c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba218ca519f7a210d2aad1f1e7a152f3') in 1.265656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.772017 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01
-  artifactKey: Guid(71d5e8342f4cddb439c0d2555953f7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01 using Guid(71d5e8342f4cddb439c0d2555953f7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c04eaab6d2a113c07a0ce52df9a059') in 0.012893 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.023550 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Attack_Back.png
-  artifactKey: Guid(4e1d3be251a792940956ae4df79d1c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Attack_Back.png using Guid(4e1d3be251a792940956ae4df79d1c1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19188c0bb1995678dd7eafb1bad23e48') in 0.148420 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Heart_Back.png
-  artifactKey: Guid(2c1a143816c3def4ca9c897131e43552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Heart_Back.png using Guid(2c1a143816c3def4ca9c897131e43552) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb020520ee700432780ea2c410b20bd') in 0.135346 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Place_Text.png
-  artifactKey: Guid(f3f228821bb194e48a8cbe4df629fa03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Place_Text.png using Guid(f3f228821bb194e48a8cbe4df629fa03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824280569ef0b60f8b35da7e61475f1e') in 0.439571 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Logo_Crystal.png
-  artifactKey: Guid(b0f805c776efb6043a6f8e96738fd4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Logo_Crystal.png using Guid(b0f805c776efb6043a6f8e96738fd4c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37662cd3b6aa027666df976dee8da162') in 0.105354 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000094 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Frame_Decore.png
-  artifactKey: Guid(7f11a48f74481294086d8921a791c985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Frame_Decore.png using Guid(7f11a48f74481294086d8921a791c985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b20635b33c1570aa43cbfe11863d868') in 0.141774 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000062 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Place_Picture.png
-  artifactKey: Guid(610e8883dc628ef4880e936e33b26e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Place_Picture.png using Guid(610e8883dc628ef4880e936e33b26e98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f206225cf50c1353a4d6edc8f1642064') in 0.525648 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000150 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Frame.png
-  artifactKey: Guid(b751f3b3dfc0c1148bdef9cb88b90ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_01/Face_Card_Color_01/Face_Card_Color_01_Frame.png using Guid(b751f3b3dfc0c1148bdef9cb88b90ca2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd616beed99e474bfeeb7dcd93b8cec34') in 0.842797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.633907 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Back_Card_Color_02/Back_Card_Color_02_Logo.png
-  artifactKey: Guid(a50923c5d208b41498915a144e2c6f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Back_Card_Color_02/Back_Card_Color_02_Logo.png using Guid(a50923c5d208b41498915a144e2c6f93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab73d1eb6387619287a7c7d9cd7b796c') in 0.243341 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.066062 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_03/Back_Card_Color_03/Back_Card_Color_03_Logo.png
-  artifactKey: Guid(a35c00f5068c6a9468856b8748820575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_03/Back_Card_Color_03/Back_Card_Color_03_Logo.png using Guid(a35c00f5068c6a9468856b8748820575) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b19dbc93c691cc2d4ca39ecaa2f5012b') in 0.132488 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 19.846390 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_04/Back_Card_Color_04/Back_Card_Color_04_Logo.png
-  artifactKey: Guid(65ac2a1455a16394d86a4a873083cc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_04/Back_Card_Color_04/Back_Card_Color_04_Logo.png using Guid(65ac2a1455a16394d86a4a873083cc74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e579caf23e7b523be30b0d04560ac332') in 0.091230 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.157751 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Back.png
-  artifactKey: Guid(1741fe79ad34701458cdd6b7fbe91686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Back.png using Guid(1741fe79ad34701458cdd6b7fbe91686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bb9c65da5f6c602c31cd9ec6df714cf') in 0.777938 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.667636 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_05/Back_Card_Color_05/Back_Card_Color_05_Logo.png
-  artifactKey: Guid(5475a5270b80828448aca2d7478b4807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_05/Back_Card_Color_05/Back_Card_Color_05_Logo.png using Guid(5475a5270b80828448aca2d7478b4807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f61e905d5486179a13739e03ca0de691') in 0.109753 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.398295 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_06/Back_Card_Color_06/Back_Card_Color_06_Logo.png
-  artifactKey: Guid(b8c93c3f7e711cb40a9703d279675655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_06/Back_Card_Color_06/Back_Card_Color_06_Logo.png using Guid(b8c93c3f7e711cb40a9703d279675655) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfd9a2812a3ede37b06ad0a5d8df291a') in 0.112259 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.848388 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_07/Back_Card_Color_07/Back_Card_Color_07_Logo.png
-  artifactKey: Guid(e593be18b91da974aafc9bfb79b59d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_07/Back_Card_Color_07/Back_Card_Color_07_Logo.png using Guid(e593be18b91da974aafc9bfb79b59d99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3171b4ef4cae31af2ad9ff1eeb023f33') in 0.117744 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.458080 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_08/Back_Card_Color_08/Back_Card_Color_08_Logo.png
-  artifactKey: Guid(415bc40b5afac1c439f882c9607b0486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_08/Back_Card_Color_08/Back_Card_Color_08_Logo.png using Guid(415bc40b5afac1c439f882c9607b0486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d16508f5b9afd3ff15bafff5332945e') in 0.060916 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.218000 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_09/Back_Card_Color_09/Back_Card_Color_09_Logo.png
-  artifactKey: Guid(4996efdfc44a9c546b7edcceaaeb8a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_09/Back_Card_Color_09/Back_Card_Color_09_Logo.png using Guid(4996efdfc44a9c546b7edcceaaeb8a8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ced4dc380838540c4d5f31ffcea6ae') in 0.135765 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.986851 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_10/Back_Card_Color_10/Back_Card_Color_10_Logo.png
-  artifactKey: Guid(b574f95d945243547b317c20ec322caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_10/Back_Card_Color_10/Back_Card_Color_10_Logo.png using Guid(b574f95d945243547b317c20ec322caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6135a45d298a733539f4797044dc79c') in 0.117671 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.613495 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_11/Back_Card_Color_11/Back_Card_Color_11_Logo.png
-  artifactKey: Guid(9cbc1ec962037394493b42c083b81a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_11/Back_Card_Color_11/Back_Card_Color_11_Logo.png using Guid(9cbc1ec962037394493b42c083b81a99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff9632c926cbc1ca904906851d670b8a') in 0.114485 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.340359 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_12/Back_Card_Color_12/Back_Card_Color_12_Logo.png
-  artifactKey: Guid(cac5d3727e6a469469d1dfcff535abb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_12/Back_Card_Color_12/Back_Card_Color_12_Logo.png using Guid(cac5d3727e6a469469d1dfcff535abb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9748922127d56b3dbf22bea7b4ba6152') in 0.136517 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.469224 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_13/Back_Card_Color_13/Back_Card_Color_13_Logo.png
-  artifactKey: Guid(438bbd7500efa544498d0f524758dae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_13/Back_Card_Color_13/Back_Card_Color_13_Logo.png using Guid(438bbd7500efa544498d0f524758dae8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cc245d0d14900b9b4842809bfe3bfe8') in 0.122803 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.319302 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_14/Back_Card_Color_14/Back_Card_Color_14_Logo.png
-  artifactKey: Guid(0a1a2fd9118562447b0c5b03d96163db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_14/Back_Card_Color_14/Back_Card_Color_14_Logo.png using Guid(0a1a2fd9118562447b0c5b03d96163db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b1c886ef205eb8e2bb689f36d1ad805') in 0.096982 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.144704 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_15/Back_Card_Color_15/Back_Card_Color_15_Logo.png
-  artifactKey: Guid(3ed2adfd06b22e04e93bc22650184452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_15/Back_Card_Color_15/Back_Card_Color_15_Logo.png using Guid(3ed2adfd06b22e04e93bc22650184452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad6e9bb5a1fe42d7cdb083bf9dec1a08') in 0.114628 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.995726 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_16/Back_Card_Color_16/Back_Card_Color_16_Logo.png
-  artifactKey: Guid(f27aa29e66bc63c4bbac21ab37d5e0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_16/Back_Card_Color_16/Back_Card_Color_16_Logo.png using Guid(f27aa29e66bc63c4bbac21ab37d5e0e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82634ddf2415fe6a2a0a091cdf0ed1ec') in 0.143436 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.578142 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Heart_Icons/Heart_Icons_Color_2.png
-  artifactKey: Guid(77e4c0688cf57544386d54a250ad6a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Heart_Icons/Heart_Icons_Color_2.png using Guid(77e4c0688cf57544386d54a250ad6a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dee34f73cab70296dcb8f17c661364db') in 0.052832 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.902332 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Number_Back/Number_Back_Color_2.png
-  artifactKey: Guid(5f6d38b6a502c7540b02f08eef3e11a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Number_Back/Number_Back_Color_2.png using Guid(5f6d38b6a502c7540b02f08eef3e11a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08c07a43208c0becad679f7a23762e70') in 0.051569 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.760464 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Number_Icons/Number_Icons_Color_2.png
-  artifactKey: Guid(9538573073c72df4db7f2e841ef067b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Number_Icons/Number_Icons_Color_2.png using Guid(9538573073c72df4db7f2e841ef067b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8ae19ca74e5e081a8bc6db3b472617') in 0.057488 seconds 
+  Time since last request: 0.000063 seconds.
+  path: Assets/Background/Freeui/ZOSMA/Main/Itembotton.png
+  artifactKey: Guid(3d6e441791dc08b41b9cccd520a510c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Freeui/ZOSMA/Main/Itembotton.png using Guid(3d6e441791dc08b41b9cccd520a510c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be41d1ac57421e45c6321230f28eaa8') in 0.107094 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000042 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Number_Icons/Number_Icons_Color_5.png
-  artifactKey: Guid(7de4431e3a96ef84baa63a1a19d9b6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Number_Icons/Number_Icons_Color_5.png using Guid(7de4431e3a96ef84baa63a1a19d9b6c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82268949cd7df2127e63f3f618bdc539') in 0.072922 seconds 
+  path: Assets/Background/Freeui/ZOSMA/Main/Rightup.png
+  artifactKey: Guid(75b16411d4ff9c3409ae0d7e003b08ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Freeui/ZOSMA/Main/Rightup.png using Guid(75b16411d4ff9c3409ae0d7e003b08ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a81c626ffe96e7da19e51c9681b9032d') in 0.103156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Background/Freeui/ZOSMA/Main/Decoration.png
+  artifactKey: Guid(05205ab3ef093d44ea14c294def5d47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Freeui/ZOSMA/Main/Decoration.png using Guid(05205ab3ef093d44ea14c294def5d47f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2f2a61cc653c87c15d182f6eddab47') in 0.082308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Background/Freeui/ZOSMA/Main/Guildbotton.png
+  artifactKey: Guid(6fb7c4e92abba1c47a569cdd755fcc4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Freeui/ZOSMA/Main/Guildbotton.png using Guid(6fb7c4e92abba1c47a569cdd755fcc4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff31ea29e71742b755b9446e4cc02817') in 0.082220 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Background/Freeui/ZOSMA/Main/Quest.png
+  artifactKey: Guid(9bef4363e0599894f9e40f0f8ce441ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Freeui/ZOSMA/Main/Quest.png using Guid(9bef4363e0599894f9e40f0f8ce441ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a8f395c0ef40d89317f7f630970f6fb') in 0.060932 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.318952 seconds.
+  path: Assets/Background/Night Mointains Lake/BackMountans.png
+  artifactKey: Guid(7af9025362f79498fa2c2e74d329ec59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Night Mointains Lake/BackMountans.png using Guid(7af9025362f79498fa2c2e74d329ec59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3dbfef37a1a9a8f2e35e42275745bb0') in 0.433702 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

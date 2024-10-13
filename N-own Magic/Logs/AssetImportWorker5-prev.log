@@ -15,7 +15,7 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-13817
+7690
 Successfully changed project path to: C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 473.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 116.02 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.026127 seconds.
+Registered in 0.010504 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 185.46 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 111.37 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.310 seconds
+- Completed reload, in  0.770 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1311ms)
-		BeginReloadAssembly (230ms)
+	ReloadAssembly (771ms)
+		BeginReloadAssembly (107ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (831ms)
-			LoadAssemblies (222ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (537ms)
+			LoadAssemblies (105ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (180ms)
+			SetupTypeCache (115ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (45ms)
-			SetupLoadedEditorAssemblies (513ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (323ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (186ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (210ms)
-				ProcessInitializeOnLoadMethodAttributes (101ms)
+				RefreshPlugins (111ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (136ms)
+				ProcessInitializeOnLoadMethodAttributes (63ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.020440 seconds.
+Registered in 0.015375 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 225.45 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 127.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.563 seconds
+- Completed reload, in  1.411 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2565ms)
-		BeginReloadAssembly (206ms)
+	ReloadAssembly (1412ms)
+		BeginReloadAssembly (140ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (2147ms)
-			LoadAssemblies (194ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (1125ms)
+			LoadAssemblies (133ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (631ms)
+			SetupTypeCache (261ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (107ms)
-			SetupLoadedEditorAssemblies (1084ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (628ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (226ms)
-				BeforeProcessingInitializeOnLoad (221ms)
-				ProcessInitializeOnLoadAttributes (518ms)
-				ProcessInitializeOnLoadMethodAttributes (86ms)
-				AfterProcessingInitializeOnLoad (23ms)
+				RefreshPlugins (128ms)
+				BeforeProcessingInitializeOnLoad (132ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (51ms)
+				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 2.14 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4111 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (56.5 KB). Loaded Objects now: 4568.
+Unloading 39 unused Assets / (56.1 KB). Loaded Objects now: 4568.
 Memory consumption went from 155.1 MB to 155.0 MB.
-Total: 7.885600 ms (FindLiveObjects: 0.644200 ms CreateObjectMapping: 0.413900 ms MarkObjects: 6.630700 ms  DeleteObjects: 0.194000 ms)
+Total: 4.499300 ms (FindLiveObjects: 0.333400 ms CreateObjectMapping: 0.200400 ms MarkObjects: 3.851000 ms  DeleteObjects: 0.113400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,22 +159,156 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 276667.759349 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Heart_Back.png
-  artifactKey: Guid(4a8dde732ff905b4fbde7026402fc755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Heart_Back.png using Guid(4a8dde732ff905b4fbde7026402fc755) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52548c3a2c1400555144c73f3ae69a1f') in 0.306510 seconds 
+  Time since last request: 442076.747777 seconds.
+  path: Assets/Background/Night Mointains Lake/Moon.png
+  artifactKey: Guid(6417e6e0f0d394c43af1ecdc60bd10dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/Night Mointains Lake/Moon.png using Guid(6417e6e0f0d394c43af1ecdc60bd10dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3141dbbb4b109d484756d5367deb03be') in 0.646571 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.016212 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.253 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2254ms)
+		BeginReloadAssembly (236ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (60ms)
+		EndReloadAssembly (1837ms)
+			LoadAssemblies (197ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (887ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (609ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (27ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (130ms)
+				ProcessInitializeOnLoadAttributes (368ms)
+				ProcessInitializeOnLoadMethodAttributes (65ms)
+				AfterProcessingInitializeOnLoad (16ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (25ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.54 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4087 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (51.1 KB). Loaded Objects now: 4579.
+Memory consumption went from 157.5 MB to 157.4 MB.
+Total: 3.707500 ms (FindLiveObjects: 0.388700 ms CreateObjectMapping: 0.260900 ms MarkObjects: 2.898700 ms  DeleteObjects: 0.157000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Logo_Crystal.png
-  artifactKey: Guid(62b415ecd498192408b8a2b1ca57eb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Logo_Crystal.png using Guid(62b415ecd498192408b8a2b1ca57eb3c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13d3a446a756b5959b077dec9312c0b') in 0.060590 seconds 
+  Time since last request: 1046.102545 seconds.
+  path: Assets/UseIcon
+  artifactKey: Guid(fb1a8a1486def8641aff8b3a3fbc906a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UseIcon using Guid(fb1a8a1486def8641aff8b3a3fbc906a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55e4696d000be81dbed2fb70d259fd03') in 0.019649 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Place_Text.png
-  artifactKey: Guid(e05e7a4a959994f4c92523eeb11a6890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Cards/TCG_Card_Elemental_Design/Card_Color_02/Face_Card_Color_02/Face_Card_Color_02_Place_Text.png using Guid(e05e7a4a959994f4c92523eeb11a6890) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69c5a7a0091e31eb374db5074d91065') in 0.284199 seconds 
+  Time since last request: 0.000035 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d457b26d2bc8024e58729449d46e968') in 0.014139 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/UseIcon/name-.png
+  artifactKey: Guid(bba9ccf352de5bd4e85acd8bb5f6d9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UseIcon/name-.png using Guid(bba9ccf352de5bd4e85acd8bb5f6d9d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d6fa751d129d0ddc17674102dfdee4') in 0.139908 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials
+  artifactKey: Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials using Guid(731f1baa9d144a9897cb1d341c2092b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b042ea9342910fd25220fe1c7d049750') in 0.052411 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000151 seconds.
+  path: Assets/TextMesh Pro/Resources
+  artifactKey: Guid(243e06394e614e5d99fab26083b707fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources using Guid(243e06394e614e5d99fab26083b707fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b25fcc2b6957111a9e254e1bce62b86') in 0.032401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+  artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73e2d31c734793c0d64434e9a7330f8') in 0.177442 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/UseIcon/book-.png
+  artifactKey: Guid(102190bd3fd02c74db62c61f82a7709c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UseIcon/book-.png using Guid(102190bd3fd02c74db62c61f82a7709c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e3fbf2b818c38eb2a8072e8bce91cae') in 0.051983 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000081 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1408718b749b1413bb3fb726b0a84bf') in 0.207728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/UseIcon/circular-.png
+  artifactKey: Guid(83d3696474d78e94882bd966c491aded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UseIcon/circular-.png using Guid(83d3696474d78e94882bd966c491aded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374e3ebeff4aca9f94e667e7e17377be') in 0.052813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/UseIcon/scroll-.png
+  artifactKey: Guid(27a7002bc3594784e869d11cb5103e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UseIcon/scroll-.png using Guid(27a7002bc3594784e869d11cb5103e89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cbed3f12bb4562013a3fc0e7e0fc43') in 0.056787 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000104 seconds.
+  path: Assets/UseIcon/potion-.png
+  artifactKey: Guid(9546712e5255d694aa4543f193121f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UseIcon/potion-.png using Guid(9546712e5255d694aa4543f193121f51) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e639ed7e58d09e5a7a126f339b273d54') in 0.055529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.230076 seconds.
+  path: Assets/2D_Handpainted_Magical_Rocks_and_Stones/Sprites/Magical_Rock_17.png
+  artifactKey: Guid(88d1d21c4e4fb5641b79d5cbbdb1596a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D_Handpainted_Magical_Rocks_and_Stones/Sprites/Magical_Rock_17.png using Guid(88d1d21c4e4fb5641b79d5cbbdb1596a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4896ca583f8d81b65110aaa4c2a9f5f') in 0.058087 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/2D_Handpainted_Magical_Rocks_and_Stones/Sprites/Magical_Rock_20.png
+  artifactKey: Guid(88e7f1f9d0616b84db7e1f4d1a5b7376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D_Handpainted_Magical_Rocks_and_Stones/Sprites/Magical_Rock_20.png using Guid(88e7f1f9d0616b84db7e1f4d1a5b7376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361a5e146803aa336bbca4c40525eab5') in 0.073150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/2D_Handpainted_Magical_Rocks_and_Stones/Sprites/Rune_7.png
+  artifactKey: Guid(11e822cd1dc8861488661f5007cbd397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D_Handpainted_Magical_Rocks_and_Stones/Sprites/Rune_7.png using Guid(11e822cd1dc8861488661f5007cbd397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e88e620f04c967c0fdf52b28cacef97') in 0.067945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.941843 seconds.
+  path: Assets/2D_Handpainted_Magical_Rocks_and_Stones/Prefabs/Blue/Magical_Rock_18.prefab
+  artifactKey: Guid(f73425842fd927a409fc2b7351e714a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D_Handpainted_Magical_Rocks_and_Stones/Prefabs/Blue/Magical_Rock_18.prefab using Guid(f73425842fd927a409fc2b7351e714a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '636ca46ea27a4bc398e9345ea1209855') in 0.061245 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting
