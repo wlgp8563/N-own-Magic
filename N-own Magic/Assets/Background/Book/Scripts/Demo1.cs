@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Demo : MonoBehaviour
+public class Demo1 : MonoBehaviour
 {
     public BookController bookController;
     

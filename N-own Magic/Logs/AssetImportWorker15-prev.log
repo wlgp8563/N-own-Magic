@@ -15,7 +15,7 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker15.log
 -srvPort
-7690
+11419
 Successfully changed project path to: C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 229.52 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 226.57 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,361 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56272
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015326 seconds.
+Registered in 0.038037 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 154.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 230.76 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.012 seconds
+- Completed reload, in  1.727 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1013ms)
-		BeginReloadAssembly (139ms)
+	ReloadAssembly (1728ms)
+		BeginReloadAssembly (265ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (692ms)
-			LoadAssemblies (135ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (1151ms)
+			LoadAssemblies (253ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (142ms)
+			SetupTypeCache (250ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (415ms)
+			RebuildScriptCaches (63ms)
+			SetupLoadedEditorAssemblies (699ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
+				InitializePlatformSupportModulesInManaged (21ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (155ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (173ms)
-				ProcessInitializeOnLoadMethodAttributes (69ms)
+				RefreshPlugins (231ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (307ms)
+				ProcessInitializeOnLoadMethodAttributes (135ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.017260 seconds.
+Registered in 0.030821 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 150.25 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 285.00 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.957 seconds
+- Completed reload, in  3.514 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1958ms)
-		BeginReloadAssembly (241ms)
+	ReloadAssembly (3517ms)
+		BeginReloadAssembly (402ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (19ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (40ms)
-		EndReloadAssembly (1481ms)
-			LoadAssemblies (177ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (2741ms)
+			LoadAssemblies (409ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (364ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (81ms)
-			SetupLoadedEditorAssemblies (787ms)
+			SetupTypeCache (637ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (168ms)
+			SetupLoadedEditorAssemblies (1445ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (12ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (150ms)
-				BeforeProcessingInitializeOnLoad (152ms)
-				ProcessInitializeOnLoadAttributes (393ms)
-				ProcessInitializeOnLoadMethodAttributes (65ms)
-				AfterProcessingInitializeOnLoad (13ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (285ms)
+				BeforeProcessingInitializeOnLoad (278ms)
+				ProcessInitializeOnLoadAttributes (684ms)
+				ProcessInitializeOnLoadMethodAttributes (149ms)
+				AfterProcessingInitializeOnLoad (31ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
+			AwakeInstancesAfterBackupRestoration (41ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
-Refreshing native plugins compatible for Editor in 1.51 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.15 seconds
+Refreshing native plugins compatible for Editor in 3.43 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4113 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (56.2 KB). Loaded Objects now: 4571.
-Memory consumption went from 155.3 MB to 155.2 MB.
-Total: 8.112800 ms (FindLiveObjects: 1.079400 ms CreateObjectMapping: 1.101000 ms MarkObjects: 5.799500 ms  DeleteObjects: 0.131300 ms)
+Unloading 4111 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (56.1 KB). Loaded Objects now: 4568.
+Memory consumption went from 155.1 MB to 155.0 MB.
+Total: 10.452300 ms (FindLiveObjects: 0.959500 ms CreateObjectMapping: 0.761300 ms MarkObjects: 8.514600 ms  DeleteObjects: 0.214000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 449488.363171 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack
+  artifactKey: Guid(75bac2ba5652bd8498224795eb5b937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack using Guid(75bac2ba5652bd8498224795eb5b937a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '190453952cb4e7dbab916e253da2dfa2') in 0.016648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.016502 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons
+  artifactKey: Guid(3d9b2669f4665ae4d8f9c6987ae26f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons using Guid(3d9b2669f4665ae4d8f9c6987ae26f41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf8afc3cc92eb5968593622a8e2fa933') in 0.004234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.562209 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell
+  artifactKey: Guid(78c13bd7d7073474594a671036861e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell using Guid(78c13bd7d7073474594a671036861e72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f4e15f37f09b1d8b54d826f1ac9e2c5') in 0.012179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.043460 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_1.png
+  artifactKey: Guid(0e04e6492d9812f4190a44d74cc8990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Buff_1.png using Guid(0e04e6492d9812f4190a44d74cc8990d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e32d5993fe7f3e76dd2273990e964bb') in 0.228295 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Dark_5.png
+  artifactKey: Guid(da2428cc0a18c1a4f97c365ed0f129ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Dark_5.png using Guid(da2428cc0a18c1a4f97c365ed0f129ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d563a7f30fd2b658558ef93ed6316b1') in 0.076881 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_5.png
+  artifactKey: Guid(d975054387d42354a9363011bfb62bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_5.png using Guid(d975054387d42354a9363011bfb62bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '962c0817d2a9062ba0fb309a2f6152cc') in 0.071159 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_5.png
+  artifactKey: Guid(a1e3951e1a03c124dbd4e9204787278f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_5.png using Guid(a1e3951e1a03c124dbd4e9204787278f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b1a1fbafa972a45df4193929c59a7e') in 0.078794 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_1.png
+  artifactKey: Guid(ad07527a07f828544b6f6a2a7f00e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Nature_1.png using Guid(ad07527a07f828544b6f6a2a7f00e678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae00ff686b88bd06eb7cfe197f347e26') in 0.089461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_3.png
+  artifactKey: Guid(0b55b49bf61a0e14ab542ec69fe02786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Debuff_3.png using Guid(0b55b49bf61a0e14ab542ec69fe02786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '435f6cc6fcc788f433a5de5b5e2ebab6') in 0.085526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_2.png
+  artifactKey: Guid(f3e87f4aa00be774c9017322c9bd656c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Earth_2.png using Guid(f3e87f4aa00be774c9017322c9bd656c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '421b8e4545406553a703860eee0d217a') in 0.119258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Holy_2.png
+  artifactKey: Guid(b99995a0f25801a4d9f648d8be6cf439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Holy_2.png using Guid(b99995a0f25801a4d9f648d8be6cf439) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e61867bc55572428cd70aa6c6a904a6') in 0.140332 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_4.png
+  artifactKey: Guid(1a862a305a44ca64e939c2b35b24e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_4.png using Guid(1a862a305a44ca64e939c2b35b24e829) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a66bea3762c3a72c911ea92bc2d90366') in 0.164503 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.769232 seconds.
+  path: Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_5.png
+  artifactKey: Guid(00d93e870e281474eaffc504915561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Free RPG Icons Pack/Icons/Magic Spell/Free RPG Icons Pack_Wind_5.png using Guid(00d93e870e281474eaffc504915561f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833a0fceb1f5646f7409aeab8be3d832') in 0.036384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.733313 seconds.
+  path: Assets/SpellS/Homeless
+  artifactKey: Guid(1f155e4f03338d94083b2c7b9ece8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless using Guid(1f155e4f03338d94083b2c7b9ece8c09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9997364dba69350831df4c276658620') in 0.010091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.102343 seconds.
+  path: Assets/SpellS/Homeless/UI Assets
+  artifactKey: Guid(d267d3142cb69f84dbdcace1ad533564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless/UI Assets using Guid(d267d3142cb69f84dbdcace1ad533564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d17004b9171804ec441fc4905324585') in 0.010380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.656537 seconds.
+  path: Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons
+  artifactKey: Guid(3e142115d3ad93d4399f5ce67b685a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons using Guid(3e142115d3ad93d4399f5ce67b685a09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aae17176fc4f84ac1ba1c808044fb830') in 0.012227 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.041496 seconds.
+  path: Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Arrow_Barrage.png
+  artifactKey: Guid(125bb49b217257347be09ede099b888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Arrow_Barrage.png using Guid(125bb49b217257347be09ede099b888d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf5e8ebf30f716886b04458f1cd2ffc0') in 0.037192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Punches.png
+  artifactKey: Guid(eecb85004343b0e4d8b78fd7f9877b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Punches.png using Guid(eecb85004343b0e4d8b78fd7f9877b32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e240f5efa8becd7a3856fd9988d3db7') in 0.042474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Dash.png
+  artifactKey: Guid(c67fbf9375ad5c34399c2849430ca7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Dash.png using Guid(c67fbf9375ad5c34399c2849430ca7f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04f2de8254ded12eb4cb35d02a7314c3') in 0.043312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Pound.png
+  artifactKey: Guid(61dab0b6e506c6a43b12d9fde15b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Homeless/UI Assets/Ability_Skill_Icons/UI_Skill_Icon_Pound.png using Guid(61dab0b6e506c6a43b12d9fde15b2393) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c58e562699d1d0f157e1da719a1bd98') in 0.040516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.461123 seconds.
+  path: Assets/SpellS/RPG_inventory_icons
+  artifactKey: Guid(97fbc11a3c506134fb95fd07a1dfa14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/RPG_inventory_icons using Guid(97fbc11a3c506134fb95fd07a1dfa14f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47d14db0848d71577553c121e7247ad6') in 0.011488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.047073 seconds.
+  path: Assets/SpellS/RPG_inventory_icons/bag.png
+  artifactKey: Guid(fe025e83f69d0b54f8a4fe3c7c128fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/RPG_inventory_icons/bag.png using Guid(fe025e83f69d0b54f8a4fe3c7c128fd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e17abd1b7d2496228640269bc729c18') in 0.050371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.772940 seconds.
+  path: Assets/SpellS/Skill icon
+  artifactKey: Guid(e9128a7a528a6c64f8f195d64758184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon using Guid(e9128a7a528a6c64f8f195d64758184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea2058ccacfb24bccc8266059299c1c') in 0.011484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.052354 seconds.
+  path: Assets/SpellS/Skill icon/Archer_a crack shot.png
+  artifactKey: Guid(ce7519d0d0e102c4b8e156ba8c7f9e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon/Archer_a crack shot.png using Guid(ce7519d0d0e102c4b8e156ba8c7f9e88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c36de91d4a72ce9e9672e1d30093fb08') in 0.106853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/SpellS/Skill icon/Archer_Charge shot_3.png
+  artifactKey: Guid(2d93066aba55a9041a83bd9403bd8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon/Archer_Charge shot_3.png using Guid(2d93066aba55a9041a83bd9403bd8d5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55c6deb9187117d48a51a0fac700a6b5') in 0.101751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/SpellS/Skill icon/Wizard_Trick.png
+  artifactKey: Guid(0b5ba48a12ad309408b91848f5b82bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon/Wizard_Trick.png using Guid(0b5ba48a12ad309408b91848f5b82bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3719e5fd841e07e9143d5473a391082f') in 0.100588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/SpellS/Skill icon/Samurai_Ilseom.png
+  artifactKey: Guid(fd6ab744a13821741bae075ba578bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon/Samurai_Ilseom.png using Guid(fd6ab744a13821741bae075ba578bce0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aec23af75af8c2070ea6bd26d867723') in 0.089246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/SpellS/Skill icon/Skill frame_silver.png
+  artifactKey: Guid(c02f8aa98a070ca40b2c8f50694ac7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon/Skill frame_silver.png using Guid(c02f8aa98a070ca40b2c8f50694ac7d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3b53eec935de89c38d8602647e5cdad') in 0.060950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/SpellS/Skill icon/Thief_Back-stabbing.png
+  artifactKey: Guid(1d7e1548e7fc4c74faee93a7cfe2d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/Skill icon/Thief_Back-stabbing.png using Guid(1d7e1548e7fc4c74faee93a7cfe2d397) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '717ea946c8b1008569667281a57cfc38') in 0.096186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.760862 seconds.
+  path: Assets/SpellS/SpellBookPreface
+  artifactKey: Guid(12fbafd7478728547af9ea5ed98bd92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface using Guid(12fbafd7478728547af9ea5ed98bd92b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4bf0a6560f0813b741114a415b51ec2') in 0.010388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.915928 seconds.
+  path: Assets/SpellS/SpellBookPreface/SpellBookPreface_png
+  artifactKey: Guid(389c9d192a6b31b48bd48f7ff56c0b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface/SpellBookPreface_png using Guid(389c9d192a6b31b48bd48f7ff56c0b4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d7cee5ba1c581a22ed119db5b760d6') in 0.009388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.059264 seconds.
+  path: Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_01.png
+  artifactKey: Guid(495b165e4f96ef14fb23cd71fa625a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_01.png using Guid(495b165e4f96ef14fb23cd71fa625a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70bbab7c09db40e0f6c27da09f6b5a9e') in 0.055816 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_23.PNG
+  artifactKey: Guid(5d1d51ce1560d254db60f4cb6c26cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_23.PNG using Guid(5d1d51ce1560d254db60f4cb6c26cdaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de063af30a98218d7068a1d706900872') in 0.056095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_19.PNG
+  artifactKey: Guid(65d211f55b476254ea778e5c4d2e5735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_19.PNG using Guid(65d211f55b476254ea778e5c4d2e5735) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3704f4c66c1d05e177e8c7a8f55b296') in 0.053010 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_12.PNG
+  artifactKey: Guid(411f88b287eb8504aa08edb04c1443c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_12.PNG using Guid(411f88b287eb8504aa08edb04c1443c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd7815e3cf15d0835c5edf9d42c285b') in 0.050839 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000123 seconds.
+  path: Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_11.png
+  artifactKey: Guid(43932b67c71640244a46b122a525ad3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/SpellBookPreface/SpellBookPreface_png/SpellBookPreface_11.png using Guid(43932b67c71640244a46b122a525ad3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf248dc035d0b904fd2eef7c2ece10b6') in 0.050349 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.032030 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 3.17 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.799 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3801ms)
+		BeginReloadAssembly (513ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (17ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (120ms)
+		EndReloadAssembly (2878ms)
+			LoadAssemblies (452ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (791ms)
+			ReleaseScriptCaches (5ms)
+			RebuildScriptCaches (142ms)
+			SetupLoadedEditorAssemblies (1294ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (62ms)
+				SetLoadedEditorAssemblies (2ms)
+				RefreshPlugins (3ms)
+				BeforeProcessingInitializeOnLoad (363ms)
+				ProcessInitializeOnLoadAttributes (673ms)
+				ProcessInitializeOnLoadMethodAttributes (136ms)
+				AfterProcessingInitializeOnLoad (55ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (68ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 15.74 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4084 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (24.6 KB). Loaded Objects now: 4585.
+Memory consumption went from 157.2 MB to 157.2 MB.
+Total: 14.328700 ms (FindLiveObjects: 2.028200 ms CreateObjectMapping: 1.013200 ms MarkObjects: 11.184900 ms  DeleteObjects: 0.099000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
