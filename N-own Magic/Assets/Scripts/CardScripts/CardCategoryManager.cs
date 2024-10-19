@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CardCategoryManager : MonoBehaviour
 {
-    public List<Card> attackCards = new List<Card>();
+    /*public List<Card> attackCards = new List<Card>();
     public List<Card> pierceCards = new List<Card>();
     public List<Card> shieldCards = new List<Card>();
     public List<Card> healCards = new List<Card>();
@@ -27,7 +27,6 @@ public class CardCategoryManager : MonoBehaviour
             { CardCategory.Heal, healCards },
             { CardCategory.ChangeCard, changeCards },
             { CardCategory.AddTurn, addCards }
-            // 나머지 카테고리들도 동일하게 추가
         };
 
         AddBasicCards();
@@ -163,5 +162,5 @@ public class CardCategoryManager : MonoBehaviour
         character.DecreaseFusionCount(); // 합성 후 캐릭터의 합성 가능 횟수 차감
 
         Debug.Log($"{category.ToString()} 카드가 Lv.{currentLevel + 1}로 합성되었습니다! 남은 합성 가능 갯수: {character.fusionCount}");
-    }
+    }*/
 }

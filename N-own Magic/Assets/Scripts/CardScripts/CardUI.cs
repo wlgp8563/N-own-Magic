@@ -13,12 +13,12 @@ public class CardUI : MonoBehaviour
     public TMP_Text cardID;             // 카드ID UI 
 
     // 카드 정보를 UI에 반영하는 함수
-    public void SetCardUI(Card cardData)
+    /*public void SetCardUI(Card cardData)
     {
         cardNameText.text = cardData.cardName;
         cardImage.sprite = cardData.cardImage;
         cardDescriptionText.text = cardData.description;
         cardLightGage.text = cardData.cardGage;
         cardID.text = cardData.cardID;
-    }
+    }*/
 }
