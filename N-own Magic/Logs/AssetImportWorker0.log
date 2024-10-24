@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16126 MB
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 32627 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
+C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-3480
-Successfully changed project path to: C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
-C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
+54646
+Successfully changed project path to: C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
+C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,105 +47,108 @@ C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 101.16 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 87.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic/Assets
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce MX450 (ID=0x1f97)
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
     Vendor:   NVIDIA
-    VRAM:     1906 MB
-    Driver:   32.0.15.5612
+    VRAM:     8038 MB
+    Driver:   31.0.15.3598
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56036
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009014 seconds.
+Registered in 0.011082 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 102.56 ms, found 4 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.46 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.663 seconds
+- Completed reload, in  0.613 seconds
 Domain Reload Profiling:
-	ReloadAssembly (663ms)
-		BeginReloadAssembly (85ms)
+	ReloadAssembly (613ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (451ms)
-			LoadAssemblies (83ms)
+		EndReloadAssembly (403ms)
+			LoadAssemblies (101ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (99ms)
+			SetupTypeCache (104ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (273ms)
+			RebuildScriptCaches (24ms)
+			SetupLoadedEditorAssemblies (222ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (103ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (116ms)
-				ProcessInitializeOnLoadMethodAttributes (43ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (95ms)
+				ProcessInitializeOnLoadMethodAttributes (45ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010565 seconds.
+Registered in 0.013291 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\N\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 98.57 ms, found 4 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 67.37 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.202 seconds
+- Completed reload, in  1.111 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1203ms)
-		BeginReloadAssembly (128ms)
+	ReloadAssembly (1112ms)
+		BeginReloadAssembly (104ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (21ms)
-		EndReloadAssembly (958ms)
-			LoadAssemblies (114ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (913ms)
+			LoadAssemblies (131ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (240ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (51ms)
-			SetupLoadedEditorAssemblies (506ms)
+			SetupTypeCache (276ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (413ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (235ms)
-				ProcessInitializeOnLoadMethodAttributes (48ms)
+				RefreshPlugins (67ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (204ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
 				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (56.5 KB). Loaded Objects now: 4565.
-Memory consumption went from 155.0 MB to 154.9 MB.
-Total: 4.297900 ms (FindLiveObjects: 0.442500 ms CreateObjectMapping: 0.207100 ms MarkObjects: 3.553700 ms  DeleteObjects: 0.093500 ms)
+Unloading 4109 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 39 unused Assets / (56.6 KB). Loaded Objects now: 4566.
+Memory consumption went from 155.1 MB to 155.0 MB.
+Total: 3.257500 ms (FindLiveObjects: 0.209100 ms CreateObjectMapping: 0.128400 ms MarkObjects: 2.831200 ms  DeleteObjects: 0.087300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,232 +162,424 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 972443.446962 seconds.
-  path: Assets/Scenes/CardGame.unity
-  artifactKey: Guid(5cbfd502a88a3ba4c9eec9bb4183a733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CardGame.unity using Guid(5cbfd502a88a3ba4c9eec9bb4183a733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46136f81eca4ebd576e29b7fcd738b44') in 0.020352 seconds 
+  Time since last request: 7076.455524 seconds.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79842766b460edbeab6a34051e857a80') in 0.016262 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 98.257114 seconds.
-  path: Assets/Assassinskill_11_nobg.png
-  artifactKey: Guid(82532a056fc77404f87025fc86b856fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assassinskill_11_nobg.png using Guid(82532a056fc77404f87025fc86b856fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52e224a3e60eb3626bf300d36319c675') in 0.286985 seconds 
+  Time since last request: 15.332189 seconds.
+  path: Assets/Resource
+  artifactKey: Guid(cd661023e0148694d956d9d05292a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resource using Guid(cd661023e0148694d956d9d05292a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2873f087b511c61b6e9f7049195e8caf') in 0.007015 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Assassinskill_29.png
-  artifactKey: Guid(5020a01ad4c184d4b809c1a88307b482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assassinskill_29.png using Guid(5020a01ad4c184d4b809c1a88307b482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd57fcbffa7a7cb73080b400be64e3710') in 0.049636 seconds 
+  Time since last request: 22.024254 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(cd661023e0148694d956d9d05292a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(cd661023e0148694d956d9d05292a2bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16e05a84192befffc8b6af3b5f7b651f') in 0.009674 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/light_hit.png
-  artifactKey: Guid(320d32d3a2bf9dc43aa3a5ee6c303f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/light_hit.png using Guid(320d32d3a2bf9dc43aa3a5ee6c303f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e2e21ab221a7dcc6a7af660d4299b7e') in 0.048516 seconds 
+  Time since last request: 1314.741688 seconds.
+  path: Assets/Resources/CardImages
+  artifactKey: Guid(4fc8089f29b55274a959f99912bded4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/CardImages using Guid(4fc8089f29b55274a959f99912bded4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8df520bcd3264dfee7811f14f97c5c7a') in 0.009439 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Druideskill_12_nobg.png
-  artifactKey: Guid(64de7ba25cfacd540ad6a20fc8b5aaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Druideskill_12_nobg.png using Guid(64de7ba25cfacd540ad6a20fc8b5aaa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea56d392ed5545e1ee71dca27145dd9') in 0.043449 seconds 
+  Time since last request: 257.786313 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_01_nobg.png
+  artifactKey: Guid(e0015d3f983a4734f82ed662450848b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_01_nobg.png using Guid(e0015d3f983a4734f82ed662450848b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d1c07f75a72bf9ef1ac4e51546b18a') in 0.156444 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Paladinskill_03_nobg.png
-  artifactKey: Guid(86ebd6a0087e1bf449c837f51edf68b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_03_nobg.png using Guid(86ebd6a0087e1bf449c837f51edf68b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e62ab5e07496a297469cf0b4cef48814') in 0.045760 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_37_nobg.png
+  artifactKey: Guid(626d18198f186944ba8808a923c9f9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_37_nobg.png using Guid(626d18198f186944ba8808a923c9f9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0b48c3beff84836c8c07d13247fc931') in 0.041161 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Paladinskill_03.png
-  artifactKey: Guid(9d2200a6f76dbc444a0d80d8cecbde6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_03.png using Guid(9d2200a6f76dbc444a0d80d8cecbde6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0fd1f89c22b20246299594fee35b4c') in 0.046879 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_31_nobg.png
+  artifactKey: Guid(4041b64b47f51904a90eec9e6f601f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_31_nobg.png using Guid(4041b64b47f51904a90eec9e6f601f3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8154cae2db0088f37806ea3c41684b6f') in 0.037283 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Paladinskill_22_nobg.png
-  artifactKey: Guid(ffe00b70bd0759d4cb669fd3e4699d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_22_nobg.png using Guid(ffe00b70bd0759d4cb669fd3e4699d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1998b433fcb8713a792890c218cf707') in 0.043275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Paladinskill_11.png
-  artifactKey: Guid(2a716e1b49952534da3e0bc61dc0cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_11.png using Guid(2a716e1b49952534da3e0bc61dc0cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e0fc5355153a72a948c85fac9232cb9') in 0.039791 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_08_nobg.png
+  artifactKey: Guid(3831839b0f1a81d4386195fc990fd4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_08_nobg.png using Guid(3831839b0f1a81d4386195fc990fd4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb4c3285629f625b8900cb872f56c29') in 0.029090 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000020 seconds.
-  path: Assets/Priestskill_07_nobg.png
-  artifactKey: Guid(f5d5a233b4eaa6f48a8d3020353b11ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_07_nobg.png using Guid(f5d5a233b4eaa6f48a8d3020353b11ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07bfdae6f44c75a49c77e7f72662e97f') in 0.047443 seconds 
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_05_nobg.png
+  artifactKey: Guid(b7ec45cf61ec6244182dbaa13f46a135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_05_nobg.png using Guid(b7ec45cf61ec6244182dbaa13f46a135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1086adcf240f5685e69c658301bf4e') in 0.027214 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Priestskill_08.png
-  artifactKey: Guid(60b36debe54a1e146a3cf4c976a70934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_08.png using Guid(60b36debe54a1e146a3cf4c976a70934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4cfadb31771711d37c159fbf3bba9178') in 0.057618 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_30_nobg.png
+  artifactKey: Guid(133e350b7520d1943b37f9f27d3feb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_30_nobg.png using Guid(133e350b7520d1943b37f9f27d3feb86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd39c4333dbee8856fdae8993c8ae2411') in 0.028429 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Priestskill_32_nobg.png
-  artifactKey: Guid(ad00d6adebaab9f478bfded18e77ad60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_32_nobg.png using Guid(ad00d6adebaab9f478bfded18e77ad60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27f77cb8644d621befa3e7379d5d5236') in 0.053154 seconds 
+  Time since last request: 0.000017 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_06_nobg.png
+  artifactKey: Guid(9b9521ac74bd3204e92e0f7b3748ef9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_06_nobg.png using Guid(9b9521ac74bd3204e92e0f7b3748ef9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05adbb0ec6c966e87f0ddbfd6a6cc2d9') in 0.027899 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Priestskill_28_nobg.png
-  artifactKey: Guid(a1ae1a5095368a9428ffcf6e8c66b59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_28_nobg.png using Guid(a1ae1a5095368a9428ffcf6e8c66b59f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121e3710f6cf1369dc776587bcfdde57') in 0.052801 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_04_nobg.png
+  artifactKey: Guid(1189cf36928968e45b02625c860c4171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_04_nobg.png using Guid(1189cf36928968e45b02625c860c4171) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cd3075c48117a57767b3218dcfb1212') in 0.026142 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Paladinskill_28.png
-  artifactKey: Guid(137590fd09107c54cb41a894c6abbca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_28.png using Guid(137590fd09107c54cb41a894c6abbca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1bfa9ffea44ba562dc144e81f68d8b0') in 0.046050 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_41_nobg.png
+  artifactKey: Guid(af6a057de6d50b34eae7d880e84c4a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_41_nobg.png using Guid(af6a057de6d50b34eae7d880e84c4a5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfa6def2f1fad0018ef7c09eb24cd310') in 0.030306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_44_nobg.png
+  artifactKey: Guid(83daf15eb7158cb43ba04ad293023606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_44_nobg.png using Guid(83daf15eb7158cb43ba04ad293023606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0364ef51ad86fb1a06de075ba1f75f5b') in 0.027474 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_01_nobg.png
+  artifactKey: Guid(d1d97841c1e82d845bd9c9e25566f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_01_nobg.png using Guid(d1d97841c1e82d845bd9c9e25566f9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50807658ecfa84941d627355bc0900cd') in 0.028147 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_40_nobg.png
+  artifactKey: Guid(8dc73df7af3a82e4b83ded17688413f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_40_nobg.png using Guid(8dc73df7af3a82e4b83ded17688413f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '361ed3f9e45310210d0940de61bc3005') in 0.031286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_04_nobg.png
+  artifactKey: Guid(690b78545e137d64cacb60de2b95c323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_04_nobg.png using Guid(690b78545e137d64cacb60de2b95c323) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb68ca0828d77d24492669f510ca766') in 0.029313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_20_nobg.png
+  artifactKey: Guid(57a46d52997e0424fb934a1dee2710cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_20_nobg.png using Guid(57a46d52997e0424fb934a1dee2710cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a9b0b069d5fa2e4f553c79cf2b3258') in 0.028921 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_12_nobg.png
+  artifactKey: Guid(20969e0c9b52e6c4fa0f7f2078daaccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_12_nobg.png using Guid(20969e0c9b52e6c4fa0f7f2078daaccf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a562809b6cc80176004cb3a898d5912') in 0.029707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_19_nobg.png
+  artifactKey: Guid(3afd050dee16ce24bb20006e6517f085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_19_nobg.png using Guid(3afd050dee16ce24bb20006e6517f085) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3b4e8a736991c7a5ddcd437acd4d786') in 0.029651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_15_nobg.png
+  artifactKey: Guid(0cec62a4bd4591d489c75c76b247dc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_15_nobg.png using Guid(0cec62a4bd4591d489c75c76b247dc01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '541926938c0c6c3a1045ee173223c989') in 0.029430 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_08_nobg.png
+  artifactKey: Guid(50538709cc8506d499474204e7fd6195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_08_nobg.png using Guid(50538709cc8506d499474204e7fd6195) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56735c13b290f20b491d7106cc19577') in 0.029288 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000038 seconds.
-  path: Assets/Priestskill_39.png
-  artifactKey: Guid(33d876f6cfce9534aae2f435b60b04af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_39.png using Guid(33d876f6cfce9534aae2f435b60b04af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1988f67a1839d716e86c1f356d79fcc3') in 0.044607 seconds 
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_12_nobg.png
+  artifactKey: Guid(7d3db7183fc7e5747a6f48ba632ce629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_12_nobg.png using Guid(7d3db7183fc7e5747a6f48ba632ce629) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '046014406097b50faad3a1c82b57b446') in 0.033146 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Priestskill_28.png
-  artifactKey: Guid(916e1e4086a1b0f4483feae59d285e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_28.png using Guid(916e1e4086a1b0f4483feae59d285e8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e38b1dc4990b56b259dbd0883a613a') in 0.041798 seconds 
+  Time since last request: 0.000035 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_21_nobg.png
+  artifactKey: Guid(f933294c04c9a3240a6de5b3527b0127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_21_nobg.png using Guid(f933294c04c9a3240a6de5b3527b0127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ea56110f959a3698fe56b501fbd2ba8') in 0.029686 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Paladinskill_08_nobg.png
-  artifactKey: Guid(6bcd71613a597424fbc296a29b9b8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_08_nobg.png using Guid(6bcd71613a597424fbc296a29b9b8605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30091ac5628dde7f6928dcf38a78a00') in 0.044074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Paladinskill_11_nobg.png
-  artifactKey: Guid(5d03721bbcd34644eab7f2e8f166c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_11_nobg.png using Guid(5d03721bbcd34644eab7f2e8f166c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e085496887178ec33e0bbf6dbeb342a2') in 0.058180 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Warlock_32.png
-  artifactKey: Guid(0fa1c6a3d05404442b4f6ead7a2e82c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_32.png using Guid(0fa1c6a3d05404442b4f6ead7a2e82c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90573f69e8d3dc81faeed1db57a64ee4') in 0.049201 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Paladinskill_20_nobg.png
-  artifactKey: Guid(b67270a50fce9d046b1a362d90e862b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_20_nobg.png using Guid(b67270a50fce9d046b1a362d90e862b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d0c54f2dfae1a0aef6819f08cc5449c') in 0.048771 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Warlock_10_nobg.png
-  artifactKey: Guid(9eef24e210a12bb479d693a4f4c41bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_10_nobg.png using Guid(9eef24e210a12bb479d693a4f4c41bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6cac690f4d2996980381c25cdfa336c') in 0.047553 seconds 
+  Time since last request: 0.000023 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_28_nobg.png
+  artifactKey: Guid(e34f49fd7f5ae5542a9cec58591e77e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_28_nobg.png using Guid(e34f49fd7f5ae5542a9cec58591e77e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee67f21f4995a0a943cc814c112a2f9d') in 0.029937 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000027 seconds.
-  path: Assets/Engineerskill_28.png
-  artifactKey: Guid(76788f2482cc6234aa71d1e22322dd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Engineerskill_28.png using Guid(76788f2482cc6234aa71d1e22322dd47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b0bdb86c500244a7f848e540df4ba9') in 0.046887 seconds 
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_35_nobg.png
+  artifactKey: Guid(52c9eb5e9a0aa6f4295ab62e8b876c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_35_nobg.png using Guid(52c9eb5e9a0aa6f4295ab62e8b876c52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '664265cdb9c2b618fc6ff0475937c86b') in 0.030521 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Priestskill_24.png
-  artifactKey: Guid(f677cf80e2ff8a94d9f491ded19534f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_24.png using Guid(f677cf80e2ff8a94d9f491ded19534f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd038eab2176c76ed0e70f2fef2312ffa') in 0.045878 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_38_nobg.png
+  artifactKey: Guid(8fce0f0d28d51ee40a866a4d6df74b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_38_nobg.png using Guid(8fce0f0d28d51ee40a866a4d6df74b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10750ff2c466383d7dffae0a8d69bca5') in 0.029708 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Priestskill_50.png
-  artifactKey: Guid(79acd8a805130f140b713a6f3e32257c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_50.png using Guid(79acd8a805130f140b713a6f3e32257c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53f2a9501fb41fbbd8a47857cb38796') in 0.045559 seconds 
+  Time since last request: 0.000027 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_28_nobg.png
+  artifactKey: Guid(41e3eb9cb7518b343acf1f372653dec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_28_nobg.png using Guid(41e3eb9cb7518b343acf1f372653dec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7038cd7e1623e1fe986621587630df') in 0.030051 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Priestskill_24_nobg.png
-  artifactKey: Guid(091dd29f8027fef48819afb66bb02ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_24_nobg.png using Guid(091dd29f8027fef48819afb66bb02ec7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d096d4dfe6ccd39536f9feff3f1703') in 0.054344 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_22_nobg.png
+  artifactKey: Guid(ce73eb152026a3e40931ea6a8d0c85cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_22_nobg.png using Guid(ce73eb152026a3e40931ea6a8d0c85cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18e00a77f3adbea539aa723d3c43f63c') in 0.031005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_42_nobg.png
+  artifactKey: Guid(ad6fbae49d78f374288e1a01fd1ac8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_42_nobg.png using Guid(ad6fbae49d78f374288e1a01fd1ac8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68baf4398d332a5da0b9798204bb7211') in 0.032736 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_29_nobg.png
+  artifactKey: Guid(5af5df8f415695d41ae4e690cd224e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_29_nobg.png using Guid(5af5df8f415695d41ae4e690cd224e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '442b6db65d554cb45effcdc3a83ce370') in 0.031120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_38_nobg.png
+  artifactKey: Guid(b1373c79dca17b24fa1b9cd9a8e2259c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_38_nobg.png using Guid(b1373c79dca17b24fa1b9cd9a8e2259c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a998c7e9def4145150f407832f7cf59') in 0.029872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_27_nobg.png
+  artifactKey: Guid(2f8d09cd10a0d5e42a7506452fc46aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_27_nobg.png using Guid(2f8d09cd10a0d5e42a7506452fc46aa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c2725e67e21da79d83b8f46a4221788') in 0.030098 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_22_nobg.png
+  artifactKey: Guid(27a3a19b73fcc9a49a770add86b62d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_22_nobg.png using Guid(27a3a19b73fcc9a49a770add86b62d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db24f975e7e27140bb536b84685a858') in 0.029755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_15_nobg.png
+  artifactKey: Guid(825347842ab72eb498349d7fec582ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_15_nobg.png using Guid(825347842ab72eb498349d7fec582ff0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e2c7c07ca10eab2933b46d370c8d163') in 0.029985 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_42_nobg.png
+  artifactKey: Guid(e78d4497ad4159e4296b31949ca59de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_42_nobg.png using Guid(e78d4497ad4159e4296b31949ca59de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cd3aab9ccb72ccd342a3487dfda7afb') in 0.040151 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_10_nobg.png
+  artifactKey: Guid(fa63e43951f5e85469df53a44d509547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_10_nobg.png using Guid(fa63e43951f5e85469df53a44d509547) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dcf4052e779d3d4fa4161c63fdc1464') in 0.032463 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_04_nobg.png
+  artifactKey: Guid(c18ef82861dc83940a4e7c7cf165d88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_04_nobg.png using Guid(c18ef82861dc83940a4e7c7cf165d88e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8a604c91312cf72d7d146b445a9b53') in 0.031569 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_43_nobg.png
+  artifactKey: Guid(fd1a92a2780902d46a302767a98dd42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_43_nobg.png using Guid(fd1a92a2780902d46a302767a98dd42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be66ef58a9f283f58792599b9083c912') in 0.031512 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_45_nobg.png
+  artifactKey: Guid(29a2af9b376e82d4bbdefd71e239f930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_45_nobg.png using Guid(29a2af9b376e82d4bbdefd71e239f930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72002d209e0342351906ec21a1ecba4a') in 0.032873 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_32_nobg.png
+  artifactKey: Guid(3d8923492b322834cbe0852df50253c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_32_nobg.png using Guid(3d8923492b322834cbe0852df50253c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '585173377d47fce41ee6f83c31264607') in 0.031913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_16_nobg.png
+  artifactKey: Guid(5137bc95e9208e648bf81648fbe4cbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_16_nobg.png using Guid(5137bc95e9208e648bf81648fbe4cbbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205e74a5c0950bbacb32710742920c7b') in 0.035021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_27_nobg.png
+  artifactKey: Guid(637d741b6516d2842b5d651577f4583a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_27_nobg.png using Guid(637d741b6516d2842b5d651577f4583a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40674d0def45905c27f692b502ec7c41') in 0.032648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_39_nobg.png
+  artifactKey: Guid(b8da10dcc1850be44a301c3e2e91ef63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_39_nobg.png using Guid(b8da10dcc1850be44a301c3e2e91ef63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942ddafa549fb2621615a1f8f79fd1e9') in 0.032974 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_09_nobg.png
+  artifactKey: Guid(52aa2b5162f5fdd4bb66e7ff14bbdb9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_09_nobg.png using Guid(52aa2b5162f5fdd4bb66e7ff14bbdb9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f158d5d11d08dd0b8af4287fd10060eb') in 0.033751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_39_nobg.png
+  artifactKey: Guid(9fd9487bde7247445b6fbbb8065acc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_39_nobg.png using Guid(9fd9487bde7247445b6fbbb8065acc45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08efc3e3f3ff426a85f6903ab88dc8de') in 0.032674 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_06_nobg.png
+  artifactKey: Guid(dff440dbf1c188b48b10c8d7e47da4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_06_nobg.png using Guid(dff440dbf1c188b48b10c8d7e47da4f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd741a56c431a26530b829aadff8916') in 0.037398 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_13_nobg.png
+  artifactKey: Guid(6a85be547f6e5624fa14e0598d2feb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_13_nobg.png using Guid(6a85be547f6e5624fa14e0598d2feb10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f819705d86b2f601e51c70579aeb15') in 0.043007 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_46_nobg.png
+  artifactKey: Guid(683cadebeaae3124ab87b754c2730529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_46_nobg.png using Guid(683cadebeaae3124ab87b754c2730529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c20dd23288b226a56a5208112acb511') in 0.033312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_09_nobg.png
+  artifactKey: Guid(ca39f7757d41cf745b5a13bbe96e4104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_09_nobg.png using Guid(ca39f7757d41cf745b5a13bbe96e4104) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0bc374479ff7b53639d6d348297adef') in 0.030991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_26_nobg.png
+  artifactKey: Guid(207ddc066bed5da458a371fc2fa96261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_26_nobg.png using Guid(207ddc066bed5da458a371fc2fa96261) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fd8f2667ae2664bcda1319c5f607ddf') in 0.033053 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000029 seconds.
-  path: Assets/Warlock_10.png
-  artifactKey: Guid(7303a68176cc1f341a842ce31f886428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_10.png using Guid(7303a68176cc1f341a842ce31f886428) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf7b2b6ae51770e0d26faf76306e87cd') in 0.051190 seconds 
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_10_nobg.png
+  artifactKey: Guid(dc77d40e1c95f264cb519bbe6ab10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_10_nobg.png using Guid(dc77d40e1c95f264cb519bbe6ab10231) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d14acc8a936ceca38c7d6ea900c01a4') in 0.033728 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Paladinskill_28_nobg.png
-  artifactKey: Guid(fb231a5980604ff4b993100bd06ff22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_28_nobg.png using Guid(fb231a5980604ff4b993100bd06ff22d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11c051045b21b1e7eb40a6482f4d5e6d') in 0.052655 seconds 
+  Time since last request: 0.000030 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_17_nobg.png
+  artifactKey: Guid(69679452bd8de8247ad42ba72772967c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_17_nobg.png using Guid(69679452bd8de8247ad42ba72772967c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e847b49f43f4539fab7d0a3a149c324c') in 0.043208 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/shadowbolt.png
-  artifactKey: Guid(cb0db1cb396bec346be5f77b0d4e89e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/shadowbolt.png using Guid(cb0db1cb396bec346be5f77b0d4e89e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e59d7663f74171a777538c1868bec450') in 0.050139 seconds 
+  Time since last request: 0.000023 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_35_nobg.png
+  artifactKey: Guid(3de491261161e904fb20803674afb166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_35_nobg.png using Guid(3de491261161e904fb20803674afb166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e64bea89429458222fe48f6fbb16d38a') in 0.032727 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Paladinskill_25_nobg.png
-  artifactKey: Guid(a0c3ca2006448224bb5b5fa9b1698717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_25_nobg.png using Guid(a0c3ca2006448224bb5b5fa9b1698717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9561c60178120078a7e05b285087dca0') in 0.050923 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_48_nobg.png
+  artifactKey: Guid(a617acb0e1c9e5a49b1b23baa7a9c979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_48_nobg.png using Guid(a617acb0e1c9e5a49b1b23baa7a9c979) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7fb3c19f2c57e3d7b960d37f449739') in 0.034507 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Update_04_nobg.png
-  artifactKey: Guid(f5bb9e3bfde2ed34faa63d9dae167c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Update_04_nobg.png using Guid(f5bb9e3bfde2ed34faa63d9dae167c46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd34a9ae1048ae5f99e0e09d3a6440ef2') in 0.055829 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_15_nobg.png
+  artifactKey: Guid(1a8f616299383364c9d4a5e528202718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_15_nobg.png using Guid(1a8f616299383364c9d4a5e528202718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf50f23aadaeb59778a71aef32d825e2') in 0.032342 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Warlock_33.png
-  artifactKey: Guid(15d3c0e699e470143a81f4f504feb567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_33.png using Guid(15d3c0e699e470143a81f4f504feb567) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80cc748ddc6a1eb80a101c803b27d47e') in 0.060220 seconds 
+  Time since last request: 0.000025 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_25_nobg.png
+  artifactKey: Guid(f53ea3d1b8ac0174ca86d6efc943c34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_25_nobg.png using Guid(f53ea3d1b8ac0174ca86d6efc943c34e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14295d627b06c6ce9468927888467b1f') in 0.032059 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Assassinskill_17_nobg.png
-  artifactKey: Guid(40597198f11371949889fd18ed8d7741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assassinskill_17_nobg.png using Guid(40597198f11371949889fd18ed8d7741) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca8b05379132b157ba290341b2b5f55b') in 0.067728 seconds 
+  Time since last request: 0.000022 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_19_nobg.png
+  artifactKey: Guid(9ccb56ba8bfd12449886013f93c51a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_19_nobg.png using Guid(9ccb56ba8bfd12449886013f93c51a86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6c124ff1c3e4ff4280c7aba4a1c3ae6') in 0.035211 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/Engineerskill_28_nobg.png
-  artifactKey: Guid(f491567be688f5044b3cd607f4f8f30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Engineerskill_28_nobg.png using Guid(f491567be688f5044b3cd607f4f8f30b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d8bdcc85b16a6c346466f56d7e8cc0b') in 0.074932 seconds 
+  Time since last request: 0.000029 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_16_nobg.png
+  artifactKey: Guid(fa0547de6a16e84418d7e92f701a0824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_16_nobg.png using Guid(fa0547de6a16e84418d7e92f701a0824) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05c7e9503bae631cbaea7df3e495850d') in 0.032312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_20_nobg.png
+  artifactKey: Guid(61be12b1f826af7429b4eef0fb2de5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_20_nobg.png using Guid(61be12b1f826af7429b4eef0fb2de5c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d1688429dd31559696cd06639e7caa') in 0.034469 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_34_nobg.png
+  artifactKey: Guid(468760a57a9b69f4e8e669f23b0ded09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_34_nobg.png using Guid(468760a57a9b69f4e8e669f23b0ded09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b21fdd403d0aa5435ac3f8543999400') in 0.032537 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000068 seconds.
-  path: Assets/Priestskill_50_nobg.png
-  artifactKey: Guid(f786312dd4e11af429ed6cf8faa7b588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_50_nobg.png using Guid(f786312dd4e11af429ed6cf8faa7b588) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f709a6ef50fad2888b18e7a7ba4e7b7') in 0.101771 seconds 
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_49_nobg.png
+  artifactKey: Guid(66237bd13cc126049868a4de2267a67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_49_nobg.png using Guid(66237bd13cc126049868a4de2267a67a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd16c9ff2f7a554a25833d814a554b02') in 0.033043 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000152 seconds.
-  path: Assets/Warlock_05.png
-  artifactKey: Guid(b37c23ff65a2a744588bd154f69c4584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_05.png using Guid(b37c23ff65a2a744588bd154f69c4584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1b5a554c5cd2af40e94a9af5eff1e9e') in 0.115795 seconds 
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_23_nobg.png
+  artifactKey: Guid(1a8743e89529f344fbcc70cd782cb9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_23_nobg.png using Guid(1a8743e89529f344fbcc70cd782cb9f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49ca76dd51f69edd25dc2993165b6a8c') in 0.032309 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000078 seconds.
-  path: Assets/Paladinskill_29.png
-  artifactKey: Guid(f5d3908ed63a7c540b6bdaa99e279132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_29.png using Guid(f5d3908ed63a7c540b6bdaa99e279132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3c2f9a97e2d4dc7a3c1185f7ed32753') in 0.152506 seconds 
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_07_nobg.png
+  artifactKey: Guid(3632d42c0c635b04fbdacacbacfe6e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_07_nobg.png using Guid(3632d42c0c635b04fbdacacbacfe6e80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a74e00ed6e37852060154844d8015b95') in 0.033515 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000101 seconds.
-  path: Assets/soul_devouring_nobg.png
-  artifactKey: Guid(e7df0ed5beb83e740893d00b697fd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/soul_devouring_nobg.png using Guid(e7df0ed5beb83e740893d00b697fd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740b9eeeac9ec6e960fd37fb504d0698') in 0.121418 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_36_nobg.png
+  artifactKey: Guid(dc8da1583e8856841ba41385d129d67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_36_nobg.png using Guid(dc8da1583e8856841ba41385d129d67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25091e93dc390939e1f942eb5af1f20f') in 0.033532 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000451 seconds.
-  path: Assets/Paladinskill_25.png
-  artifactKey: Guid(aa059b0dbce3b0a4e93acb4b56a5356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_25.png using Guid(aa059b0dbce3b0a4e93acb4b56a5356c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5519fd159c5b86c72e50b0c3e72faff3') in 0.106888 seconds 
+  Time since last request: 0.000032 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_41_nobg.png
+  artifactKey: Guid(4cbdbea6b0853094fbd1c93f5259a935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_41_nobg.png using Guid(4cbdbea6b0853094fbd1c93f5259a935) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2024b154d0329a2bd4264fce596def7a') in 0.031678 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_03_nobg.png
+  artifactKey: Guid(4c1fbd69942cb2a499b12795f7ffea21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Archerskill_03_nobg.png using Guid(4c1fbd69942cb2a499b12795f7ffea21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd75f9e441c2048ed398e08c605eaea20') in 0.030840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_13_nobg.png
+  artifactKey: Guid(4f129b09f132d2740a1e3c4ff39a3e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_13_nobg.png using Guid(4f129b09f132d2740a1e3c4ff39a3e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76bfb49443f8917933ddafe0124942ee') in 0.032614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_02_nobg.png
+  artifactKey: Guid(a63b34d18b030cd42b209382699f433b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Druideskill_02_nobg.png using Guid(a63b34d18b030cd42b209382699f433b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06baea3c3fb5d5ffcadcdaaeb6612c1') in 0.033492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_06_nobg.png
+  artifactKey: Guid(ade274eff6751a348a9f07a0569133e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SpellS/500_skillicons/Skill_nobg/Assassinskill_06_nobg.png using Guid(ade274eff6751a348a9f07a0569133e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84812db87d0980978fe70cd01c25b8ab') in 0.033825 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

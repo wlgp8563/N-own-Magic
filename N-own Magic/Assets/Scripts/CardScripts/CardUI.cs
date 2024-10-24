@@ -6,19 +6,22 @@ using TMPro;
 
 public class CardUI : MonoBehaviour
 {
-    public TMP_Text cardNameText;       // 카드 이름 UI
-    public Image cardImage;         // 카드 이미지 UI
-    public TMP_Text cardDescriptionText;// 카드 설명 UI
-    public TMP_Text cardLightGage;      // 카드 빛에너지 수 UI
-    public TMP_Text cardID;             // 카드ID UI 
+    public TMP_Text cardNameText;
+    public Image cardImage;
+    public TMP_Text descriptionText;
+    public TMP_Text cardIDText;
+    public TMP_Text cardLightEnergy;
 
-    // 카드 정보를 UI에 반영하는 함수
-    /*public void SetCardUI(Card cardData)
+    private Card cardData;
+
+    // 카드 데이터를 설정하고 UI 업데이트
+    public void SetCardData(Card card)
     {
-        cardNameText.text = cardData.cardName;
-        cardImage.sprite = cardData.cardImage;
-        cardDescriptionText.text = cardData.description;
-        cardLightGage.text = cardData.cardGage;
-        cardID.text = cardData.cardID;
-    }*/
+        cardData = card;
+        cardNameText.text = card.cardName;
+        cardImage.sprite = card.cardImage;
+        descriptionText.text = card.description;
+        cardIDText.text = card.cardID;
+        cardLightEnergy.text = card.lightEnergy.ToString();
+    }
 }
