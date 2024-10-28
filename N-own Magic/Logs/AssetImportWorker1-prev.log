@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 32627 MB
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ko' Physical Memory: 16126 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
+C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64708
-Successfully changed project path to: C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
-C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
+1578
+Successfully changed project path to: C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
+C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,276 +47,59 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 72.83 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 837.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic/Assets
+[Subsystems] Discovering subsystems at path C:/Users/N/Documents/GitHub/N-own-Magic/N-own Magic/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Renderer: NVIDIA GeForce MX450 (ID=0x1f97)
     Vendor:   NVIDIA
-    VRAM:     8038 MB
-    Driver:   31.0.15.3598
+    VRAM:     1906 MB
+    Driver:   32.0.15.5612
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56952
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56328
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011078 seconds.
+Registered in 0.418907 seconds.
 Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 66.25 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 308.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.488 seconds
+- Completed reload, in 11.113 seconds
 Domain Reload Profiling:
-	ReloadAssembly (488ms)
-		BeginReloadAssembly (70ms)
+	ReloadAssembly (11114ms)
+		BeginReloadAssembly (7247ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (324ms)
-			LoadAssemblies (67ms)
+			CreateAndSetChildDomain (2ms)
+		EndReloadAssembly (2357ms)
+			LoadAssemblies (7240ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (70ms)
+			SetupTypeCache (1146ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (194ms)
+			RebuildScriptCaches (75ms)
+			SetupLoadedEditorAssemblies (941ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
+				InitializePlatformSupportModulesInManaged (22ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (66ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
+				RefreshPlugins (309ms)
+				BeforeProcessingInitializeOnLoad (4ms)
+				ProcessInitializeOnLoadAttributes (396ms)
+				ProcessInitializeOnLoadMethodAttributes (210ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011596 seconds.
+Registered in 0.051047 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 67.53 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.911 seconds
-Domain Reload Profiling:
-	ReloadAssembly (912ms)
-		BeginReloadAssembly (105ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (13ms)
-		EndReloadAssembly (715ms)
-			LoadAssemblies (112ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (162ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (384ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (68ms)
-				BeforeProcessingInitializeOnLoad (77ms)
-				ProcessInitializeOnLoadAttributes (186ms)
-				ProcessInitializeOnLoadMethodAttributes (38ms)
-				AfterProcessingInitializeOnLoad (11ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.59 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 39 unused Assets / (56.2 KB). Loaded Objects now: 4564.
-Memory consumption went from 154.9 MB to 154.9 MB.
-Total: 2.410300 ms (FindLiveObjects: 0.191700 ms CreateObjectMapping: 0.107700 ms MarkObjects: 2.047900 ms  DeleteObjects: 0.061800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 2704.437883 seconds.
-  path: Assets/20_shadow_rain_nobg.png
-  artifactKey: Guid(e73b53acf9876574fa58c89c6d1f7cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/20_shadow_rain_nobg.png using Guid(e73b53acf9876574fa58c89c6d1f7cd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '197a9d747b7c66cbe4e6078bde009dd0') in 0.135480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Paladinskill_16_nobg.png
-  artifactKey: Guid(7d5809243dae3b74db5312df3fd3c906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_16_nobg.png using Guid(7d5809243dae3b74db5312df3fd3c906) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fba5e8aae0ea886ba67590ac239b86') in 0.026855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Priestskill_08.png
-  artifactKey: Guid(60b36debe54a1e146a3cf4c976a70934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_08.png using Guid(60b36debe54a1e146a3cf4c976a70934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8dabb740aaa707522b99bf03641f8df') in 0.025664 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Priestskill_32_nobg.png
-  artifactKey: Guid(ad00d6adebaab9f478bfded18e77ad60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_32_nobg.png using Guid(ad00d6adebaab9f478bfded18e77ad60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab32ada59c923f4b0457b3e31b6f647f') in 0.019733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Archerskill_05_nobg.png
-  artifactKey: Guid(dc146abd7ac659d439767faac33ef083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archerskill_05_nobg.png using Guid(dc146abd7ac659d439767faac33ef083) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74f819b9301b5dd1225225184d9a6a73') in 0.021025 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Paladinskill_28.png
-  artifactKey: Guid(137590fd09107c54cb41a894c6abbca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_28.png using Guid(137590fd09107c54cb41a894c6abbca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '275e18620059c6a329fd119e781f664d') in 0.019162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/13_Healing_spell_2_nobg.png
-  artifactKey: Guid(89a7c2b9294dbaa4985085575713504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/13_Healing_spell_2_nobg.png using Guid(89a7c2b9294dbaa4985085575713504f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8026b7349ddb27e33fa08ba268f6083a') in 0.023405 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Warlock_10_nobg.png
-  artifactKey: Guid(9eef24e210a12bb479d693a4f4c41bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_10_nobg.png using Guid(9eef24e210a12bb479d693a4f4c41bd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '233c1a39247af424167bbf6023a85e8f') in 0.023784 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/06_Death_blow2.png
-  artifactKey: Guid(0ce75dcc75cd7e24090a1c022b3e92e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/06_Death_blow2.png using Guid(0ce75dcc75cd7e24090a1c022b3e92e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51fd4ccb41aec6a21e0810bbf687f684') in 0.021102 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Paladinskill_22_nobg.png
-  artifactKey: Guid(ffe00b70bd0759d4cb669fd3e4699d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_22_nobg.png using Guid(ffe00b70bd0759d4cb669fd3e4699d02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff889231c4fe9bfccc039b847133693f') in 0.020590 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/07_Death_blow3_nobg.png
-  artifactKey: Guid(0b2dad4a55cd68147a334c2919900fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/07_Death_blow3_nobg.png using Guid(0b2dad4a55cd68147a334c2919900fab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ff209d2a57aeb44c6904476fc07751') in 0.020383 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Paladinskill_25_nobg.png
-  artifactKey: Guid(a0c3ca2006448224bb5b5fa9b1698717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_25_nobg.png using Guid(a0c3ca2006448224bb5b5fa9b1698717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c57816c72b4ff48793939c5cfe82c5ef') in 0.021937 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Priestskill_30_nobg.png
-  artifactKey: Guid(e1d08c9be4272154d8e997be8a0bbd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_30_nobg.png using Guid(e1d08c9be4272154d8e997be8a0bbd6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f83224bef343a857891eb959ea50e96e') in 0.021616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Archerskill_34_nobg.png
-  artifactKey: Guid(20b1a25f44a40ba4e9f349a197963034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archerskill_34_nobg.png using Guid(20b1a25f44a40ba4e9f349a197963034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ac3b63e65a0f80e17f9bf9fed44ca88') in 0.024622 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/12_Healing_spell.png
-  artifactKey: Guid(511b7df189d509e4bbb3271bf1df0df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/12_Healing_spell.png using Guid(511b7df189d509e4bbb3271bf1df0df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac566f06c1b7e914d5db9e8ed06869c') in 0.022792 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Warlock_05_nobg.png
-  artifactKey: Guid(7fe8ac26b5c64ad46867e570ddc4f8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_05_nobg.png using Guid(7fe8ac26b5c64ad46867e570ddc4f8c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb495bc9f8116e6268f7c9395949fbd1') in 0.022325 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Warlock_32_nobg.png
-  artifactKey: Guid(e5681ba5458b1d240bf7c255a4cdfc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Warlock_32_nobg.png using Guid(e5681ba5458b1d240bf7c255a4cdfc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c70fe599c734320426d6d25e79bb316') in 0.022634 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Paladinskill_11_nobg.png
-  artifactKey: Guid(5d03721bbcd34644eab7f2e8f166c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Paladinskill_11_nobg.png using Guid(5d03721bbcd34644eab7f2e8f166c745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41fc09ac8db364870cee4b0efcc3a481') in 0.023352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/24_Holy_rain_nobg.png
-  artifactKey: Guid(327fd9a46424af74880dfa0713684ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/24_Holy_rain_nobg.png using Guid(327fd9a46424af74880dfa0713684ae2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3a923b6ed89773ba97f145b9f3fbebe') in 0.022172 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Priestskill_50.png
-  artifactKey: Guid(79acd8a805130f140b713a6f3e32257c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_50.png using Guid(79acd8a805130f140b713a6f3e32257c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b4e4d1cba23c1f3223cad0eabd27be') in 0.020024 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Priestskill_07.png
-  artifactKey: Guid(ce9242735c2ec8f4eb5c63e3794bd8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Priestskill_07.png using Guid(ce9242735c2ec8f4eb5c63e3794bd8e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17d6c8de6e24222d42157e0c610384c4') in 0.022167 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Archerskill_18.png
-  artifactKey: Guid(60fa0ea877ae2ec478fd273b6ea4fe1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Archerskill_18.png using Guid(60fa0ea877ae2ec478fd273b6ea4fe1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9af4c79ae0ce4d0cf3e36af494478305') in 0.021903 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Assassinskill_29_nobg.png
-  artifactKey: Guid(0a1afdcc43c88064d996b32448b6be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assassinskill_29_nobg.png using Guid(0a1afdcc43c88064d996b32448b6be97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26eed8c5a46620ef49b09331d05cc370') in 0.021147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/05_Death_blow_nobg.png
-  artifactKey: Guid(bfa99d7cfecc9984e8cc2e0e225c7aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/05_Death_blow_nobg.png using Guid(bfa99d7cfecc9984e8cc2e0e225c7aff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b360a4ce2349b2ba2742cf5f27290226') in 0.023163 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Druideskill_18_nobg.png
-  artifactKey: Guid(3f65df59d24c8c5419e9a85b7f09cc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Druideskill_18_nobg.png using Guid(3f65df59d24c8c5419e9a85b7f09cc8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '643f1c8694553ce0dc41a2c300f1ac3d') in 0.023733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/soul_devouring_nobg.png
-  artifactKey: Guid(e7df0ed5beb83e740893d00b697fd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/soul_devouring_nobg.png using Guid(e7df0ed5beb83e740893d00b697fd44b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff3ae3c315da72409d8e4183b3bfe131') in 0.020530 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0

@@ -2,30 +2,135 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CardManager : MonoBehaviour
 {
+    public static CardManager Instance;
+
+    public GameObject fuseShop;
     public Transform cardParent; // 카드들이 배치될 부모 UI
-    public GameObject cardPrefab; // 카드 프리팹
-    public Button deckButton; // 덱을 보여주는 버튼
+    public GameObject cardPrefab; // 카드 프리팹s
+    public Button deckButton; // 덱을 보여주는 버튼(선택창 씬에 있음)
+    public GameObject deckUI;  //덱 UI 창
     public Button submitButton; // 카드 제출 버튼
     public List<Card> cardDeck = new List<Card>(); // 전체 카드 덱
     public List<Card> handDeck = new List<Card>(); // 현재 화면에 보이는 덱
+    public List<Card> selectedCards = new List<Card>(); //카드 합성 시 선택한 카드들 리스트 덱
+    public Button fusionButton;
 
-    public GameObject deckUI; // 덱 UI
     public GameObject handDeckUI; // 핸드 덱 UI
 
     public int initialHandSize = 4; // 게임 시작 시 뽑을 카드 수
     public float cardSpacing = 50f; // 카드 간격
     public float fanAngle = 10f; // 부채꼴 각도
 
+    private void Awake()
+    {
+        if(Instance==null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     void Start()
     {
-        deckButton.onClick.AddListener(ShowCardDeckUI); // 덱 버튼 클릭 이벤트
-        submitButton.onClick.AddListener(ReturnHandCardsToDeck); // 제출 버튼 클릭 이벤트
+        if(SceneManager.GetActiveScene().name == "InGame")
+        { 
+            deckButton.onClick.AddListener(ShowCardDeckUI); // 덱 버튼 클릭
 
-        DrawInitialHand();
-        ArrangeCardsInFanShape();
+            fusionButton.onClick.AddListener(TryFuseCards);
+        }
+        else if(SceneManager.GetActiveScene().name == "CardGame")
+        {
+            submitButton.onClick.AddListener(ReturnHandCardsToDeck); // 제출 버튼 클릭 이벤트
+
+            DrawInitialHand();
+            ArrangeCardsInFanShape();
+        }
+        
+    }
+
+    public void DisplayDectInFusionShop()
+    {
+        foreach(Transform child in fuseShop.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach(var card in cardDeck)
+        {
+            GameObject cardUI = Instantiate(cardPrefab, fuseShop.transform);
+            CardUI cardUIScript = cardUI.GetComponent<CardUI>();
+            cardUIScript.SetCardData(card);
+
+            Button cardButton = cardUI.GetComponent<Button>();
+            cardButton.onClick.AddListener(() => OnCardSelected(card, cardUI));
+        }
+    }
+
+    private void OnCardSelected(Card card, GameObject cardUI)
+    {
+        if (selectedCards.Contains(card))
+        {
+            selectedCards.Remove(card);
+            cardUI.GetComponent<Image>().color = Color.gray;
+        }
+        else if(selectedCards.Count < 3)
+        {
+            selectedCards.Add(card);
+            cardUI.GetComponent<Image>().color = Color.white;
+        }
+    }
+
+    private void TryFuseCards()
+    {
+        if(Player.Instance.canFuseCard <= 0)
+        {
+            Debug.Log("합성 가능 횟수가 부족합니다"); //여기는 텍스트 상자 뜨는 걸로 수정
+            return;
+        }
+        
+        if(selectedCards.Count == 3 && CanFuseCards(selectedCards))
+        {
+            TryFuseCards(selectedCards);
+            Player.Instance.DecreaseFusion();
+        }
+        else
+        {
+            Debug.Log("합성 가능 조건이 아님");
+        }
+    }
+
+    private bool CanFuseCards(List<Card> selectCards)
+    {
+        return selectedCards[0].level == selectedCards[1].level &&
+               selectedCards[1].level == selectedCards[2].level &&
+               selectedCards[0].category == selectedCards[1].category &&
+               selectedCards[1].category == selectedCards[2].category;
+    }
+
+    private void FuseCards(List<Card> cardsToFuse)
+    {
+        int newLevel = cardsToFuse[0].level + 1;
+        CardCategory category = cardsToFuse[0].category;
+
+        Card newCard = new Card(category, newLevel);
+        cardDeck.Add(newCard);
+
+        foreach (var card in cardsToFuse)
+        {
+            cardDeck.Remove(card);
+        }
+
+        selectedCards.Clear();
+        DisplayDectInFusionShop();
+        //카드 합성 성공 메시지 추가
     }
 
     // 덱 UI 표시

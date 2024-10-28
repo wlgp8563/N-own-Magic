@@ -4,11 +4,97 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
+
+    public int maxhp = 25;
+    public int currenthp;
+    public int playerlevel = 1;
+    public int exp = 0;
+    public int nexttoexp = 15;
+    public int canFuseCard = 2;
+    public int lightenergy = 2;
+    public int playerturn = 3;
+    public int handdecknum = 4;
+
     public string playerName = "Player";
     public int health = 100;
     public int cardDrawCount = 4;
     public LightEnergyManager energyManager;
     public TurnManager turnManager;
+
+    private void Awake()
+    {
+        if(Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public void Start()
+    {
+        currenthp = maxhp;
+    }
+
+    public void AddExp(int amount)
+    {
+        exp += amount;
+        if(exp >= nexttoexp)
+        {
+            LevelUp();
+        }
+    }
+
+    private void LevelUp()
+    {
+        playerlevel++;
+        exp = 0;
+        switch(playerlevel)
+        {
+            case 2:
+                nexttoexp += 10;
+                maxhp += 10;
+                currenthp = maxhp;
+                break;
+            case 3:
+                nexttoexp += 15;
+                maxhp += 15;
+                currenthp = maxhp;
+                break;
+            case 4:
+                nexttoexp += 20;
+                maxhp += 20;
+                currenthp = maxhp;
+                break;
+            case 5:
+                nexttoexp += 30;
+                maxhp += 30;
+                currenthp = maxhp;
+                break;
+            case 6:
+                nexttoexp += 40;
+                maxhp += 40;
+                currenthp = maxhp;
+                break;
+        }
+    }
+
+    public void DecreaseFusion()
+    {
+        if(canFuseCard > 0)
+        {
+            canFuseCard--;
+        }
+    }
+
+    /*public void IncreaseFusion()
+    {
+        canFuseCard++;
+    }*/
 
     public void UseCard(Card card)
     {

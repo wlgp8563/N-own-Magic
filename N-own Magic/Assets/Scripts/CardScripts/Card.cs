@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum CardCategory { Attack, Pierce, Shield, Heal, AddCard, AddTurn }
+
 public class Card
 {
     public string cardName;
@@ -14,7 +16,7 @@ public class Card
     public CardCategory category;
 
     // 카드 카테고리 enum
-    public enum CardCategory { Attack, Pierce, Shield, Heal, AddCard, AddTurn }
+    //public enum CardCategory { Attack, Pierce, Shield, Heal, AddCard, AddTurn }
 
     // 카드 기본 생성자
     public Card(string name, Sprite image, int energy, string id, int lvl, CardCategory cat)
@@ -31,7 +33,7 @@ public class Card
     // 카드 레벨 업 메소드
     public void LevelUp()
     {
-        if (level < 3)  // 최대 레벨 5까지 가능
+        if (level < 3)  // 최대 레벨 3까지 가능
         {
             level++;
             cardName = $"{cardName.Split(' ')[0]} Level{level}";
