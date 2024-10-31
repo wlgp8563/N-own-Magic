@@ -9,7 +9,7 @@ public class CardManager : MonoBehaviour
     public static CardManager Instance;
 
     public GameObject fuseShop;
-    public Transform cardParent; // 카드들이 배치될 부모 UI
+    public Transform handCardArea; // 카드들이 배치될 UI위치
     public GameObject cardPrefab; // 카드 프리팹s
     public Button deckButton; // 덱을 보여주는 버튼(선택창 씬에 있음)
     public GameObject deckUI;  //덱 UI 창
@@ -40,7 +40,9 @@ public class CardManager : MonoBehaviour
 
     void Start()
     {
-        if(SceneManager.GetActiveScene().name == "InGame")
+        InitializeDeck();
+
+        /*if (SceneManager.GetActiveScene().name == "InGame")
         { 
             deckButton.onClick.AddListener(ShowCardDeckUI); // 덱 버튼 클릭
 
@@ -52,11 +54,94 @@ public class CardManager : MonoBehaviour
 
             DrawInitialHand();
             ArrangeCardsInFanShape();
-        }
+        }*/
         
     }
 
-    public void DisplayDectInFusionShop()
+    private void InitializeDeck()
+    {
+        cardDeck.Add(new Card("Lighting Level1", null, 0, "attack01", 1, CardCategory.Attack));
+        cardDeck.Add(new Card("Lighting Level1", null, 0, "attack02", 1, CardCategory.Attack));
+        cardDeck.Add(new Card("Pierce Light Level1", null, 0, "pierce01", 1, CardCategory.Pierce));
+        cardDeck.Add(new Card("Heal Level1", null, 0, "heal01", 1, CardCategory.Heal));
+        cardDeck.Add(new Card("Heal Level1", null, 0, "heal02", 1, CardCategory.Heal));
+        cardDeck.Add(new Card("Shield Level1", null, 1, "shield01", 1, CardCategory.Shield));
+        cardDeck.Add(new Card("Add Card Level1", null, 1, "addcard01", 1, CardCategory.AddCard));
+        cardDeck.Add(new Card("Add Turn Level1", null, 1, "addturn01", 1, CardCategory.AddTurn));
+    }
+
+    public void OpenFusionShop()
+    {
+        fusionUI.gameObject.SetActive(true);
+        DisplayDeckInFusionUI();
+    }
+
+    private void DisplayDeckInFusionUI()
+    {
+        foreach (Transform child in fusionInventoryArea)
+        {
+            Destroy(child.gameObject);
+        }
+
+        foreach (Card card in playerDeck)
+        {
+            GameObject cardObj = Instantiate(cardPrefab, fusionInventoryArea);
+            cardObj.GetComponent<CardDisplay>().Setup(card);
+        }
+    }
+
+    public void FuseSelectedCards(List<Card> selectedCards)
+    {
+        if (selectedCards.Count == 3 &&
+            selectedCards[0].category == selectedCards[1].category &&
+            selectedCards[0].category == selectedCards[2].category &&
+            selectedCards[0].level == selectedCards[1].level &&
+            selectedCards[0].level == selectedCards[2].level &&
+            PlayerState.Instance.UseFusionAttempt())
+        {
+            var fusedCard = new Card($"{selectedCards[0].category} Level{selectedCards[0].level + 1}",
+                                      null, 0, "newID", selectedCards[0].level + 1, selectedCards[0].category);
+            playerDeck.RemoveAll(card => selectedCards.Contains(card));
+            playerDeck.Add(fusedCard);
+        }
+    }
+
+    public void DrawInitialHand()
+    {
+        handDeck.Clear();
+        for (int i = 0; i < Player.Instance.maxHandSize; i++)
+        {
+            int randomIndex = Random.Range(0, playerDeck.Count);
+            handDeck.Add(playerDeck[randomIndex]);
+        }
+        DisplayHand();
+    }
+
+    private void DisplayHand()
+    {
+        foreach (Transform child in handArea)
+        {
+            Destroy(child.gameObject);
+        }
+
+        float cardSpacing = 0.3f;
+        float handWidth = (handDeck.Count - 1) * cardSpacing;
+
+        for (int i = 0; i < handDeck.Count; i++)
+        {
+            GameObject cardObj = Instantiate(cardPrefab, handArea);
+            cardObj.GetComponent<CardDisplay>().Setup(handDeck[i]);
+            cardObj.transform.localPosition = new Vector3(i * cardSpacing - handWidth / 2, 0, 0);
+            cardObj.transform.localRotation = Quaternion.Euler(0, 0, -10 + 5 * i);
+        }
+    }
+
+
+
+
+
+
+    /*public void DisplayDectInFusionShop()
     {
         foreach(Transform child in fuseShop.transform)
         {
@@ -234,5 +319,5 @@ public class CardManager : MonoBehaviour
         // 게임 상태 초기화 후 다시 카드 뽑기
         DrawInitialHand();
         ArrangeCardsInFanShape();
-    }
+    }*/
 }

@@ -22,12 +22,17 @@ public class Card
     public Card(string name, Sprite image, int energy, string id, int lvl, CardCategory cat)
     {
         cardName = name;
-        cardImage = image;
+        cardImage = LoadCardImage(cat, lvl);
         lightEnergy = energy;
         cardID = id;
         level = lvl;
         category = cat;
         UpdateDescription(); // 생성 시 카드 설명 업데이트
+    }
+
+    private Sprite LoadCardImage(CardCategory category, int level)
+    {
+        return Resources.Load<Sprite>($"Cards/{category}_Level{level}");
     }
 
     // 카드 레벨 업 메소드
@@ -37,7 +42,7 @@ public class Card
         {
             level++;
             cardName = $"{cardName.Split(' ')[0]} Level{level}";
-            cardImage = GetUpdatedImage(level);
+            cardImage = LoadCardImage(category,level);
             lightEnergy = GetUpdatedLightEnergy(level);
             UpdateDescription();  // 레벨업 시 설명 업데이트
         }
@@ -56,16 +61,16 @@ public class Card
                 description = $"{value}의 쉴드를 무시한 관통 공격을 가한다.";
                 break;
             case CardCategory.Shield:
-                description = $"{value}의 쉴드를 가진다.";
+                description = $"{value} 크기의 쉴드를 가진다.";
                 break;
             case CardCategory.Heal:
-                description = $"{value}의 체력을 회복한다.";
+                description = $"{value}만큼의 체력을 회복한다.";
                 break;
             case CardCategory.AddCard:
-                description = $"{value}의 카드를 추가한다.";
+                description = $"{value}만큼의 카드를 덱에서 랜덤으로 추가한다.";
                 break;
             case CardCategory.AddTurn:
-                description = $"{value}의 턴을 추가한다.";
+                description = $"{value}의 턴을 해당 턴에 추가한다.";
                 break;
         }
     }
@@ -93,11 +98,11 @@ public class Card
     }
 
     // 카드 레벨에 따른 이미지 갱신 (레벨별 다른 이미지 설정)
-    private Sprite GetUpdatedImage(int newLevel)
+    /*private Sprite GetUpdatedImage(int newLevel)
     {
         // 각 레벨에 맞는 이미지를 Resources 폴더에서 불러옴
         return Resources.Load<Sprite>($"CardImages/{cardName.Split(' ')[0]}_Level{newLevel}");
-    }
+    }*/
 
     // 카드 레벨에 따른 빛 에너지 갱신 (빛 에너지도 다르게 설정 가능)
     private int GetUpdatedLightEnergy(int newLevel)
