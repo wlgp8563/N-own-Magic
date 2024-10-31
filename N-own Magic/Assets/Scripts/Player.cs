@@ -83,12 +83,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void DecreaseFusion()
+    public bool DecreaseFusion()
     {
         if(canFuseCard > 0)
         {
             canFuseCard--;
+            return true;
         }
+        return false;
     }
 
     /*public void IncreaseFusion()

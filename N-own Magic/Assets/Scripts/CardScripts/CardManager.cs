@@ -9,6 +9,8 @@ public class CardManager : MonoBehaviour
     public static CardManager Instance;
 
     public GameObject fuseShop;
+    public Button fusionButton;
+    public Transform fuseDeck;
     public Transform handCardArea; // 카드들이 배치될 UI위치
     public GameObject cardPrefab; // 카드 프리팹s
     public Button deckButton; // 덱을 보여주는 버튼(선택창 씬에 있음)
@@ -17,7 +19,7 @@ public class CardManager : MonoBehaviour
     public List<Card> cardDeck = new List<Card>(); // 전체 카드 덱
     public List<Card> handDeck = new List<Card>(); // 현재 화면에 보이는 덱
     public List<Card> selectedCards = new List<Card>(); //카드 합성 시 선택한 카드들 리스트 덱
-    public Button fusionButton;
+    
 
     public GameObject handDeckUI; // 핸드 덱 UI
 
@@ -72,21 +74,21 @@ public class CardManager : MonoBehaviour
 
     public void OpenFusionShop()
     {
-        fusionUI.gameObject.SetActive(true);
+        fuseShop.gameObject.SetActive(true);
         DisplayDeckInFusionUI();
     }
 
     private void DisplayDeckInFusionUI()
     {
-        foreach (Transform child in fusionInventoryArea)
+        foreach (Transform child in fuseDeck)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (Card card in playerDeck)
+        foreach (Card card in cardDeck)
         {
-            GameObject cardObj = Instantiate(cardPrefab, fusionInventoryArea);
-            cardObj.GetComponent<CardDisplay>().Setup(card);
+            GameObject cardObj = Instantiate(cardPrefab, fuseDeck);
+            cardObj.GetComponent<CardUI>().SetCardData(card);
         }
     }
 
@@ -97,29 +99,29 @@ public class CardManager : MonoBehaviour
             selectedCards[0].category == selectedCards[2].category &&
             selectedCards[0].level == selectedCards[1].level &&
             selectedCards[0].level == selectedCards[2].level &&
-            PlayerState.Instance.UseFusionAttempt())
+            Player.Instance.DecreaseFusion())
         {
             var fusedCard = new Card($"{selectedCards[0].category} Level{selectedCards[0].level + 1}",
                                       null, 0, "newID", selectedCards[0].level + 1, selectedCards[0].category);
-            playerDeck.RemoveAll(card => selectedCards.Contains(card));
-            playerDeck.Add(fusedCard);
+            cardDeck.RemoveAll(card => selectedCards.Contains(card));
+            cardDeck.Add(fusedCard);
         }
     }
 
     public void DrawInitialHand()
     {
         handDeck.Clear();
-        for (int i = 0; i < Player.Instance.maxHandSize; i++)
+        for (int i = 0; i < Player.Instance.handdecknum; i++)
         {
-            int randomIndex = Random.Range(0, playerDeck.Count);
-            handDeck.Add(playerDeck[randomIndex]);
+            int randomIndex = Random.Range(0, cardDeck.Count);
+            handDeck.Add(cardDeck[randomIndex]);
         }
         DisplayHand();
     }
 
     private void DisplayHand()
     {
-        foreach (Transform child in handArea)
+        foreach (Transform child in handCardArea)
         {
             Destroy(child.gameObject);
         }
@@ -129,8 +131,8 @@ public class CardManager : MonoBehaviour
 
         for (int i = 0; i < handDeck.Count; i++)
         {
-            GameObject cardObj = Instantiate(cardPrefab, handArea);
-            cardObj.GetComponent<CardDisplay>().Setup(handDeck[i]);
+            GameObject cardObj = Instantiate(cardPrefab, handCardArea);
+            cardObj.GetComponent<CardUI>().SetCardData(handDeck[i]);
             cardObj.transform.localPosition = new Vector3(i * cardSpacing - handWidth / 2, 0, 0);
             cardObj.transform.localRotation = Quaternion.Euler(0, 0, -10 + 5 * i);
         }
