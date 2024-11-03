@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class BntsControl : MonoBehaviour
 {
     public Button[] buttons;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +23,11 @@ public class BntsControl : MonoBehaviour
 
     public void InManual()
     {
-
+        //SceneManager.LoadScene("InGame");
     }
 
     public void GameExit()
     {
-
+        Application.Quit();
     }
 }
