@@ -12,6 +12,9 @@ public class PlayerUI : MonoBehaviour
     public Slider expslider;
     public TMP_Text levelText;
     public TMP_Text canfusecardText;
+    public TMP_Text myTurn;
+    public TMP_Text lightEnergy;
+    public TMP_Text canHandleDeck;
 
     private void Start()
     {
@@ -34,5 +37,8 @@ public class PlayerUI : MonoBehaviour
         expText.text = $"{playerState.exp} / {playerState.nexttoexp}";
         levelText.text = $"Lv. {playerState.playerlevel}";
         canfusecardText.text = $"{playerState.canFuseCard}";
+        myTurn.text = $"{playerState.playerturn}";
+        lightEnergy.text = $"{playerState.lightenergy}";
+        canHandleDeck.text = $"{playerState.handdecknum}";
     }
 }

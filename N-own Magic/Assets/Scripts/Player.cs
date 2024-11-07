@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     public int playerturn = 3;
     public int handdecknum = 4;
 
-    public string playerName = "Player";
+    //public string playerName = "Player";
     public int health = 100;
     public int cardDrawCount = 4;
     public LightEnergyManager energyManager;
@@ -146,10 +146,10 @@ public class Player : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log($"{playerName} took {damage} damage. Remaining Health: {health}");
+        //Debug.Log($"{playerName} took {damage} damage. Remaining Health: {health}");
         if (health <= 0)
         {
-            Debug.Log($"{playerName} has been defeated!");
+            //Debug.Log($"{playerName} has been defeated!");
             // 게임 오버 로직 추가
         }
     }
@@ -157,6 +157,6 @@ public class Player : MonoBehaviour
     public void Heal(int amount)
     {
         health += amount;
-        Debug.Log($"{playerName} healed {amount} health. Current Health: {health}");
+        //Debug.Log($"{playerName} healed {amount} health. Current Health: {health}");
     }
 }

@@ -34,7 +34,7 @@ public class TurnManager : MonoBehaviour
     {
         currentTurn = Turn.Enemy;
         Debug.Log("적 턴 시작");
-        enemy.PerformAction();
+        //enemy.PerformAction();
         EndTurn();
     }
 
