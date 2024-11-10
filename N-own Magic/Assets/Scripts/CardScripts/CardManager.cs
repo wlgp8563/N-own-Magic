@@ -7,25 +7,30 @@ using UnityEngine.SceneManagement;
 public class CardManager : MonoBehaviour
 {
     public static CardManager Instance;
+    private Player player;
 
-    public GameObject fuseShop;
-    public Button fusionButton;
-    public Transform fuseDeck;
-    public Transform handCardArea; // 카드들이 배치될 UI위치
-    public GameObject cardPrefab; // 카드 프리팹s
-    public Button deckButton; // 덱을 보여주는 버튼(선택창 씬에 있음)
-    public GameObject deckUI;  //덱 UI 창
-    public Button submitButton; // 카드 제출 버튼
-    public List<Card> cardDeck = new List<Card>(); // 전체 카드 덱
+    public Dictionary<int, Card> playerDeck = new Dictionary<int, Card>();
     public List<Card> handDeck = new List<Card>(); // 현재 화면에 보이는 덱
-    public List<Card> selectedCards = new List<Card>(); //카드 합성 시 선택한 카드들 리스트 덱
+    public List<Card> selectedCardsForFusion = new List<Card>(); //카드 합성 시 선택한 카드들 리스트 덱
+
+    //public GameObject fuseShop;
+    //public Transform fuseDeck;
+    public Button fuseButton;
+    public Transform handDeckUIParent; // 카드들이 배치될 UI위치
+    public GameObject cardUIPrefab; // 카드 프리팹
+    public Transform fusionShopUIParent;
+    public Button deckButton; // 덱을 보여주는 버튼(선택창 씬에 있음)
+    //public GameObject deckUI;  //덱 UI 창
+    //public Button submitButton; // 카드 제출 버튼
+    public List<Card> cardDeck = new List<Card>(); // 전체 카드 덱
+    
     
 
-    public GameObject handDeckUI; // 핸드 덱 UI
+    //public GameObject handDeckUI; // 핸드 덱 UI
 
-    public int initialHandSize = 4; // 게임 시작 시 뽑을 카드 수
-    public float cardSpacing = 50f; // 카드 간격
-    public float fanAngle = 10f; // 부채꼴 각도
+    //public int initialHandSize = 4; // 게임 시작 시 뽑을 카드 수
+    //public float cardSpacing = 50f; // 카드 간격
+    //public float fanAngle = 10f; // 부채꼴 각도
 
     private void Awake()
     {
@@ -43,6 +48,10 @@ public class CardManager : MonoBehaviour
     void Start()
     {
         InitializeDeck();
+        //DrawHandDeck();
+        DisplayHandDeckUI();
+        //SetupFusionShopUI();
+        //fuseButton.onClick.AddListener(FuseCards);
 
         /*if (SceneManager.GetActiveScene().name == "InGame")
         { 
@@ -62,264 +71,129 @@ public class CardManager : MonoBehaviour
 
     private void InitializeDeck()
     {
-        cardDeck.Add(new Card("Lighting Level1", null, 0, "attack01", 1, CardCategory.Attack));
-        cardDeck.Add(new Card("Lighting Level1", null, 0, "attack02", 1, CardCategory.Attack));
-        cardDeck.Add(new Card("Pierce Light Level1", null, 0, "pierce01", 1, CardCategory.Pierce));
-        cardDeck.Add(new Card("Heal Level1", null, 0, "heal01", 1, CardCategory.Heal));
-        cardDeck.Add(new Card("Heal Level1", null, 0, "heal02", 1, CardCategory.Heal));
-        cardDeck.Add(new Card("Shield Level1", null, 1, "shield01", 1, CardCategory.Shield));
-        cardDeck.Add(new Card("Add Card Level1", null, 1, "addcard01", 1, CardCategory.AddCard));
-        cardDeck.Add(new Card("Add Turn Level1", null, 1, "addturn01", 1, CardCategory.AddTurn));
+        AddNewCardToDeck(1, 2);
+        AddNewCardToDeck(4, 2);
+        AddNewCardToDeck(10, 2);
+        AddNewCardToDeck(7, 1);
+        AddNewCardToDeck(13, 1);
+        AddNewCardToDeck(16, 1);
     }
 
-    public void OpenFusionShop()
+    private void AddNewCardToDeck(int cardID, int count)
     {
-        fuseShop.gameObject.SetActive(true);
-        DisplayDeckInFusionUI();
+        for (int i = 0; i < count; i++)
+        {
+            Card newCard = CreateCardByID(cardID);
+            if (playerDeck.ContainsKey(cardID))
+            {
+                playerDeck[cardID].count += 1;
+            }
+            else
+            {
+                playerDeck[cardID] = newCard;
+            }
+        }
     }
 
-    private void DisplayDeckInFusionUI()
+    private Card CreateCardByID(int cardID)
     {
-        foreach (Transform child in fuseDeck)
+        switch (cardID)
+        {
+            case 1: return new Card("Lighting Level1", null, 0, cardID, 1, CardCategory.Attack);
+            case 2: return new Card("Lighting Level2", null, 0, cardID, 2, CardCategory.Attack);
+            case 3: return new Card("Lighting Level3", null, 0, cardID, 3, CardCategory.Attack);
+            case 4: return new Card("Pierce Light Level1", null, 0, cardID, 1, CardCategory.Pierce);
+            case 5: return new Card("Pierce Light Level2", null, 0, cardID, 2, CardCategory.Pierce);
+            case 6: return new Card("Pierce Light Level3", null, 0, cardID, 3, CardCategory.Pierce);
+            case 7: return new Card("Shield Level1", null, 0, cardID, 1, CardCategory.Shield);
+            case 8: return new Card("Shield Level2", null, 0, cardID, 2, CardCategory.Shield);
+            case 9: return new Card("Shield Level3", null, 0, cardID, 3, CardCategory.Shield);
+            case 10: return new Card("Heal Level1", null, 0, cardID, 1, CardCategory.Heal);
+            case 11: return new Card("Heal Level2", null, 0, cardID, 2, CardCategory.Heal);
+            case 12: return new Card("Heal Level3", null, 1, cardID, 3, CardCategory.Heal);
+            case 13: return new Card("Add Card Level1", null, 1, cardID, 1, CardCategory.AddCard);
+            case 14: return new Card("Add Card Level2", null, 2, cardID, 2, CardCategory.AddCard);
+            case 15: return new Card("Add Card Level3", null, 3, cardID, 3, CardCategory.AddCard);
+            case 16: return new Card("Add Turn Level1", null, 1, cardID, 1, CardCategory.AddTurn);
+            case 17: return new Card("Add Turn Level2", null, 2, cardID, 2, CardCategory.AddTurn);
+            case 18: return new Card("Add Turn Level3", null, 3, cardID, 3, CardCategory.AddTurn);
+            default: return null;
+        }
+    }
+
+    private void DisplayHandDeckUI()
+    {
+        // 기존 UI 제거
+        foreach (Transform child in handDeckUIParent)
         {
             Destroy(child.gameObject);
         }
 
-        foreach (Card card in cardDeck)
-        {
-            GameObject cardObj = Instantiate(cardPrefab, fuseDeck);
-            cardObj.GetComponent<CardUI>().SetCardData(card);
-        }
-    }
-
-    public void FuseSelectedCards(List<Card> selectedCards)
-    {
-        if (selectedCards.Count == 3 &&
-            selectedCards[0].category == selectedCards[1].category &&
-            selectedCards[0].category == selectedCards[2].category &&
-            selectedCards[0].level == selectedCards[1].level &&
-            selectedCards[0].level == selectedCards[2].level &&
-            Player.Instance.DecreaseFusion())
-        {
-            var fusedCard = new Card($"{selectedCards[0].category} Level{selectedCards[0].level + 1}",
-                                      null, 0, "newID", selectedCards[0].level + 1, selectedCards[0].category);
-            cardDeck.RemoveAll(card => selectedCards.Contains(card));
-            cardDeck.Add(fusedCard);
-        }
-    }
-
-    public void DrawInitialHand()
-    {
-        handDeck.Clear();
-        for (int i = 0; i < Player.Instance.handdecknum; i++)
-        {
-            int randomIndex = Random.Range(0, cardDeck.Count);
-            handDeck.Add(cardDeck[randomIndex]);
-        }
-        DisplayHand();
-    }
-
-    private void DisplayHand()
-    {
-        foreach (Transform child in handCardArea)
-        {
-            Destroy(child.gameObject);
-        }
-
-        float cardSpacing = 0.3f;
-        float handWidth = (handDeck.Count - 1) * cardSpacing;
-
-        for (int i = 0; i < handDeck.Count; i++)
-        {
-            GameObject cardObj = Instantiate(cardPrefab, handCardArea);
-            cardObj.GetComponent<CardUI>().SetCardData(handDeck[i]);
-            cardObj.transform.localPosition = new Vector3(i * cardSpacing - handWidth / 2, 0, 0);
-            cardObj.transform.localRotation = Quaternion.Euler(0, 0, -10 + 5 * i);
-        }
-    }
-
-
-
-
-
-
-    /*public void DisplayDectInFusionShop()
-    {
-        foreach(Transform child in fuseShop.transform)
-        {
-            Destroy(child.gameObject);
-        }
-
-        foreach(var card in cardDeck)
-        {
-            GameObject cardUI = Instantiate(cardPrefab, fuseShop.transform);
-            CardUI cardUIScript = cardUI.GetComponent<CardUI>();
-            cardUIScript.SetCardData(card);
-
-            Button cardButton = cardUI.GetComponent<Button>();
-            cardButton.onClick.AddListener(() => OnCardSelected(card, cardUI));
-        }
-    }
-
-    private void OnCardSelected(Card card, GameObject cardUI)
-    {
-        if (selectedCards.Contains(card))
-        {
-            selectedCards.Remove(card);
-            cardUI.GetComponent<Image>().color = Color.gray;
-        }
-        else if(selectedCards.Count < 3)
-        {
-            selectedCards.Add(card);
-            cardUI.GetComponent<Image>().color = Color.white;
-        }
-    }
-
-    private void TryFuseCards()
-    {
-        if(Player.Instance.canFuseCard <= 0)
-        {
-            Debug.Log("합성 가능 횟수가 부족합니다"); //여기는 텍스트 상자 뜨는 걸로 수정
-            return;
-        }
-        
-        if(selectedCards.Count == 3 && CanFuseCards(selectedCards))
-        {
-            TryFuseCards(selectedCards);
-            Player.Instance.DecreaseFusion();
-        }
-        else
-        {
-            Debug.Log("합성 가능 조건이 아님");
-        }
-    }
-
-    private bool CanFuseCards(List<Card> selectCards)
-    {
-        return selectedCards[0].level == selectedCards[1].level &&
-               selectedCards[1].level == selectedCards[2].level &&
-               selectedCards[0].category == selectedCards[1].category &&
-               selectedCards[1].category == selectedCards[2].category;
-    }
-
-    private void FuseCards(List<Card> cardsToFuse)
-    {
-        int newLevel = cardsToFuse[0].level + 1;
-        CardCategory category = cardsToFuse[0].category;
-
-        Card newCard = new Card(category, newLevel);
-        cardDeck.Add(newCard);
-
-        foreach (var card in cardsToFuse)
-        {
-            cardDeck.Remove(card);
-        }
-
-        selectedCards.Clear();
-        DisplayDectInFusionShop();
-        //카드 합성 성공 메시지 추가
-    }
-
-    // 덱 UI 표시
-    void ShowCardDeckUI()
-    {
-        deckUI.SetActive(true); // 덱 UI 활성화
-        PopulateDeckUI();
-    }
-
-    // 덱 UI에 cardDeck 표시
-    void PopulateDeckUI()
-    {
-        // 덱 UI에 기존 카드 제거
-        foreach (Transform child in deckUI.transform)
-        {
-            Destroy(child.gameObject);
-        }
-
-        // cardDeck의 모든 카드를 덱 UI에 생성
-        foreach (Card card in cardDeck)
-        {
-            GameObject newCard = Instantiate(cardPrefab, deckUI.transform);
-            CardUI cardUI = newCard.GetComponent<CardUI>();
-            cardUI.SetCardData(card); // 카드 데이터를 UI에 적용
-        }
-    }
-
-    // 카드 덱에서 카드를 뽑아 핸드 덱에 추가
-    void DrawInitialHand()
-    {
-        handDeck.Clear();
-        for (int i = 0; i < initialHandSize; i++)
-        {
-            int randomIndex = Random.Range(0, cardDeck.Count); // 랜덤하게 카드 선택
-            handDeck.Add(cardDeck[randomIndex]);
-            cardDeck.RemoveAt(randomIndex); // 중복 방지를 위해 덱에서 제거
-        }
-
-        // UI에 카드 생성
-        foreach (Card card in handDeck)
-        {
-            GameObject newCard = Instantiate(cardPrefab, handDeckUI.transform);
-            CardUI cardUI = newCard.GetComponent<CardUI>();
-            cardUI.SetCardData(card); // 카드 데이터 설정
-        }
-    }
-
-    // 카드를 부채꼴 모양으로 배치
-    void ArrangeCardsInFanShape()
-    {
+        // 부채꼴 배치 관련 변수 설정
+        float handDeckRadius = 300f; // 부채꼴의 반지름
+        float startAngle = -30f; // 시작 각도
+        float endAngle = 30f; // 종료 각도
         int cardCount = handDeck.Count;
-        float middleIndex = (cardCount - 1) / 2f;
+        float angleStep = (cardCount > 1) ? (endAngle - startAngle) / (cardCount - 1) : 0;
 
         for (int i = 0; i < cardCount; i++)
         {
-            Transform cardTransform = handDeckUI.transform.GetChild(i);
-            float angle = (i - middleIndex) * fanAngle;
-            Vector3 position = new Vector3((i - middleIndex) * cardSpacing, 0f, 0f);
+            // 카드 생성
+            Card card = handDeck[i];
+            GameObject cardUI = Instantiate(cardUIPrefab, handDeckUIParent);
+            CardUI cardUIComponent = cardUI.GetComponent<CardUI>();
+            cardUIComponent.SetCardData(card);
 
-            // 카드 회전 및 배치
-            cardTransform.localPosition = position;
-            cardTransform.localRotation = Quaternion.Euler(0f, 0f, angle);
+            // RectTransform을 이용한 위치 및 회전 설정
+            RectTransform cardRect = cardUI.GetComponent<RectTransform>();
+
+            // 현재 카드의 배치 각도
+            float angle = startAngle + (angleStep * i);
+
+            // 위치 계산 (부채꼴 배치)
+            float posX = handDeckRadius * Mathf.Sin(angle * Mathf.Deg2Rad);
+            float posY = -handDeckRadius * Mathf.Cos(angle * Mathf.Deg2Rad); // 부채꼴 아래쪽 배치
+
+            // 카드 위치 및 회전 적용
+            cardRect.anchoredPosition = new Vector2(posX, posY);
+            cardRect.localRotation = Quaternion.Euler(0, 0, angle);
         }
     }
 
-    // 카드를 제출하고 handDeck에서 cardDeck으로 반환
-    void ReturnHandCardsToDeck()
+    public Card UpgradeCard(Card card)
     {
-        foreach (Card card in handDeck)
+        int nextLevelId = card.cardID + 1;
+        if (playerDeck.ContainsKey(nextLevelId))
         {
-            cardDeck.Add(card); // handDeck에서 cardDeck으로 카드 반환
+            return new Card(
+                playerDeck[nextLevelId].cardName,
+                playerDeck[nextLevelId].cardImage,
+                playerDeck[nextLevelId].lightEnergy,
+                playerDeck[nextLevelId].cardID,
+                playerDeck[nextLevelId].level,
+                playerDeck[nextLevelId].category);
         }
-
-        handDeck.Clear();
-
-        // 기존 핸드 UI의 카드 제거
-        foreach (Transform child in handDeckUI.transform)
-        {
-            Destroy(child.gameObject);
-        }
-
-        DrawInitialHand(); // 새로운 핸드를 뽑음
-        ArrangeCardsInFanShape(); // 다시 부채꼴로 배치
+        return null;
     }
 
-    void EndGame()
+    public void AddCardToDeck(Card card)
     {
-        // handDeck 초기화 및 모든 카드를 cardDeck으로 반환
-        foreach (Card card in handDeck)
+        if (!playerDeck.ContainsKey(card.cardID))
         {
-            cardDeck.Add(card);
+            //playerDeck[card.cardID] = new List<Card>();
         }
-        handDeck.Clear();
+        //playerDeck[card.cardID].Add(card);
+    }
 
-        // 핸드 UI 초기화
-        foreach (Transform child in handDeckUI.transform)
+    public void RemoveCardFromDeck(Card card)
+    {
+        if (playerDeck.ContainsKey(card.cardID))
         {
-            Destroy(child.gameObject);
+            //playerDeck[card.cardID].Remove(card);
+            if (playerDeck[card.cardID].count == 0)
+            {
+                playerDeck.Remove(card.cardID);
+            }
         }
-
-        // 게임 상태 초기화 후 다시 카드 뽑기
-        DrawInitialHand();
-        ArrangeCardsInFanShape();
-    }*/
+    }
 }

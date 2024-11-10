@@ -21,7 +21,7 @@ public class CardUI : MonoBehaviour
         cardNameText.text = card.cardName;
         cardImage.sprite = card.cardImage;
         descriptionText.text = card.description;
-        cardIDText.text = card.cardID;
+        cardIDText.text = card.cardID.ToString();
         cardLightEnergy.text = card.lightEnergy.ToString();
     }
 }

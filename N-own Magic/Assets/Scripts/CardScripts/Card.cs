@@ -7,26 +7,25 @@ public enum CardCategory { Attack, Pierce, Shield, Heal, AddCard, AddTurn }
 
 public class Card
 {
-    public string cardName;
-    public Sprite cardImage;
-    public string description;
-    public int lightEnergy;
-    public string cardID;
-    public int level;
-    public CardCategory category;
-
-    // 카드 카테고리 enum
-    //public enum CardCategory { Attack, Pierce, Shield, Heal, AddCard, AddTurn }
+    public string cardName { get; set; }
+    public Sprite cardImage { get; set; }
+    public string description { get; set; }
+    public int lightEnergy { get; set; }
+    public int cardID { get; set; }
+    public int level { get; set; }
+    public CardCategory category { get; set; }
+    public int count { get; set; }
 
     // 카드 기본 생성자
-    public Card(string name, Sprite image, int energy, string id, int lvl, CardCategory cat)
+    public Card(string name, Sprite image, int energy, int id, int lvl, CardCategory cat, int count = 1)
     {
-        cardName = name;
-        cardImage = LoadCardImage(cat, lvl);
-        lightEnergy = energy;
-        cardID = id;
-        level = lvl;
-        category = cat;
+        this.cardName = name;
+        this.cardImage = LoadCardImage(cat, lvl);
+        this.lightEnergy = energy;
+        this.cardID = id;
+        this.level = lvl;
+        this.category = cat;
+        this.count = count;
         UpdateDescription(); // 생성 시 카드 설명 업데이트
     }
 
@@ -96,13 +95,6 @@ public class Card
                 return 0;
         }
     }
-
-    // 카드 레벨에 따른 이미지 갱신 (레벨별 다른 이미지 설정)
-    /*private Sprite GetUpdatedImage(int newLevel)
-    {
-        // 각 레벨에 맞는 이미지를 Resources 폴더에서 불러옴
-        return Resources.Load<Sprite>($"CardImages/{cardName.Split(' ')[0]}_Level{newLevel}");
-    }*/
 
     // 카드 레벨에 따른 빛 에너지 갱신 (빛 에너지도 다르게 설정 가능)
     private int GetUpdatedLightEnergy(int newLevel)

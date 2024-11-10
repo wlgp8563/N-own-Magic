@@ -1669,8 +1669,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b7d245916891cca47a0144e12a82e086, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -14256,8 +14256,6 @@ MonoBehaviour:
   lightenergy: 2
   playerturn: 3
   handdecknum: 4
-  health: 100
-  cardDrawCount: 4
   energyManager: {fileID: 0}
   turnManager: {fileID: 0}
 --- !u!4 &792650523
@@ -15263,18 +15261,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1024f3354a751f8449029d25bd3e1982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fuseShop: {fileID: 0}
-  fusionButton: {fileID: 0}
-  fuseDeck: {fileID: 0}
-  handCardArea: {fileID: 0}
-  cardPrefab: {fileID: 0}
+  fuseButton: {fileID: 0}
+  handDeckUIParent: {fileID: 0}
+  cardUIPrefab: {fileID: 0}
+  fusionShopUIParent: {fileID: 0}
   deckButton: {fileID: 0}
-  deckUI: {fileID: 0}
-  submitButton: {fileID: 0}
-  handDeckUI: {fileID: 0}
-  initialHandSize: 4
-  cardSpacing: 50
-  fanAngle: 10
 --- !u!4 &891630348
 Transform:
   m_ObjectHideFlags: 0
@@ -17096,8 +17087,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b7d245916891cca47a0144e12a82e086, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
