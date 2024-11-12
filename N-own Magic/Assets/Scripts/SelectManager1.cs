@@ -11,6 +11,7 @@ public class SelectManager1 : MonoBehaviour
     public Button goNextButton; // 활성화될 버튼
     public GameObject buttonGroup;
     public GameObject nextGroup;
+    public GameObject fuseShop;
 
     public Button optionButton;
     public GameObject disappearGroup;
@@ -51,6 +52,7 @@ public class SelectManager1 : MonoBehaviour
 
     void OpenOption()
     {
+        fuseShop.SetActive(true);
         disappearGroup.SetActive(false);
         appearGroup.SetActive(true);
     }

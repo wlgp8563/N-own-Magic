@@ -54,22 +54,22 @@ public class Card
         switch (category)
         {
             case CardCategory.Attack:
-                description = $"{value}의 빛 공격을 가한다.";
+                description = $"{value}의 빛 공격을\n 가한다.";
                 break;
             case CardCategory.Pierce:
-                description = $"{value}의 쉴드를 무시한 관통 공격을 가한다.";
+                description = $"{value}의 쉴드를 무시한\n 관통 공격을 가한다.";
                 break;
             case CardCategory.Shield:
-                description = $"{value} 크기의 쉴드를 가진다.";
+                description = $"{value} 크기의 쉴드를\n 가진다.";
                 break;
             case CardCategory.Heal:
-                description = $"{value}만큼의 체력을 회복한다.";
+                description = $"{value}만큼의 체력을\n 회복한다.";
                 break;
             case CardCategory.AddCard:
-                description = $"{value}만큼의 카드를 덱에서 랜덤으로 추가한다.";
+                description = $"{value}만큼의 카드를\n 덱에서 랜덤으로\n 추가한다.";
                 break;
             case CardCategory.AddTurn:
-                description = $"{value}의 턴을 해당 턴에 추가한다.";
+                description = $"{value}의 턴을\n 해당 턴에 추가한다.";
                 break;
         }
     }
@@ -80,7 +80,7 @@ public class Card
         switch (category)
         {
             case CardCategory.Attack:
-                return level * 10; // 공격력은 레벨당 10씩 증가
+                return level * 8; // 공격력은 레벨당 10씩 증가
             case CardCategory.Pierce:
                 return level * 8;  // 관통 공격은 레벨당 8씩 증가
             case CardCategory.Shield:
@@ -102,17 +102,17 @@ public class Card
         switch (category)
         {
             case CardCategory.Attack:
-                return lightEnergy + (newLevel * 5); // 예: 공격 카드는 레벨당 5 증가
+                return lightEnergy; 
             case CardCategory.Pierce:
-                return lightEnergy + (newLevel * 6); // 예: 관통 공격은 레벨당 6 증가
+                return lightEnergy; 
             case CardCategory.Shield:
-                return lightEnergy + (newLevel * 3); // 예: 쉴드는 레벨당 3 증가
+                return lightEnergy; 
             case CardCategory.Heal:
-                return lightEnergy + (newLevel * 4); // 예: 힐은 레벨당 4 증가
+                return lightEnergy + (newLevel); 
             case CardCategory.AddCard:
-                return lightEnergy + (newLevel * 2); // 예: 카드 추가는 레벨당 2 증가
+                return lightEnergy + (newLevel); 
             case CardCategory.AddTurn:
-                return lightEnergy + (newLevel * 2); // 예: 턴 추가는 레벨당 2 증가
+                return lightEnergy + (newLevel + 1);
             default:
                 return lightEnergy;
         }

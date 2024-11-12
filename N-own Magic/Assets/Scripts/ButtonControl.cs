@@ -15,6 +15,7 @@ public class ButtonControl : MonoBehaviour
         buttons[0].onClick.AddListener(Shop1Exit);
         buttons[1].onClick.AddListener(Shop2Exit);
         buttons[2].onClick.AddListener(LetterExit);
+        buttons[3].onClick.AddListener(Shop3Exit);
     }
     void Shop1Exit()
     {
@@ -29,10 +30,8 @@ public class ButtonControl : MonoBehaviour
     {
         gameobjects[2].SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
+    void Shop3Exit()
     {
-        
+        gameobjects[3].SetActive(false);
     }
 }

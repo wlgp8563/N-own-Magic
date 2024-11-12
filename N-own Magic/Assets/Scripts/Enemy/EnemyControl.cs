@@ -12,6 +12,13 @@ public class EnemyControl : MonoBehaviour
     private int currentShield;
     private int remainingTurns;
 
+    private Animator ani;
+
+    private void Awake()
+    {
+        ani = GetComponent<Animator>();
+    }
+
     private void Start()
     {
         InitializeEnemy();
@@ -70,7 +77,10 @@ public class EnemyControl : MonoBehaviour
         }
     }
 
-    private void Attack() { /* 공격 코드 */ }
+    private void Attack() 
+    {   /* 공격 코드 */
+        ani.SetTrigger("Punch_01");
+    }
     private void Heal() { UpdateHp(enemyData.healSelf); }
     private void Shield() { /* 쉴드 코드 */ }
 

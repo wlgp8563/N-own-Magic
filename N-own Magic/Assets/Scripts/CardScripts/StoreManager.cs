@@ -42,10 +42,10 @@ public class StoreManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        foreach (Card card in cardManager.cardDeck)
+        /*foreach (Card card in cardManager.playerDeck)
         {
             CreateStoreCardUI(card);
-        }
+        }*/
     }
 
     void CreateStoreCardUI(Card cardData)

@@ -20,19 +20,19 @@ public class SelectManager : MonoBehaviour
         goNextButton.interactable = false;
 
         // 첫 번째와 두 번째 버튼 클릭 시의 이벤트 리스너를 추가합니다.
-        //button1.onClick.AddListener(() => OnButtonClicked(ref isButton1Clicked, "CardGame"));
-        //button2.onClick.AddListener(() => OnButtonClicked(ref isButton2Clicked, "CardGame"));
-        //goNextButton.onClick.AddListener(ActivateNextGroup);
+        button1.onClick.AddListener(() => OnButton1Clicked(ref isButton1Clicked, "CardGame"));
+        button2.onClick.AddListener(() => OnButton2Clicked(ref isButton2Clicked, "CardGame"));
+        goNextButton.onClick.AddListener(ActivateNextGroup);
     }
 
-    public void OnButton1Clicked()
+    public void OnButton1Clicked(ref bool buttonClicked, string sceneName)
     {
         isButton1Clicked = true; // 첫 번째 버튼 클릭 표시
         CheckBothButtonsClicked();
         SceneManager.LoadScene("CardGame");
     }
 
-    public void OnButton2Clicked()
+    public void OnButton2Clicked(ref bool buttonClicked, string sceneName)
     {
         isButton2Clicked = true; // 두 번째 버튼 클릭 표시
         CheckBothButtonsClicked();

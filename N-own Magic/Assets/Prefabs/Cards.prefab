@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5066531565103830394}
   - component: {fileID: 940802908608032947}
   - component: {fileID: 8806327611801418999}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: IDNum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 6071234730118874470}
   - component: {fileID: 4850034311641308712}
   - component: {fileID: 6563788168812857249}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardID
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -222,7 +222,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7932145532999723157}
   - component: {fileID: 1376231211411668840}
-  m_Layer: 5
+  - component: {fileID: -8631596890254763391}
+  - component: {fileID: -1220927935485819620}
+  m_Layer: 6
   m_Name: Cards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -271,6 +273,63 @@ MonoBehaviour:
   descriptionText: {fileID: 7932145533982669027}
   cardIDText: {fileID: 8806327611801418999}
   cardLightEnergy: {fileID: 7932145533254299335}
+--- !u!114 &-8631596890254763391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7932145532999723156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
+--- !u!114 &-1220927935485819620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7932145532999723156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &7932145533164544448
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +341,7 @@ GameObject:
   - component: {fileID: 7932145533164544449}
   - component: {fileID: 7932145533164544463}
   - component: {fileID: 7932145533164544462}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +417,7 @@ GameObject:
   - component: {fileID: 7932145533254299334}
   - component: {fileID: 7932145533254299332}
   - component: {fileID: 7932145533254299335}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: LENum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -493,7 +552,7 @@ GameObject:
   - component: {fileID: 7932145533382971016}
   - component: {fileID: 7932145533382971030}
   - component: {fileID: 7932145533382971017}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: CardName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -628,7 +687,7 @@ GameObject:
   - component: {fileID: 7932145533982669026}
   - component: {fileID: 7932145533982669024}
   - component: {fileID: 7932145533982669027}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,8 +744,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 043898c62c8fbd74599f036ca6d5083e, type: 2}
-  m_sharedMaterial: {fileID: 1229669605562977114, guid: 043898c62c8fbd74599f036ca6d5083e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
+  m_sharedMaterial: {fileID: -6806060600753746822, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -763,7 +822,7 @@ GameObject:
   - component: {fileID: 7932145533993429745}
   - component: {fileID: 7932145533993429759}
   - component: {fileID: 7932145533993429758}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Card
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -841,7 +900,7 @@ GameObject:
   - component: {fileID: 7932145534107358144}
   - component: {fileID: 7932145534107358158}
   - component: {fileID: 7932145534107358145}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: DescriptionFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -918,7 +977,7 @@ GameObject:
   - component: {fileID: 7932145534157226431}
   - component: {fileID: 7932145534157226429}
   - component: {fileID: 7932145534157226428}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: Frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -994,7 +1053,7 @@ GameObject:
   - component: {fileID: 7932145534212830548}
   - component: {fileID: 7932145534212830546}
   - component: {fileID: 7932145534212830549}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: NameFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1130,7 @@ GameObject:
   - component: {fileID: 7932145535036620767}
   - component: {fileID: 7932145535036620765}
   - component: {fileID: 7932145535036620764}
-  m_Layer: 5
+  m_Layer: 6
   m_Name: LightEnergy
   m_TagString: Untagged
   m_Icon: {fileID: 0}

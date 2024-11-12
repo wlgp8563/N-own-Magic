@@ -12,7 +12,7 @@ public class CardUI : MonoBehaviour
     public TMP_Text cardIDText;
     public TMP_Text cardLightEnergy;
 
-    private Card cardData;
+    public Card cardData;
 
     // 카드 데이터를 설정하고 UI 업데이트
     public void SetCardData(Card card)
