@@ -61,7 +61,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -3189603572285634438}
-    m_Position: {x: 290, y: -60, z: 0}
+    m_Position: {x: 10, y: -190, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7176950883653847627}
     m_Position: {x: 280, y: 150, z: 0}
@@ -76,7 +76,7 @@ AnimatorStateMachine:
     m_Position: {x: 290, y: -10, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1735212076562141920}
-    m_Position: {x: 290, y: -110, z: 0}
+    m_Position: {x: 290, y: -60, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -2079969101918401660}
@@ -101,7 +101,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ANIM_DemonEarth_Death
-  m_Speed: 1
+  m_Speed: 0.75
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -203,7 +203,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ANIM_DemonEarth_Victory
-  m_Speed: 1
+  m_Speed: 0.75
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -337,7 +337,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ANIM_DemonEarth_FastPunch
-  m_Speed: 1
+  m_Speed: 0.75
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []
@@ -389,7 +389,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ANIM_DemonEarth_GroundPunch
-  m_Speed: 1
+  m_Speed: 0.75
   m_CycleOffset: 0
   m_Transitions: []
   m_StateMachineBehaviours: []

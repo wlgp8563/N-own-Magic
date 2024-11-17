@@ -7,23 +7,44 @@ using System.Linq;
 
 public class CardGameManager : MonoBehaviour
 {
+    public static CardGameManager cardGameManager;
+    
     public Transform handDeckUIParent;
     public GameObject cardUIPrefab;
     public Vector3 handDeckCenterPosition = Vector3.zero;
     public float cardSpacing = 100f;
     public int maxHandDeckNum = 4;
 
+    public ParticleSystem cardEffectPrefab;
+    public Transform effectSpawnPoint;
+
+    //private int shieldValue;
     private List<Card> handDeck = new List<Card>();
     private Dictionary<int, Card> playerDeck;
     private Player player; // Player 스크립트 참조
-    private EnemyControl enemy; // EnemyController 스크립트 참조
+    private EnemyControl enemyControl; // Enemy 스크립트 참조
+    private TurnManager turnManager;
+
+    private void Awake()
+    {
+        if (cardGameManager == null)
+        {
+            cardGameManager = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
         player = FindObjectOfType<Player>();
-        enemy = FindObjectOfType<EnemyControl>();
+        //enemy = FindObjectOfType<EnemyControl>();
 
-        playerDeck = CardManager.Instance.playerDeck;
+        //shieldValue = EnemyControl.Instance.currentShield;
+        playerDeck = CardManager.CardManagerInstance.playerDeck;
         DrawHandDeck();
         DisplayHandDeckUI();
     }
@@ -40,6 +61,15 @@ public class CardGameManager : MonoBehaviour
             Card randomCard = allCards[randomIndex];
             handDeck.Add(randomCard);
             allCards.RemoveAt(randomIndex);
+        }
+    }
+
+    public void ClearHandDeck()
+    {
+        handDeck.Clear();
+        foreach (Transform child in handDeckUIParent)
+        {
+            Destroy(child.gameObject);
         }
     }
 
@@ -117,14 +147,6 @@ public class CardGameManager : MonoBehaviour
             Destroy(rectTransform.gameObject);
 
             RepositionHandDeck();
-            // 플레이어 턴 차감 및 확인
-            player.DecreaseTurn();
-
-            // 턴이 0이 되면 적군 턴으로 전환
-            if (player.IsTurnOver())
-            {
-                StartEnemyTurn();
-            }
         }
         else
         {
@@ -135,7 +157,155 @@ public class CardGameManager : MonoBehaviour
     // 카드 사용 로직
     private void UseCard(Card card)
     {
-        Debug.Log($"카드 사용: {card.cardName}");
+        int value = card.GetEffectValueByCategoryAndLevel();
+        //Player.Instance.currentLightEnergy = Player.Instance.lightenergy;
+        int lightEnergyCost = card.lightEnergy;
+
+        if(Player.Instance.currentLightEnergy < lightEnergyCost)
+        {
+            Debug.Log($"{card.cardName} 카드를 사용할 수 없습니다. LightEnergy가 부족합니다. 필요 에너지: {lightEnergyCost}, 현재 에너지: {player.currentLightEnergy}");
+            return;
+        }
+        else
+        {
+            Player.Instance.DecreaseLightEnergy(lightEnergyCost);
+        }
+
+        Debug.Log($"카드 사용: {card.cardName}, 효과: {value}");
+
+        switch (card.category)
+        {
+            case CardCategory.Attack: // Attack (ID: 1~3)
+                ApplyAttack(card, value);
+                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/LightingEffects");
+                break;
+
+            case CardCategory.Pierce: // Pierce (ID: 4~6)
+                ApplyPierceAttack(card, value);
+                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/PierceEffects");
+                break;
+
+            case CardCategory.Shield: // Shield (ID: 7~9)
+                ApplyShield(card, value);
+                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/ShieldEffects");
+                break;
+
+            case CardCategory.Heal: // Heal (ID: 10~12)
+                ApplyHeal(card, value);
+                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/HealingEffects");
+                break;
+
+            case CardCategory.AddCard: // AddCard (ID: 13~15)
+                DrawRandomCard(card, value);
+                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/AddCardTurnEffects");
+                break;
+
+            case CardCategory.AddTurn: // AddTurn (ID: 16~18)
+                AddExtraTurn(card, value);
+                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/AddCardEffects");
+                break;
+        }
+        player.DecreaseTurn();
+
+        if (player.currentTurn == 0)
+        {
+            turnManager.EndPlayerTurn();
+            player.currentTurn = player.playerturn;
+        }
+    }
+
+    private void PlayCardEffect()
+    {
+        if (cardEffectPrefab != null && effectSpawnPoint != null)
+        {
+            ParticleSystem effect = Instantiate(cardEffectPrefab, effectSpawnPoint.position, Quaternion.identity);
+            effect.Play();
+            Destroy(effect.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
+        }
+        else
+        {
+            Debug.LogWarning($"카드의 이펙트가 없습니다.");
+        }
+    }
+
+    public void ApplyAttack(Card card, int value)
+    { 
+        int shieldValue = EnemyControl.enemyControlInstance.currentEnemyShield;
+        int remainingDamage = value - shieldValue;
+
+        if (shieldValue > 0)
+        {
+            Debug.Log($"적의 쉴드 {shieldValue}를 제거");
+            EnemyControl.enemyControlInstance.ReduceShield(value);
+        }
+
+        if (remainingDamage > 0)
+        {
+            Debug.Log($"적에게 {remainingDamage}의 공격을 가합니다.");
+            EnemyControl.enemyControlInstance.EnemyTakeDamage(remainingDamage);
+        }
+    }
+
+    public void ApplyPierceAttack(Card card, int value)
+    {
+        Debug.Log($"적에게 {value}의 관통 공격을 가합니다. (쉴드 무시)");
+        EnemyControl.enemyControlInstance.EnemyTakeDamage(value);
+    }
+
+    private void ApplyShield(Card card, int value)
+    {
+        Debug.Log($"플레이어가 {value}의 쉴드를 획득합니다.");
+        Player.Instance.AddShield(value);
+    }
+
+    private void ApplyHeal(Card card, int value)
+    {
+        Debug.Log($"플레이어가 {value}의 체력을 회복합니다.");
+        Player.Instance.Heal(value);
+    }
+
+    private void DrawRandomCard(Card card, int value)
+    {
+        handDeck.Remove(card);
+        RepositionHandDeck();
+
+        for (int i = 0; i < value; i++)
+        {
+            if (CardManager.CardManagerInstance.playerDeck.Count > 0)
+            {
+                // 덱에서 랜덤하게 한 장 추가
+                int randomIndex = Random.Range(0, CardManager.CardManagerInstance.playerDeck.Count);
+                int cardID = new List<int>(CardManager.CardManagerInstance.playerDeck.Keys)[randomIndex];
+                Card drawnCard = CardManager.CardManagerInstance.CreateCardByID(cardID);
+
+                // HandDeck에 추가
+                CardManager.CardManagerInstance.handDeck.Add(drawnCard);
+                Debug.Log($"{drawnCard.cardName} 카드를 뽑았습니다.");
+
+                GameObject cardUI = Instantiate(cardUIPrefab, handDeckUIParent);
+                CardUI cardUIComponent = cardUI.GetComponent<CardUI>();
+                cardUIComponent.SetCardData(drawnCard);
+
+                //RepositionHandDeck();
+                AddMouseEffects(cardUI);
+            }
+        }
+        //DisplayHandDeckUI();
+        RepositionHandDeck();
+    }
+
+    public void ResetPlayerState()
+    {
+        player.currentTurn = player.playerturn;
+        player.currentLightEnergy = player.lightenergy;
+        player.currentShield = 0;
+    }
+
+    private void AddExtraTurn(Card card, int value)
+    {
+        player.IncreaseTurn(value);
+        Debug.Log($"플레이어가 {value}의 추가 턴을 획득합니다.");
+        //TurnManager.Instance.AddTurns(value);
     }
 
     private void RepositionHandDeck()
@@ -171,20 +341,5 @@ public class CardGameManager : MonoBehaviour
     private bool IsDroppedOnEnemyArea(Vector2 position)
     {
         return position.y > Screen.height / 2;
-    }
-
-    // 적군 턴 시작
-    private void StartEnemyTurn()
-    {
-        Debug.Log("적군의 턴이 시작됩니다.");
-
-        foreach (var enemy in FindObjectsOfType < EnemyControl>())
-        {
-            enemy.enemyData.StartTurn();
-            enemy.enemyData.TakeTurn();
-        }
-
-        // 적군 턴 종료 후 플레이어 턴 초기화
-        player.ResetTurn();
     }
 }

@@ -13,11 +13,14 @@ public class Enemy : ScriptableObject
     public int healSelf;
     public int shieldSelf;
     public int turnCount;
-
+    public int enemyShield;
+    //public int currentEnemyHp;
+    public int giveExp;
+    public int giveMoney;
     private int currentTurnCount;
-    private int shieldAmount;
+    
     //public TurnManager turnManager;
-    public void StartTurn()
+    /*public void StartTurn()
     {
         currentTurnCount = turnCount;
         Debug.Log($"{enemyName}의 턴이 시작됩니다. 남은 턴: {currentTurnCount}");
@@ -83,7 +86,7 @@ public class Enemy : ScriptableObject
 
 
 
-    /*public void PerformAction()
+    public void PerformAction()
     {
         // 플레이어에게 데미지 주기
         Player player = FindObjectOfType<Player>();

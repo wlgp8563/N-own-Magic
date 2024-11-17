@@ -10,11 +10,14 @@ public class PlayerUI2 : MonoBehaviour
     public Slider hpslider;
     public TMP_Text myTurn;
     public TMP_Text lightEnergy;
+    //public GameObject playerShields;
+    public TMP_Text shieldNum;
 
     // Start is called before the first frame update
     void Start()
     {
         UpdateUI();
+        //shields.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,7 +32,8 @@ public class PlayerUI2 : MonoBehaviour
         hpslider.maxValue = playerState.maxhp;
         hpslider.value = playerState.currenthp;
         hpText.text = $"{playerState.currenthp} / {playerState.maxhp}";
-        myTurn.text = $"{playerState.playerturn}";
-        lightEnergy.text = $"{playerState.lightenergy}";
+        myTurn.text = $"{playerState.currentTurn}";
+        lightEnergy.text = $"{playerState.currentLightEnergy}";
+        shieldNum.text = $"Shield : {playerState.currentShield}";
     }
 }

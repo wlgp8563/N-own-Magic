@@ -14,7 +14,7 @@ public class CardFusionManager : MonoBehaviour
     public Button fusionButton; // 합성하기 버튼
 
     private List<Card> selectedCards = new List<Card>(); // 합성할 카드들
-    private Dictionary<int, Card> playerDeck => CardManager.Instance.playerDeck; // playerDeck 참조
+    private Dictionary<int, Card> playerDeck => CardManager.CardManagerInstance.playerDeck; // playerDeck 참조
 
     private void Awake()
     {
@@ -33,12 +33,6 @@ public class CardFusionManager : MonoBehaviour
     {
         fusionButton.onClick.AddListener(FuseSelectedCards);
         DisplayCardsInFusionShop();
-    }
-
-    public void OpenFusionShop()
-    {
-        //fusionShopUI.SetActive(true);
-        //DisplayCardsInFusionShop();
     }
 
     public void CloseFusionShop()
@@ -154,8 +148,8 @@ public class CardFusionManager : MonoBehaviour
         }
 
         // 새로운 합성된 카드 추가
-        Card newCard = CardManager.Instance.CreateCardByID(nextLevelCardID);
-        CardManager.Instance.AddNewCardToDeck(nextLevelCardID, 1);
+        Card newCard = CardManager.CardManagerInstance.CreateCardByID(nextLevelCardID);
+        CardManager.CardManagerInstance.AddNewCardToDeck(nextLevelCardID, 1);
 
         Debug.Log($"카드 합성 완료: {newCard.cardName} 획득");
 

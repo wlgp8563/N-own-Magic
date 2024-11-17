@@ -22,7 +22,7 @@ public class SetEnemy : MonoBehaviour
         {
             // 선택된 캐릭터를 씬에 스폰
             _currentCharacter = Instantiate(EnemyManager.Instance.selectedCharacterPrefab, canvas.transform);
-            _currentCharacter.transform.localPosition = new Vector3(25f, -50, 0f);
+            _currentCharacter.transform.localPosition = new Vector3(25f, -30, 0f);
             _currentCharacter.transform.SetAsLastSibling();
 
             ChangeSortingLayer(_currentCharacter, "Prefab");

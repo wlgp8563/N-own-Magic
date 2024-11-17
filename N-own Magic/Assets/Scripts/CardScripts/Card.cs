@@ -42,7 +42,7 @@ public class Card
             level++;
             cardName = $"{cardName.Split(' ')[0]} Level{level}";
             cardImage = LoadCardImage(category,level);
-            lightEnergy = GetUpdatedLightEnergy(level);
+            //lightEnergy = GetUpdatedLightEnergy(level);
             UpdateDescription();  // 레벨업 시 설명 업데이트
         }
     }
@@ -57,7 +57,7 @@ public class Card
                 description = $"{value}의 빛 공격을\n 가한다.";
                 break;
             case CardCategory.Pierce:
-                description = $"{value}의 쉴드를 무시한\n 관통 공격을 가한다.";
+                description = $"쉴드를 무시한\n {value}크기의 관통 공격을 가한다.";
                 break;
             case CardCategory.Shield:
                 description = $"{value} 크기의 쉴드를\n 가진다.";
@@ -66,7 +66,7 @@ public class Card
                 description = $"{value}만큼의 체력을\n 회복한다.";
                 break;
             case CardCategory.AddCard:
-                description = $"{value}만큼의 카드를\n 덱에서 랜덤으로\n 추가한다.";
+                description = $"카드 {value}장을\n 덱에서 랜덤으로\n 추가한다.";
                 break;
             case CardCategory.AddTurn:
                 description = $"{value}의 턴을\n 해당 턴에 추가한다.";
@@ -75,18 +75,18 @@ public class Card
     }
 
     // 카테고리와 레벨에 따른 효과 값 반환
-    private int GetEffectValueByCategoryAndLevel()
+    public int GetEffectValueByCategoryAndLevel()
     {
         switch (category)
         {
             case CardCategory.Attack:
                 return level * 8; // 공격력은 레벨당 10씩 증가
             case CardCategory.Pierce:
-                return level * 8;  // 관통 공격은 레벨당 8씩 증가
+                return level * 6;  // 관통 공격은 레벨당 8씩 증가
             case CardCategory.Shield:
                 return level * 5;  // 쉴드는 레벨당 5씩 증가
             case CardCategory.Heal:
-                return level * 7;  // 체력 회복은 레벨당 7씩 증가
+                return level * 7;  // 체력 회복은 레벨당 씩 증가
             case CardCategory.AddCard:
                 return level;      // 추가 카드는 레벨당 1장씩 증가
             case CardCategory.AddTurn:
@@ -97,7 +97,7 @@ public class Card
     }
 
     // 카드 레벨에 따른 빛 에너지 갱신 (빛 에너지도 다르게 설정 가능)
-    private int GetUpdatedLightEnergy(int newLevel)
+    /*public int GetUpdatedLightEnergy(int newLevel)
     {
         switch (category)
         {
@@ -116,5 +116,5 @@ public class Card
             default:
                 return lightEnergy;
         }
-    }
+    }*/
 }

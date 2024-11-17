@@ -5,13 +5,11 @@ using TMPro;
 
 public class LightEnergyManager : MonoBehaviour
 {
-    public int maxLightEnergy = 3;
-    public int currentLightEnergy;
-    public TMP_Text energyText;
+    /*public TMP_Text energyText;
 
     void Start()
     {
-        currentLightEnergy = maxLightEnergy;
+        Player.Instance.currentLightEnergy = Player.Instance.lightenergy;
         UpdateEnergyUI();
     }
 
@@ -46,5 +44,5 @@ public class LightEnergyManager : MonoBehaviour
     public void RestoreEnergyAtTurnStart(int amount)
     {
         AddEnergy(amount);
-    }
+    }*/
 }

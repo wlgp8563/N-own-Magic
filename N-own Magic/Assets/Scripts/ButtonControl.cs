@@ -16,6 +16,8 @@ public class ButtonControl : MonoBehaviour
         buttons[1].onClick.AddListener(Shop2Exit);
         buttons[2].onClick.AddListener(LetterExit);
         buttons[3].onClick.AddListener(Shop3Exit);
+        buttons[4].onClick.AddListener(Shop4Enter);
+        buttons[5].onClick.AddListener(Shop4Exit);
     }
     void Shop1Exit()
     {
@@ -33,5 +35,15 @@ public class ButtonControl : MonoBehaviour
     void Shop3Exit()
     {
         gameobjects[3].SetActive(false);
+    }
+
+    void Shop4Enter()
+    {
+        gameobjects[4].SetActive(true);
+    }
+
+    void Shop4Exit()
+    {
+        gameobjects[5].SetActive(false);
     }
 }

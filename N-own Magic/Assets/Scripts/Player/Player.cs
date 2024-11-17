@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -14,11 +16,23 @@ public class Player : MonoBehaviour
     public int canFuseCard = 2;
     public int lightenergy = 2;
     public int playerturn = 3;
-    public int defalutplayerturn = 3;
     public int handdecknum = 4;
+    public int haveMoney = 0;
 
-    public LightEnergyManager energyManager;
+    public int currentTurn;
+    public int currentShield;
+    public int currentLightEnergy;
+
+    //private LightEnergyManager energyManager;
     public TurnManager turnManager;
+    //private PlayerUI2 playerUI2;
+    //public GameObject playerShields;
+
+    /*public GameObject levelUpM;
+    public TMP_Text level;
+    public TMP_Text reward;
+    public string InGame;
+    public string currentSceneName;*/
 
     private void Awake()
     {
@@ -36,12 +50,16 @@ public class Player : MonoBehaviour
     public void Start()
     {
         currenthp = maxhp;
+        currentTurn = playerturn;
+        currentShield = 0;
+        currentLightEnergy = lightenergy;
+        //currentSceneName = SceneManager.GetActiveScene().name;
+        //playerUI2.playerShields.SetActive(false);
     }
 
     public void AddExp(int amount)
     {
-        exp += amount;
-        if(exp >= nexttoexp)
+        if(amount >= nexttoexp)
         {
             LevelUp();
         }
@@ -55,31 +73,66 @@ public class Player : MonoBehaviour
         {
             case 2:
                 nexttoexp += 10;
-                maxhp += 10;
+                maxhp += 12;
                 currenthp = maxhp;
+                LevelUp2Reward();
                 break;
             case 3:
                 nexttoexp += 15;
-                maxhp += 15;
+                maxhp += 18;
                 currenthp = maxhp;
                 break;
             case 4:
                 nexttoexp += 20;
-                maxhp += 20;
+                maxhp += 26;
                 currenthp = maxhp;
                 break;
             case 5:
                 nexttoexp += 30;
-                maxhp += 30;
+                maxhp += 36;
                 currenthp = maxhp;
                 break;
             case 6:
                 nexttoexp += 40;
-                maxhp += 40;
+                maxhp += 48;
                 currenthp = maxhp;
                 break;
         }
     }
+
+    public void LevelUp2Reward()
+    {
+        haveMoney += 7;
+        handdecknum += 1;
+        /*if(currentSceneName == InGame)
+        {
+            level.text = $"Level.1 -> Level.2";
+            reward.text = $"+ 7 coin" +
+                $"뽑을 수 있는 카드 1 증가";
+            StartCoroutine(SetLevelUP());
+        }
+        /*level.text = $"Level.1 -> Level.2";
+        reward.text = $"+ 7 coin" +
+            $"뽑을 수 있는 카드 1 증가";
+        StartCoroutine(SetLevelUP());*/
+    }
+
+    public void LevelUP6Reward()
+    {
+        haveMoney += 32;
+        lightenergy += 1;
+        //level.text = $"Level.5 -> Level.6";
+        //reward.text = $"+ 32 coin" +
+            //$"플레이어 빛 에너지 1 증가";
+    }
+
+    /*private IEnumerator SetLevelUP()
+    {
+        levelUpM.SetActive(true);
+
+        yield return new WaitForSeconds(2.5f);
+        levelUpM.SetActive(false);
+    }*/
 
     public bool DecreaseFusion()
     {
@@ -91,57 +144,12 @@ public class Player : MonoBehaviour
         return false;
     }
 
-    /*public void IncreaseFusion()
+    public void IncreaseFusion()
     {
         canFuseCard++;
-    }*/
-
-    public void UseCard(Card card)
-    {
-        if (energyManager.UseEnergy(card.lightEnergy))
-        {
-            //ApplyCardEffect(card);
-            // 카드 사용 후 덱에 반환하거나 필요한 로직 추가
-            // 예: cardManager.ReturnCardsToDeck(new List<Card> { card });
-            turnManager.OnCardUsed();
-        }
-        else
-        {
-            Debug.Log("에너지가 부족하여 카드를 사용할 수 없습니다.");
-        }
     }
 
-    /*void ApplyCardEffect(Card card)
-    {
-        switch (card.cardType)
-        {
-            case Card.CardType.AddCard:
-                // 추가 카드 뽑기
-                // cardManager.DrawCards(1);
-                break;
-            case Card.CardType.AddTurn:
-                // 턴 추가 로직
-                // turnManager.StartPlayerTurn(); // 또는 다른 방식으로 구현
-                break;
-            case Card.CardType.Attack:
-                // 적에게 데미지 주기
-                Enemy enemy = FindObjectOfType<Enemy>();
-                if (enemy != null)
-                {
-                    enemy.TakeDamage(10); // 예시 데미지
-                }
-                break;
-            case Card.CardType.Defense:
-                // 방어막 추가
-                // 예: player.AddShield(card.shield);
-                break;
-            case Card.CardType.Heal:
-                Heal(10); // 예시 힐량
-                break;
-        }
-    }*/
-
-    public void TakeDamage(int damage)
+    public void PlayerTakeDamage(int damage)
     {
         currenthp -= damage;
         //Debug.Log($"{playerName} took {damage} damage. Remaining Health: {health}");
@@ -152,27 +160,72 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void PlayerShieldAttack(int amount)
+    {
+        currentShield -= amount;
+        if(currentShield <= 0)
+        {
+            currentShield = 0;
+        }
+        /*if(currentShield <= 0)
+        {
+            playerUI2.playerShields.SetActive(false);
+        }*/
+    }
+
     public void Heal(int amount)
     {
-        currenthp += amount;
+        if(currenthp == maxhp)
+        {
+            currenthp = maxhp;
+        }
+        else
+        {
+            currenthp += amount;
+            if(currenthp >= maxhp)
+            {
+                currenthp = maxhp;
+            }
+        }
+
         //Debug.Log($"{playerName} healed {amount} health. Current Health: {health}");
+    }
+    
+
+    public void AddShield(int amount)
+    {
+        //playerUI2.playerShields.SetActive(true);
+        currentShield += amount;
     }
 
     public void DecreaseTurn()
     {
-        if(playerturn > 0)
+        if(currentTurn > 0)
         {
-            playerturn--;
+            currentTurn--;
         }
+
+        if(currentTurn == 0)
+        {
+            TurnManager.TurnManagerInstance.EndPlayerTurn();
+            //turnManager.EndPlayerTurn();
+            ResetTurn();
+        }
+    }
+
+    public void IncreaseTurn(int amount)
+    {
+        currentTurn += amount;
     }
 
     public void ResetTurn()
     {
-        playerturn = defalutplayerturn;
+        currentTurn = playerturn;
+        //playerturn = defalutplayerturn;
     }
 
-    public bool IsTurnOver()
+    public void DecreaseLightEnergy(int amount)
     {
-        return playerturn <= 0;
+        currentLightEnergy -= amount;
     }
 }

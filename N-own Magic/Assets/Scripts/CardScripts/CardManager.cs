@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class CardManager : MonoBehaviour
 {
-    public static CardManager Instance;
+    public static CardManager CardManagerInstance;
     private Player player;
 
     public Dictionary<int, Card> playerDeck = new Dictionary<int, Card>();
     public List<Card> handDeck = new List<Card>(); // 현재 화면에 보이는 덱
     public GameObject cardUIPrefab; // 카드 프리팹
 
+    public ParticleSystem cardEffectPrefab;
+
     private void Awake()
     {
-        if(Instance==null)
+        if(CardManagerInstance==null)
         {
-            Instance = this;
+            CardManagerInstance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -31,7 +33,7 @@ public class CardManager : MonoBehaviour
 
     private void InitializeDeck()
     {
-        AddNewCardToDeck(1, 3);
+        AddNewCardToDeck(1, 2);
         AddNewCardToDeck(4, 2);
         AddNewCardToDeck(7, 2);
         AddNewCardToDeck(10, 1);

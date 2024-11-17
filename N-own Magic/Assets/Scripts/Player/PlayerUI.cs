@@ -15,6 +15,7 @@ public class PlayerUI : MonoBehaviour
     public TMP_Text myTurn;
     public TMP_Text lightEnergy;
     public TMP_Text canHandleDeck;
+    public TMP_Text playerCoin;
 
     private void Start()
     {
@@ -38,7 +39,8 @@ public class PlayerUI : MonoBehaviour
         levelText.text = $"Lv. {playerState.playerlevel}";
         canfusecardText.text = $"{playerState.canFuseCard}";
         myTurn.text = $"{playerState.playerturn}";
-        lightEnergy.text = $"{playerState.lightenergy}";
+        lightEnergy.text = $"{playerState.currentLightEnergy}";
         canHandleDeck.text = $"{playerState.handdecknum}";
+        playerCoin.text = $"{playerState.haveMoney} coin";
     }
 }

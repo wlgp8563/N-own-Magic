@@ -5,56 +5,68 @@ using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
-    public enum Turn
-    {
-        Player,
-        Enemy
-    }
+    public static TurnManager TurnManagerInstance;
 
-    public Turn currentTurn;
-    public CardManager cardManager;
-    public LightEnergyManager energyManager;
-    public Player player;
-    public Enemy enemy;
+    private bool isTurnActive = false;
+    private bool isPlayerTurn = true;
+
+    public int currentTurn;
+    private CardManager cardManager;
+    //public LightEnergyManager energyManager;
+    private Player player;
+    private Enemy enemy;
+    //private EnemyControl enemyControl;
+
+
+    private void Awake()
+    {
+        if (TurnManagerInstance == null)
+        {
+            TurnManagerInstance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
-        StartPlayerTurn();
+        //StartPlayerTurn();
     }
 
     public void StartPlayerTurn()
     {
-        currentTurn = Turn.Player;
+        isPlayerTurn = true;
+        //currentTurn = player.playerturn;
+        isTurnActive = true;
+
+        CardGameManager.cardGameManager.DrawHandDeck();
+        CardGameManager.cardGameManager.DisplayHandDeckUI();
         Debug.Log("플레이어 턴 시작");
-        energyManager.RestoreEnergyAtTurnStart(3);
-        //cardManager.DrawCards(player.cardDrawCount);
     }
 
     public void StartEnemyTurn()
     {
-        currentTurn = Turn.Enemy;
+        isPlayerTurn = false;
+        isTurnActive = true;
         Debug.Log("적 턴 시작");
-        //enemy.PerformAction();
-        EndTurn();
+        EnemyControl.enemyControlInstance.StartPerformActions();
     }
 
-    public void EndTurn()
+    public void EndPlayerTurn()
     {
-        if (currentTurn == Turn.Player)
-        {
-            Debug.Log("플레이어 턴 종료");
-            //cardManager.ResetDeck();
-            StartEnemyTurn();
-        }
-        else
-        {
-            Debug.Log("적 턴 종료");
-            StartPlayerTurn();
-        }
+        isPlayerTurn = false;
+        isTurnActive = false;
+        CardGameManager.cardGameManager.ClearHandDeck();
+        StartEnemyTurn();
     }
 
-    public void OnCardUsed()
+    public void EndEnemyTurn()
     {
-        EndTurn();
+        isTurnActive = false;
+
+        StartPlayerTurn();
     }
 }
