@@ -1,0 +1,1355 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.10f1 (1c7d0df0160b) revision 1867021'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22631) 64bit Core' Language: 'ko' Physical Memory: 32627 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker33
+-projectPath
+C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
+-logFile
+Logs/AssetImportWorker33.log
+-srvPort
+49302
+Successfully changed project path to: C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
+C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 84.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8038 MB
+    Driver:   31.0.15.3598
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009733 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 70.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.477 seconds
+Domain Reload Profiling:
+	ReloadAssembly (477ms)
+		BeginReloadAssembly (71ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (320ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (65ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (198ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (8ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (39ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010542 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 72.25 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.091 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1092ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (899ms)
+			LoadAssemblies (122ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (279ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (404ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (200ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4137 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.1 KB). Loaded Objects now: 4595.
+Memory consumption went from 156.8 MB to 156.8 MB.
+Total: 2.991000 ms (FindLiveObjects: 0.231400 ms CreateObjectMapping: 0.112900 ms MarkObjects: 2.566000 ms  DeleteObjects: 0.079700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26903.724329 seconds.
+  path: Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/AddCardTurn.wav
+  artifactKey: Guid(4e349dc959014a845b9aa317d1c2b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/AddCardTurn.wav using Guid(4e349dc959014a845b9aa317d1c2b7f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c85c4bd6de0061b33deccb32bb7bdeda') in 0.115429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.879157 seconds.
+  path: Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/Attact.wav
+  artifactKey: Guid(323e15cfe809e114ab92c9f4b25e8bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/Attact.wav using Guid(323e15cfe809e114ab92c9f4b25e8bc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc0f75eaeeb2336433dcf25a5f81c10') in 0.013338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.232799 seconds.
+  path: Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/Pierce.wav
+  artifactKey: Guid(8b23b175a78d6b5458322e3a6c9905d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/Pierce.wav using Guid(8b23b175a78d6b5458322e3a6c9905d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7631ef57808d668d730295d8f72754') in 0.012027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1062.659484 seconds.
+  path: Assets/Effects/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch fire crisp fade hdr ab.mat
+  artifactKey: Guid(2e32f93f5ce765e47b0cabd37ce2b73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch fire crisp fade hdr ab.mat using Guid(2e32f93f5ce765e47b0cabd37ce2b73d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ed553c9515a1f85acf8382216ced669') in 0.053176 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008647 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.767 seconds
+Domain Reload Profiling:
+	ReloadAssembly (768ms)
+		BeginReloadAssembly (114ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (577ms)
+			LoadAssemblies (88ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (158ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (266ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (63ms)
+				ProcessInitializeOnLoadAttributes (150ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 4.08 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.7 KB). Loaded Objects now: 4641.
+Memory consumption went from 158.9 MB to 158.9 MB.
+Total: 2.847400 ms (FindLiveObjects: 0.464000 ms CreateObjectMapping: 0.145600 ms MarkObjects: 2.216600 ms  DeleteObjects: 0.020600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008798 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.763 seconds
+Domain Reload Profiling:
+	ReloadAssembly (763ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (581ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (267ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (14ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (147ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.64 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4644.
+Memory consumption went from 158.9 MB to 158.9 MB.
+Total: 2.265300 ms (FindLiveObjects: 0.177300 ms CreateObjectMapping: 0.090100 ms MarkObjects: 1.980200 ms  DeleteObjects: 0.016800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007351 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.766 seconds
+Domain Reload Profiling:
+	ReloadAssembly (766ms)
+		BeginReloadAssembly (108ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (584ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (161ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (31ms)
+			SetupLoadedEditorAssemblies (264ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (145ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.65 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.7 KB). Loaded Objects now: 4647.
+Memory consumption went from 158.9 MB to 158.9 MB.
+Total: 2.321400 ms (FindLiveObjects: 0.179800 ms CreateObjectMapping: 0.118000 ms MarkObjects: 2.005700 ms  DeleteObjects: 0.017000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.27 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 25 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (21.9 KB). Loaded Objects now: 4647.
+Memory consumption went from 77.3 MB to 77.3 MB.
+Total: 2.713600 ms (FindLiveObjects: 0.176400 ms CreateObjectMapping: 0.087500 ms MarkObjects: 2.433800 ms  DeleteObjects: 0.015300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009227 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.823 seconds
+Domain Reload Profiling:
+	ReloadAssembly (824ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (632ms)
+			LoadAssemblies (93ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (28ms)
+			SetupLoadedEditorAssemblies (330ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (94ms)
+				ProcessInitializeOnLoadAttributes (173ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.51 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.6 KB). Loaded Objects now: 4650.
+Memory consumption went from 159.0 MB to 158.9 MB.
+Total: 2.312500 ms (FindLiveObjects: 0.194300 ms CreateObjectMapping: 0.098700 ms MarkObjects: 1.998200 ms  DeleteObjects: 0.020400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 606.956360 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b2b4d1b2fc866097224acc6b1bd982') in 0.418163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab
+  artifactKey: Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab using Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6af87724b98221a6135ef8644504c2ff') in 0.245154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.781123 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44b390af689edd27aaa87e326bef367c') in 0.249546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 61.450686 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b944a596077c947df901cdd84b2fe20') in 0.610954 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab
+  artifactKey: Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab using Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31356185f57edc6bbcb06d76c2d20c7') in 0.511942 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009326 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.426 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1426ms)
+		BeginReloadAssembly (193ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (1095ms)
+			LoadAssemblies (181ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (288ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (62ms)
+			SetupLoadedEditorAssemblies (503ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (28ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (144ms)
+				ProcessInitializeOnLoadAttributes (257ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
+				AfterProcessingInitializeOnLoad (25ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (21ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.29 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (25.7 KB). Loaded Objects now: 4654.
+Memory consumption went from 159.2 MB to 159.2 MB.
+Total: 2.393300 ms (FindLiveObjects: 0.186700 ms CreateObjectMapping: 0.094700 ms MarkObjects: 2.092300 ms  DeleteObjects: 0.018700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 61.993413 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50526604827b956e5792d44f25f269fb') in 0.281334 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.296974 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee2549bee1c0033221f84f61538f503d') in 0.245659 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.984962 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0454b2223a2d8539315b684008d5c8fa') in 0.247750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.670435 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1772f17286145b4fe80830745fb83a6f') in 0.240024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.191812 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df30decdd3b04ad6c35d1e24600a3c3e') in 0.240035 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.005167 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a6faa644e76d2cf47d0b830dedf9a7a') in 0.230043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.986010 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '015591c73c62bbf69cb6db507018eae2') in 0.230864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.684650 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad37ceb8f03c5bd2a1d571a2edf1e037') in 0.231824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.315993 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a977bf3fdcd40d65075abcb2df1e31') in 0.245396 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.380248 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b80937a2f9cbe2d2a9dc53bf3e30cbf') in 0.231467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.130986 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83437290eb32976d2adb7ea515fe4023') in 0.230828 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.090093 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '200baf522fa1dbf8d942f32e677f2bc4') in 0.229030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.611395 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ae6fc839cfcbd40917cfb0a05401c2') in 0.239719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.212523 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd94f62de043a7e99682eb13567221dd3') in 0.244429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.907562 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f7b7d15263ca5706e3a2b03a7094bd5') in 0.248913 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.041351 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22b228093cae033f6f90fe378c8da4f') in 0.240118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.781076 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7642c77aa751160f73355d7ed4cd1165') in 0.232185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.820996 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2088eedef620da4bd7f14b33fd56aaa3') in 0.242386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.626037 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ecbe92b0bd77deeeb1b1f9f9bf734f') in 0.421084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.811806 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eb36e78408081f92267cb337f816d0b') in 0.242384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.467625 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dacc448f4418acb5a54784a9293dd13') in 0.232180 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.103326 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a98602805d12984b6c90fd3984f286b7') in 0.241391 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.678939 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18362089d98ef53cc92e689fd83e542') in 0.250746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.427275 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbee14ccd8af0b0c3baa7ac9ed44be59') in 0.241662 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.847525 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06206c484c9a3550a524bb20cd7b7be7') in 0.241163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 19.757984 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad16269a6c605e92fa10a316e99727cd') in 0.233490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 76.010076 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf63307891cb3196211941fc3d04872') in 0.233782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.801091 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d284033d2e00d3b718d1b1ae28049a') in 0.231103 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.210916 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a21107f002afc769c76c2bc4d45bb872') in 0.239006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 24.647181 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd87fe56fc670713234a25b869c22c1d') in 0.239030 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 20.151288 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba34ac8f8f0f169fa4579b1a25d4bc81') in 0.228321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.078773 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a8a3df5f6c6c1fa614d4d46b0d5eb61') in 0.231973 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.955784 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb97f4363ceab74bbd8b564814b8d6e') in 0.239401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.804137 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5c97cd23bc2cc17c64e74b7a388a646') in 0.244911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.574452 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ae3c5081f324511a41b6515a914b08') in 0.240026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 59.091871 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8be4c612408d996be5d07ddf4e65636') in 0.234110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.648122 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab
+  artifactKey: Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab using Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63fdc705a9c3766302944a5983fafe06') in 0.230156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.398160 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab
+  artifactKey: Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab using Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5291abcbcb2b95c9daea26bf9813bbdf') in 0.231790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.722195 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd755b1d0341760d33cd0e4e1eace6baf') in 0.235853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.338109 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '155019a0ac01fd5d37590af172a8689e') in 0.229204 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.179986 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7974f71552d2d6fe59825187f824188') in 0.229145 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.565605 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0fdb399e00800a36c75fda0dae1c475') in 0.225527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.580744 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae3bb44e58df2c61b4b0501019f2608') in 0.226866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.421119 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86c27a0a8a2043ed9d7b67e05ed21116') in 0.227689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.666856 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37213e0fd153a9ca6f813f04931f61be') in 0.242149 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.230282 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be1d9ffeb6d8298d2d054b5e5ba1aa1e') in 0.239542 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.794119 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b78fe149ba12d65df3fe553437c902f') in 0.241218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.464675 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b2c0a3de6984842a48fd445ba922540') in 0.234249 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.613425 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6077f64231c34db3fe078ec96f42412c') in 0.236461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.060812 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd53f80f7053b3b9da59a6db8fa151fd') in 0.226229 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.603188 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8561a240c68fae38cd84feb1e914a6e9') in 0.243104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.022806 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baad06b149f19cdbfc9323143ad8c807') in 0.230735 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 173.649294 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79111958e40e720610122ebe19d79fb5') in 0.232795 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.797899 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddd8066bd9f39f087f6dc3be297f88e0') in 0.232650 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.787296 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7c1d98df62edb2451b5f0f19ceec08') in 0.232395 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.407038 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '196b9451a1afbd4251d8c4e946075d33') in 0.226965 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.783922 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '524c8c28841bdbabc945f1db00f6c22a') in 0.227097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.503435 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c14ad252e494c9ff3117dbe412479735') in 0.226134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.837017 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f4b47a836496b0a20ebcf3e8d01f52') in 0.230753 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 436.856040 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a766871764f5b738d7e879fe1061d3') in 0.250838 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab
+  artifactKey: Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Nightmare.prefab using Guid(cb7ccb0f13a4fde4c80c67795da2bb54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f356cec475531e3a3f78ed53df5897b0') in 0.272955 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010377 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.797 seconds
+Domain Reload Profiling:
+	ReloadAssembly (798ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (586ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (163ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (38ms)
+			SetupLoadedEditorAssemblies (246ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (65ms)
+				ProcessInitializeOnLoadAttributes (129ms)
+				ProcessInitializeOnLoadMethodAttributes (28ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.7 KB). Loaded Objects now: 4657.
+Memory consumption went from 159.9 MB to 159.9 MB.
+Total: 2.450500 ms (FindLiveObjects: 0.176600 ms CreateObjectMapping: 0.287600 ms MarkObjects: 1.967700 ms  DeleteObjects: 0.018000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 6.091555 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a2f793e4a4302da4bebc05e940a6cd0') in 0.307476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad238cb5ca58872a753947bbf582d25b') in 0.242939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.461977 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab
+  artifactKey: Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2.prefab using Guid(0a83ac19d6acbd04b92a3140363561dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8621abdc38a92291f5f796b57c5d1952') in 0.257903 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004081 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab
+  artifactKey: Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v8_Medium.prefab using Guid(e5ec99c31fa5b124184efc634bccc581) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0fd3d3e7a312a0afa103dfa3e119f5') in 0.286313 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.009409 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.719 seconds
+Domain Reload Profiling:
+	ReloadAssembly (719ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (533ms)
+			LoadAssemblies (91ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (145ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (33ms)
+			SetupLoadedEditorAssemblies (230ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (128ms)
+				ProcessInitializeOnLoadMethodAttributes (24ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 2.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.7 KB). Loaded Objects now: 4660.
+Memory consumption went from 159.9 MB to 159.9 MB.
+Total: 2.112700 ms (FindLiveObjects: 0.174100 ms CreateObjectMapping: 0.084400 ms MarkObjects: 1.838600 ms  DeleteObjects: 0.014900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 35.260503 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90cce82d56010594ed17e6bbbff02cb5') in 0.284273 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.055729 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f0f860ce2944425ef5ea7d6d756abcf') in 0.232980 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.559960 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0f3b823eab2017a10938f525de17725') in 0.228750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.393080 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9b6909737c88c174c4df9254d66d36') in 0.229409 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.349459 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a46c15a816373a72dcc7cb86edb392a') in 0.226991 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.162744 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f260a633842d45430ff785e5bc4d6fe') in 0.226335 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.372255 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02363f6d22d304889ce67518f630b413') in 0.237467 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.390538 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f90aec163155583b666eee06e6bb601c') in 0.242917 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.834700 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4013387b21850dc1fc466828cc8fbdfe') in 0.234187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.004248 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79b360feed6fd2a1428bcc284da7be78') in 0.242672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.026251 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ecd40a83d1726af770ac33a80871513') in 0.232275 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.598615 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a047d225d8ff141965eca63ae86d2749') in 0.236600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.466942 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cadb055a97a3bbbd467a22c45900c065') in 0.238492 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.798267 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '136066e09b205e17ee163dc5f1add29b') in 0.243911 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.655859 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd442f8cd9c1b93b3adf1ab91ea2c4566') in 0.241262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.145829 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f54f7fb4069f6da6dbcb8efec1748dd') in 0.233874 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.012733 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c9e663d217a9008bd9e8800db58b3fd') in 0.229073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.676316 seconds.
+  path: Assets/Emenies/Boss.asset
+  artifactKey: Guid(9a3f193dbf87a8449856d620c8f002d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Emenies/Boss.asset using Guid(9a3f193dbf87a8449856d620c8f002d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cd047b32da049e9ab8fb8e8fe69e4af') in 0.010486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.726971 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c53960a0320f98b228b9c0b2febea0e') in 0.229473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.477370 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '528d7efeef321c36ead1b0aca6a2fb4b') in 0.228790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.697375 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09944b659f3a2ec06b4ccb0d269bb5a2') in 0.224557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.266167 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66421a0033411aa21ceac71783232c3d') in 0.237864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.432577 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d42558d27a6e3090e1bd4612b06bbd') in 0.235808 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.614955 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd496bd6064cbfec2e17b66abdd643b') in 0.236692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.059990 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dcb4afd73e4203272f168d097fdae2c') in 0.229206 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.493140 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f1b7aae62e1e9eaa1e05640bf3e36af') in 0.229438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.848881 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb954eb5da1de112fa7597c0279afdf2') in 0.230589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.352181 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bacad3ab734ad4adab50912ce6ed29d') in 0.233365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.563796 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feb315f02584cf0d5391818bd34336c0') in 0.235088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.236969 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11e6634df4796145c3e0c1d33c225492') in 0.238125 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.889563 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd90f87c535315fa279bc85ed36731bf0') in 0.232152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.649096 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab
+  artifactKey: Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Normal_v2_Nightmare.prefab using Guid(f2c7e5a97346ca047a0ef003eabb4324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86b940c3a2437b1f07ef421e9aeefa80') in 0.230082 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 338.576187 seconds.
+  path: Assets/Scenes/CardGame.unity
+  artifactKey: Guid(5cbfd502a88a3ba4c9eec9bb4183a733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/CardGame.unity using Guid(5cbfd502a88a3ba4c9eec9bb4183a733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe1b5eb97a781f55ac495eb260a84d9b') in 0.002841 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.053838 seconds.
+  path: Assets/Resources/12_Healing_spell.png
+  artifactKey: Guid(511b7df189d509e4bbb3271bf1df0df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/12_Healing_spell.png using Guid(511b7df189d509e4bbb3271bf1df0df5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c374455ec29bdecacab89a9af5b9cf') in 0.059783 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/24_Holy_rain.png
+  artifactKey: Guid(56016c9ed495ebc44a62f535a8d789af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/24_Holy_rain.png using Guid(56016c9ed495ebc44a62f535a8d789af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41cfee44836958bb90b76d3d768bd587') in 0.030656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Paladinskill_20.png
+  artifactKey: Guid(2d30a83bfcefa5842b04e83d8c6fab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Paladinskill_20.png using Guid(2d30a83bfcefa5842b04e83d8c6fab09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ac576eb055ff32ea8b1b640abf377bb') in 0.035676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Assassinskill_29.png
+  artifactKey: Guid(5020a01ad4c184d4b809c1a88307b482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Assassinskill_29.png using Guid(5020a01ad4c184d4b809c1a88307b482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca798f2b546f79aeaec774b81ff8bdd8') in 0.041871 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Priestskill_27.png
+  artifactKey: Guid(d6f781a02de81f84f8272b9e63244dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Priestskill_27.png using Guid(d6f781a02de81f84f8272b9e63244dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da2c25dd68d929f3aea889cccddf25f') in 0.039136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Paladinskill_11.png
+  artifactKey: Guid(2a716e1b49952534da3e0bc61dc0cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Paladinskill_11.png using Guid(2a716e1b49952534da3e0bc61dc0cf2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e4cf0fe81bf1138921df6eb8826ab0a') in 0.033740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Priestskill_23.png
+  artifactKey: Guid(674a3d365c1fab1439aab1510b80cbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Priestskill_23.png using Guid(674a3d365c1fab1439aab1510b80cbec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39dc173d78da80689d3723210f9a72a3') in 0.034610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Paladinskill_16.png
+  artifactKey: Guid(130e5cb9a3b697540aa574941c9d00b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Paladinskill_16.png using Guid(130e5cb9a3b697540aa574941c9d00b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4234e7c9db678c18499254a0a619e78') in 0.037455 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.784691 seconds.
+  path: Assets/Resources/Effects
+  artifactKey: Guid(552b5320de0172f419d0c6b65fdeb661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Effects using Guid(552b5320de0172f419d0c6b65fdeb661) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2cb458f3290e05be2b34560701b4652') in 0.017397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.053765 seconds.
+  path: Assets/Resources/Effects/AddCardTurn.prefab
+  artifactKey: Guid(87ee7299dd44ed747af24dbb91bcd33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Effects/AddCardTurn.prefab using Guid(87ee7299dd44ed747af24dbb91bcd33b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e09814f231b330208dc676a997b31e41') in 0.085081 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Resources/Effects/PierceEffects.prefab
+  artifactKey: Guid(265d3a5ba69981a4698ceabcedf368b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/Effects/PierceEffects.prefab using Guid(265d3a5ba69981a4698ceabcedf368b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af46a751f63549a68b9f51941b943c0b') in 0.029585 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.560184 seconds.
+  path: Assets/Effects/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch triangle smooth nosp add.mat
+  artifactKey: Guid(d94053f8609f0e14aadb270ec29d672f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Effects/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr stretch triangle smooth nosp add.mat using Guid(d94053f8609f0e14aadb270ec29d672f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81eb2c63756cdc05d0bee6d7f09610e5') in 0.049374 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012052 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.882 seconds
+Domain Reload Profiling:
+	ReloadAssembly (883ms)
+		BeginReloadAssembly (134ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (33ms)
+		EndReloadAssembly (658ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (169ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (298ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (15ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (76ms)
+				ProcessInitializeOnLoadAttributes (165ms)
+				ProcessInitializeOnLoadMethodAttributes (29ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (12ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 3.22 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4108 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (24.7 KB). Loaded Objects now: 4666.
+Memory consumption went from 160.4 MB to 160.3 MB.
+Total: 3.546400 ms (FindLiveObjects: 0.260900 ms CreateObjectMapping: 0.148400 ms MarkObjects: 3.109900 ms  DeleteObjects: 0.025700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

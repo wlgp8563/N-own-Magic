@@ -7,7 +7,7 @@ public class CardManager : MonoBehaviour
     public static CardManager CardManagerInstance;
     private Player player;
 
-    public Dictionary<int, Card> playerDeck = new Dictionary<int, Card>();
+    public Dictionary<int, Card> playerDeck = new Dictionary<int, Card>(); //플레이어의 전체 덱
     public List<Card> handDeck = new List<Card>(); // 현재 화면에 보이는 덱
     public GameObject cardUIPrefab; // 카드 프리팹
 
@@ -33,7 +33,7 @@ public class CardManager : MonoBehaviour
 
     private void InitializeDeck()
     {
-        AddNewCardToDeck(1, 2);
+        AddNewCardToDeck(1, 3);
         AddNewCardToDeck(4, 2);
         AddNewCardToDeck(7, 2);
         AddNewCardToDeck(10, 1);

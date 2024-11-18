@@ -15,8 +15,12 @@ public class CardGameManager : MonoBehaviour
     public float cardSpacing = 100f;
     public int maxHandDeckNum = 4;
 
-    public ParticleSystem cardEffectPrefab;
-    public Transform effectSpawnPoint;
+    public GameObject cardEffectPrefab;
+    public Transform attackEffectSpawnPoint;
+    public Transform healEffectSpawnPoint;
+    public Transform shieldEffectSpawnPoint;
+    public Transform addCardTurnEffectSpawnPoint;
+
 
     //private int shieldValue;
     private List<Card> handDeck = new List<Card>();
@@ -177,32 +181,46 @@ public class CardGameManager : MonoBehaviour
         {
             case CardCategory.Attack: // Attack (ID: 1~3)
                 ApplyAttack(card, value);
-                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/LightingEffects");
+                cardEffectPrefab = Resources.Load<GameObject>("Effects/Lighting");
+                EnemyControl.enemyControlInstance.PlayerAttackEffect(cardEffectPrefab);
+                //cardEffectPrefab = Resources.Load<GameObject>("Effects/Lighting");
+                //AttackEffect();
                 break;
 
             case CardCategory.Pierce: // Pierce (ID: 4~6)
                 ApplyPierceAttack(card, value);
-                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/PierceEffects");
+                cardEffectPrefab = Resources.Load<GameObject>("Effects/Pierce");
+                EnemyControl.enemyControlInstance.PlayerAttackEffect(cardEffectPrefab);
+                //cardEffectPrefab = Resources.Load<GameObject>("Effects/Pierce");
+                //AttackEffect();
                 break;
 
             case CardCategory.Shield: // Shield (ID: 7~9)
                 ApplyShield(card, value);
-                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/ShieldEffects");
+                cardEffectPrefab = Resources.Load<GameObject>("Effects/Healing");
+                EnemyControl.enemyControlInstance.PlayerShieldEffect(cardEffectPrefab);
+                //ShieldEffect();
                 break;
 
             case CardCategory.Heal: // Heal (ID: 10~12)
                 ApplyHeal(card, value);
-                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/HealingEffects");
+                cardEffectPrefab = Resources.Load<GameObject>("Effects/Healing");
+                EnemyControl.enemyControlInstance.PlayerHealEffect(cardEffectPrefab);
+                //HealEffect();
                 break;
 
             case CardCategory.AddCard: // AddCard (ID: 13~15)
                 DrawRandomCard(card, value);
-                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/AddCardTurnEffects");
+                cardEffectPrefab = Resources.Load<GameObject>("Effects/AddCardTurn");
+                EnemyControl.enemyControlInstance.PlayerAddTurnCardEffect(cardEffectPrefab);
+                //AddCardTurnEffect();
                 break;
 
             case CardCategory.AddTurn: // AddTurn (ID: 16~18)
                 AddExtraTurn(card, value);
-                cardEffectPrefab = Resources.Load<ParticleSystem>("Effects/AddCardEffects");
+                cardEffectPrefab = Resources.Load<GameObject>("Effects/AddCardTurn");
+                EnemyControl.enemyControlInstance.PlayerAddTurnCardEffect(cardEffectPrefab);
+                //AddCardTurnEffect();
                 break;
         }
         player.DecreaseTurn();
@@ -214,13 +232,56 @@ public class CardGameManager : MonoBehaviour
         }
     }
 
-    private void PlayCardEffect()
+    private void HealEffect()
     {
-        if (cardEffectPrefab != null && effectSpawnPoint != null)
+        if (cardEffectPrefab != null && healEffectSpawnPoint != null)
         {
-            ParticleSystem effect = Instantiate(cardEffectPrefab, effectSpawnPoint.position, Quaternion.identity);
-            effect.Play();
-            Destroy(effect.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
+            GameObject effect = Instantiate(cardEffectPrefab, healEffectSpawnPoint.position, Quaternion.identity);
+            effect.transform.SetParent(healEffectSpawnPoint, false); // effectSpawnPoint를 부모로 설정 (Canvas 내부)
+            effect.transform.localPosition = new Vector3(0, 0, 10); // 부모 위치 기준으로 로컬 위치 설정
+            var renderer = effect.GetComponent<Renderer>();
+            renderer.sortingLayerName = "Effects";
+            renderer.sortingOrder = 20; // UI 위에 나타나도록 값을 높게 설정
+            Destroy(effect, 1.0f);
+            //Destroy(effect.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
+        }
+        else
+        {
+            Debug.LogWarning($"카드의 이펙트가 없습니다.");
+        }
+    }
+
+    private void ShieldEffect()
+    {
+        if (cardEffectPrefab != null && shieldEffectSpawnPoint != null)
+        {
+            GameObject effect = Instantiate(cardEffectPrefab, shieldEffectSpawnPoint.position, Quaternion.identity);
+            effect.transform.SetParent(shieldEffectSpawnPoint, false); // effectSpawnPoint를 부모로 설정 (Canvas 내부)
+            effect.transform.localPosition = new Vector3(0, 0, 10); // 부모 위치 기준으로 로컬 위치 설정
+            var renderer = effect.GetComponent<Renderer>();
+            renderer.sortingLayerName = "Effects";
+            renderer.sortingOrder = 20; // UI 위에 나타나도록 값을 높게 설정
+            Destroy(effect, 1.0f);
+            //Destroy(effect.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
+        }
+        else
+        {
+            Debug.LogWarning($"카드의 이펙트가 없습니다.");
+        }
+    }
+
+    private void AddCardTurnEffect()
+    {
+        if (cardEffectPrefab != null && addCardTurnEffectSpawnPoint != null)
+        {
+            GameObject effect = Instantiate(cardEffectPrefab, addCardTurnEffectSpawnPoint.position, Quaternion.identity);
+            effect.transform.SetParent(addCardTurnEffectSpawnPoint, false); // effectSpawnPoint를 부모로 설정 (Canvas 내부)
+            effect.transform.localPosition = new Vector3(0, 0, 10); // 부모 위치 기준으로 로컬 위치 설정
+            var renderer = effect.GetComponent<Renderer>();
+            renderer.sortingLayerName = "Effects";
+            renderer.sortingOrder = 20; // UI 위에 나타나도록 값을 높게 설정
+            Destroy(effect, 1.0f);
+            //Destroy(effect.gameObject, effect.main.duration + effect.main.startLifetime.constantMax);
         }
         else
         {
@@ -229,26 +290,84 @@ public class CardGameManager : MonoBehaviour
     }
 
     public void ApplyAttack(Card card, int value)
-    { 
+    {
+        /*if (BossControl.bossControlInstance.isboss == false)
+        {
+            int shieldValue = EnemyControl.enemyControlInstance.currentEnemyShield;
+            int remainingDamage = value - shieldValue;
+            if (shieldValue > 0)
+            {
+                EnemyControl.enemyControlInstance.ReduceShield(value);
+            }
+            //EnemyControl.enemyControlInstance.ReduceShield(value);
+            if (remainingDamage > 0)
+            {
+                EnemyControl.enemyControlInstance.ReduceShield(remainingDamage);
+            }
+        }
+        else
+        {
+            int bossshieldValue = BossControl.bossControlInstance.currentEnemyShield;
+            int bossremainingDamage = value - bossshieldValue;
+            if (bossshieldValue > 0)
+            {
+                BossControl.bossControlInstance.EnemyTakeDamage(value);
+            }
+            if(bossremainingDamage > 0)
+            {
+                BossControl.bossControlInstance.EnemyTakeDamage(bossremainingDamage);
+            }
+            //BossControl.bossControlInstance.EnemyTakeDamage(value);
+        }*/
+
         int shieldValue = EnemyControl.enemyControlInstance.currentEnemyShield;
         int remainingDamage = value - shieldValue;
+
+        //int bossshieldValue = BossControl.bossControlInstance.currentEnemyShield;
+        //int bossremainingDamage = value - bossshieldValue;
 
         if (shieldValue > 0)
         {
             Debug.Log($"적의 쉴드 {shieldValue}를 제거");
             EnemyControl.enemyControlInstance.ReduceShield(value);
+            /*if (!BossControl.bossControlInstance.isboss)
+            {
+                EnemyControl.enemyControlInstance.ReduceShield(value);
+            }
+            else
+            {
+                BossControl.bossControlInstance.EnemyTakeDamage(value);
+            }*/
         }
 
         if (remainingDamage > 0)
         {
-            Debug.Log($"적에게 {remainingDamage}의 공격을 가합니다.");
             EnemyControl.enemyControlInstance.EnemyTakeDamage(remainingDamage);
+            /*Debug.Log($"적에게 {remainingDamage}의 공격을 가합니다.");
+            if (!BossControl.bossControlInstance.isboss)
+            {
+                EnemyControl.enemyControlInstance.ReduceShield(remainingDamage);
+            }
+            else
+            {
+                BossControl.bossControlInstance.EnemyTakeDamage(bossremainingDamage);
+            }*/
+            //EnemyControl.enemyControlInstance.EnemyTakeDamage(remainingDamage);
         }
     }
 
     public void ApplyPierceAttack(Card card, int value)
     {
         Debug.Log($"적에게 {value}의 관통 공격을 가합니다. (쉴드 무시)");
+        /*bool bosscheck = BossControl.bossControlInstance.isboss;
+        if (bosscheck == false)
+        {
+            EnemyControl.enemyControlInstance.ReduceShield(value);
+        }
+        else
+        {
+            BossControl.bossControlInstance.EnemyTakeDamage(value);
+        }*/
         EnemyControl.enemyControlInstance.EnemyTakeDamage(value);
     }
 

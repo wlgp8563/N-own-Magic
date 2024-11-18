@@ -105,7 +105,6 @@ public class CardFusionManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("카드 ID가 다릅니다. 다시 선택하세요.");
                     selectedCards.Clear();
                     fusionButton.interactable = false;
                 }
@@ -153,7 +152,7 @@ public class CardFusionManager : MonoBehaviour
 
         Debug.Log($"카드 합성 완료: {newCard.cardName} 획득");
 
-        // UI 갱신
+        // UI 업데이트
         selectedCards.Clear();
         fusionButton.interactable = false;
         DisplayCardsInFusionShop();

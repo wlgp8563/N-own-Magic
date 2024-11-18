@@ -22,7 +22,6 @@ public class SelectManager1 : MonoBehaviour
 
     void Start()
     {
-        goNextButton.interactable = false;
 
         // 첫 번째와 두 번째 버튼 클릭 시의 이벤트 리스너를 추가합니다.
         button1.onClick.AddListener(() => OnButtonClicked(ref isButton1Clicked, "CardGame"));

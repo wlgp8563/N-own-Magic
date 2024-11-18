@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void LevelUp()
+    public void LevelUp()
     {
         playerlevel++;
         exp = 0;
@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
                 nexttoexp += 10;
                 maxhp += 12;
                 currenthp = maxhp;
-                LevelUp2Reward();
+                EnemyControl.enemyControlInstance.LevelUp2Reward();
                 break;
             case 3:
                 nexttoexp += 15;

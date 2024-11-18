@@ -20,7 +20,7 @@ public class SetEnemy : MonoBehaviour
     {
         if (EnemyManager.Instance.selectedCharacterPrefab != null)
         {
-            // 선택된 캐릭터를 씬에 스폰
+            // 선택된 캐릭터를 CardGame 씬에 스폰
             _currentCharacter = Instantiate(EnemyManager.Instance.selectedCharacterPrefab, canvas.transform);
             _currentCharacter.transform.localPosition = new Vector3(25f, -30, 0f);
             _currentCharacter.transform.SetAsLastSibling();

@@ -52,6 +52,14 @@ public class TurnManager : MonoBehaviour
         isPlayerTurn = false;
         isTurnActive = true;
         Debug.Log("적 턴 시작");
+        /*if(!BossControl.bossControlInstance.isboss)
+        {
+            EnemyControl.enemyControlInstance.StartPerformActions();
+        }
+        else
+        {
+            BossControl.bossControlInstance.StartPerformActions();
+        }*/
         EnemyControl.enemyControlInstance.StartPerformActions();
     }
 
@@ -60,12 +68,27 @@ public class TurnManager : MonoBehaviour
         isPlayerTurn = false;
         isTurnActive = false;
         CardGameManager.cardGameManager.ClearHandDeck();
-        StartEnemyTurn();
+        StartCoroutine(DelayEnemyTurn());
+        //StartEnemyTurn();
     }
 
     public void EndEnemyTurn()
     {
         isTurnActive = false;
+        StartCoroutine(DelayPlayerTurn());
+        //StartPlayerTurn();
+    }
+
+    private IEnumerator DelayEnemyTurn()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        StartEnemyTurn();
+    }
+
+    private IEnumerator DelayPlayerTurn()
+    {
+        yield return new WaitForSeconds(1.0f);
 
         StartPlayerTurn();
     }

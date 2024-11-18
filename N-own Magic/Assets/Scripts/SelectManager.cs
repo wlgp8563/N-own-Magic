@@ -12,12 +12,15 @@ public class SelectManager : MonoBehaviour
     public GameObject buttonGroup;
     public GameObject nextGroup;
 
+    public AudioSource audioSource;
+    //public AudioClip buttonClickSound;
+
     private bool isButton1Clicked = false;
     private bool isButton2Clicked = false;
 
     void Start()
     {
-        goNextButton.interactable = false;
+        //goNextButton.interactable = false;
 
         // 첫 번째와 두 번째 버튼 클릭 시의 이벤트 리스너를 추가합니다.
         button1.onClick.AddListener(() => OnButton1Clicked(ref isButton1Clicked, "CardGame"));
@@ -29,6 +32,8 @@ public class SelectManager : MonoBehaviour
     {
         isButton1Clicked = true; // 첫 번째 버튼 클릭 표시
         CheckBothButtonsClicked();
+        audioSource.volume = 0.7f;
+        audioSource.Play();
         SceneManager.LoadScene("CardGame");
     }
 
@@ -36,6 +41,8 @@ public class SelectManager : MonoBehaviour
     {
         isButton2Clicked = true; // 두 번째 버튼 클릭 표시
         CheckBothButtonsClicked();
+        audioSource.volume = 0.7f;
+        audioSource.Play();
         SceneManager.LoadScene("CardGame");
     }
 
@@ -51,6 +58,8 @@ public class SelectManager : MonoBehaviour
 
     public void GoNextButton()
     {
+        audioSource.volume = 0.55f;
+        audioSource.Play();
         ActivateNextGroup();
     }
     /*void OnButtonClicked(ref bool buttonClicked, string sceneName)

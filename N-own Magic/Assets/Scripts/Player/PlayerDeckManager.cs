@@ -28,19 +28,8 @@ public class PlayerDeckManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        DisplayCardsInFusionShop();
-    }
-
-    public void CloseFusionShop()
-    {
-        playerDeckUI.SetActive(false);
-        //selectedCards.Clear();
-    }
-
     // 카드 리스트 UI 표시
-    private void DisplayCardsInFusionShop()
+    public void DisplayCardsInFusionShop()
     {
         // 기존 UI 카드 삭제
         foreach (Transform child in cardContentParent)
@@ -56,12 +45,13 @@ public class PlayerDeckManager : MonoBehaviour
 
             for (int i = 0; i < card.count; i++)
             {
+                Debug.Log("플레이어덱 보여주기");
                 GameObject cardUI = Instantiate(cardUIPrefab, cardContentParent);
 
-                SetSortingLayer(cardUI, 4);
-
-                cardUI.GetComponent<CardUI>().SetCardData(card);
-                Button cardButton = cardUI.GetComponent<Button>();
+                SetSortingLayer(cardUI, 5);
+                CardUI cardUIComponent = cardUI.GetComponent<CardUI>();
+                cardUIComponent.GetComponent<CardUI>().SetCardData(card);
+                //Button cardButton = cardUI.GetComponent<Button>();
 
                 //cardButton.onClick.AddListener(() => SelectCardForFusion(card));
             }
