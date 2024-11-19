@@ -803,18 +803,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 193231126}
-        m_TargetAssemblyTypeName: SelectManager, Assembly-CSharp
-        m_MethodName: GoNextButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: CardGame
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &10358618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,6 +1885,8 @@ MonoBehaviour:
   - {fileID: 363119932}
   - {fileID: 1556263448}
   - {fileID: 1556263448}
+  audioSource: {fileID: 327999605}
+  buttonClickSound: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
 --- !u!1 &47902594
 GameObject:
   m_ObjectHideFlags: 0
@@ -5281,6 +5271,7 @@ MonoBehaviour:
   buttonGroup: {fileID: 193231121}
   nextGroup: {fileID: 1180191068}
   audioSource: {fileID: 327999605}
+  buttonClickSound: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
 --- !u!1 &199052117
 GameObject:
   m_ObjectHideFlags: 0
@@ -8091,7 +8082,7 @@ GameObject:
   - component: {fileID: 327999606}
   - component: {fileID: 327999605}
   m_Layer: 0
-  m_Name: ButtonAudio
+  m_Name: EffectAudio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8107,7 +8098,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 29bde6326b4c34ad8a12da475f79b50a, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -26530,18 +26521,6 @@ MonoBehaviour:
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 193231126}
-        m_TargetAssemblyTypeName: SelectManager, Assembly-CSharp
-        m_MethodName: GoNextButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: CardGame
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1289019920

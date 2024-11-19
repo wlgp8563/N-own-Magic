@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class SelectManager : MonoBehaviour
 {
+    public static SelectManager selectManagerInstance;
+    
     public Button button1; // 첫 번째 버튼
     public Button button2; // 두 번째 버튼
     public Button goNextButton; // 활성화될 버튼
@@ -13,10 +15,23 @@ public class SelectManager : MonoBehaviour
     public GameObject nextGroup;
 
     public AudioSource audioSource;
-    //public AudioClip buttonClickSound;
+    public AudioClip buttonClickSound;
 
     private bool isButton1Clicked = false;
     private bool isButton2Clicked = false;
+
+    private void Awake()
+    {
+        if (selectManagerInstance == null)
+        {
+            selectManagerInstance = this;
+            //DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {

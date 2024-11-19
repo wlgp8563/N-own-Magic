@@ -37,6 +37,9 @@ public class EnemyControl : MonoBehaviour
 
     private Animator ani;
 
+    public AudioClip levelupAudio;
+    public AudioSource levelupSource;
+
     private void Awake()
     {
         if (enemyControlInstance == null)
@@ -432,6 +435,7 @@ public class EnemyControl : MonoBehaviour
     {
         isLevelup2 = true;
         level2reward.SetActive(true);
+        levelupSource.Play();
         StartCoroutine(DisappearReward());
     }
     private IEnumerator DisappearReward()

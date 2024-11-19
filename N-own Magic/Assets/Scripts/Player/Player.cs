@@ -25,14 +25,6 @@ public class Player : MonoBehaviour
 
     //private LightEnergyManager energyManager;
     public TurnManager turnManager;
-    //private PlayerUI2 playerUI2;
-    //public GameObject playerShields;
-
-    /*public GameObject levelUpM;
-    public TMP_Text level;
-    public TMP_Text reward;
-    public string InGame;
-    public string currentSceneName;*/
 
     private void Awake()
     {
@@ -53,8 +45,6 @@ public class Player : MonoBehaviour
         currentTurn = playerturn;
         currentShield = 0;
         currentLightEnergy = lightenergy;
-        //currentSceneName = SceneManager.GetActiveScene().name;
-        //playerUI2.playerShields.SetActive(false);
     }
 
     public void AddExp(int amount)

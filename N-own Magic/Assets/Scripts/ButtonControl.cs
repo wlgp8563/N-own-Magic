@@ -5,9 +5,27 @@ using UnityEngine.UI;
 
 public class ButtonControl : MonoBehaviour
 {
+    public static ButtonControl btncontrolInstance;
+    
     public Button[] buttons;
 
     public GameObject[] gameobjects;
+
+    public AudioSource audioSource;
+    public AudioClip buttonClickSound;
+
+    private void Awake()
+    {
+        if (btncontrolInstance == null)
+        {
+            btncontrolInstance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -21,29 +39,35 @@ public class ButtonControl : MonoBehaviour
     }
     void Shop1Exit()
     {
+        audioSource.Play();
         gameobjects[0].SetActive(false);
     }
     void Shop2Exit()
     {
+        audioSource.Play();
         gameobjects[1].SetActive(false);
     }
 
     void LetterExit()
     {
+        audioSource.Play();
         gameobjects[2].SetActive(false);
     }
     void Shop3Exit()
     {
+        audioSource.Play();
         gameobjects[3].SetActive(false);
     }
 
     void Shop4Enter()
     {
+        audioSource.Play();
         gameobjects[4].SetActive(true);
     }
 
     void Shop4Exit()
     {
+        audioSource.Play();
         gameobjects[5].SetActive(false);
     }
 }
