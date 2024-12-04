@@ -80,13 +80,13 @@ public class Card
         switch (category)
         {
             case CardCategory.Attack:
-                return level * 8; // 공격력은 레벨당 10씩 증가
+                return level * 11; // 공격력은 레벨당 10씩 증가
             case CardCategory.Pierce:
-                return level * 6;  // 관통 공격은 레벨당 8씩 증가
+                return level * 8;  // 관통 공격은 레벨당 8씩 증가
             case CardCategory.Shield:
-                return level * 5;  // 쉴드는 레벨당 5씩 증가
+                return level * 7;  // 쉴드는 레벨당 5씩 증가
             case CardCategory.Heal:
-                return level * 7;  // 체력 회복은 레벨당 씩 증가
+                return level * 9;  // 체력 회복은 레벨당 씩 증가
             case CardCategory.AddCard:
                 return level;      // 추가 카드는 레벨당 1장씩 증가
             case CardCategory.AddTurn:

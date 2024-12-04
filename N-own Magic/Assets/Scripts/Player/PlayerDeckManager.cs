@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PlayerDeckManager : MonoBehaviour
 {
-    public static PlayerDeckManager playerDeckManager;
+    //public static PlayerDeckManager playerDeckManager;
 
     [Header("UI Elements")]
     public GameObject playerDeckUI; // 카드 합성 shop UI
@@ -15,7 +15,7 @@ public class PlayerDeckManager : MonoBehaviour
     //private List<Card> selectedCards = new List<Card>(); // 합성할 카드들
     private Dictionary<int, Card> playerDeck => CardManager.CardManagerInstance.playerDeck; // playerDeck 참조
 
-    private void Awake()
+    /*private void Awake()
     {
         if (playerDeckManager == null)
         {
@@ -26,7 +26,7 @@ public class PlayerDeckManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
     // 카드 리스트 UI 표시
     public void DisplayCardsInFusionShop()

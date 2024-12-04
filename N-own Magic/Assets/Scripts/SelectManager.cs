@@ -46,18 +46,20 @@ public class SelectManager : MonoBehaviour
     public void OnButton1Clicked(ref bool buttonClicked, string sceneName)
     {
         isButton1Clicked = true; // 첫 번째 버튼 클릭 표시
+        button1.interactable = false;
         CheckBothButtonsClicked();
         audioSource.volume = 0.7f;
-        audioSource.Play();
+        audioSource.PlayOneShot(buttonClickSound);
         SceneManager.LoadScene("CardGame");
     }
 
     public void OnButton2Clicked(ref bool buttonClicked, string sceneName)
     {
         isButton2Clicked = true; // 두 번째 버튼 클릭 표시
+        button2.interactable = false;
         CheckBothButtonsClicked();
         audioSource.volume = 0.7f;
-        audioSource.Play();
+        audioSource.PlayOneShot(buttonClickSound);
         SceneManager.LoadScene("CardGame");
     }
 
@@ -74,7 +76,7 @@ public class SelectManager : MonoBehaviour
     public void GoNextButton()
     {
         audioSource.volume = 0.55f;
-        audioSource.Play();
+        audioSource.PlayOneShot(buttonClickSound);
         ActivateNextGroup();
     }
     /*void OnButtonClicked(ref bool buttonClicked, string sceneName)
@@ -135,7 +137,10 @@ public class SelectManager : MonoBehaviour
 
     void ActivateNextGroup()
     {
-        buttonGroup.SetActive(false);
-        nextGroup.SetActive(true);
+        //audioSource.PlayOneShot(buttonClickSound);
+        SceneManager.LoadScene("InGame2");
+
+        //buttonGroup.SetActive(false);
+        //nextGroup.SetActive(true);
     }
 }

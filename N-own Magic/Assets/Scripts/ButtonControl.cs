@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonControl : MonoBehaviour
 {
-    public static ButtonControl btncontrolInstance;
+    //public static ButtonControl btncontrolInstance;
     
     public Button[] buttons;
 
@@ -14,7 +14,7 @@ public class ButtonControl : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip buttonClickSound;
 
-    private void Awake()
+    /*private void Awake()
     {
         if (btncontrolInstance == null)
         {
@@ -25,49 +25,42 @@ public class ButtonControl : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
     // Start is called before the first frame update
     void Start()
     {
         buttons[0].onClick.AddListener(Shop1Exit);
         buttons[1].onClick.AddListener(Shop2Exit);
-        buttons[2].onClick.AddListener(LetterExit);
-        buttons[3].onClick.AddListener(Shop3Exit);
-        buttons[4].onClick.AddListener(Shop4Enter);
-        buttons[5].onClick.AddListener(Shop4Exit);
+        buttons[2].onClick.AddListener(Shop3Exit);
+        buttons[3].onClick.AddListener(Shop4Enter);
+        buttons[4].onClick.AddListener(Shop4Exit);
     }
     void Shop1Exit()
     {
-        audioSource.Play();
+        audioSource.PlayOneShot(buttonClickSound);
         gameobjects[0].SetActive(false);
     }
     void Shop2Exit()
     {
-        audioSource.Play();
+        audioSource.PlayOneShot(buttonClickSound);
         gameobjects[1].SetActive(false);
-    }
-
-    void LetterExit()
-    {
-        audioSource.Play();
-        gameobjects[2].SetActive(false);
     }
     void Shop3Exit()
     {
-        audioSource.Play();
-        gameobjects[3].SetActive(false);
+        audioSource.PlayOneShot(buttonClickSound);
+        gameobjects[2].SetActive(false);
     }
 
     void Shop4Enter()
     {
-        audioSource.Play();
-        gameobjects[4].SetActive(true);
+        audioSource.PlayOneShot(buttonClickSound);
+        gameobjects[3].SetActive(true);
     }
 
     void Shop4Exit()
     {
-        audioSource.Play();
-        gameobjects[5].SetActive(false);
+        audioSource.PlayOneShot(buttonClickSound);
+        gameobjects[4].SetActive(false);
     }
 }

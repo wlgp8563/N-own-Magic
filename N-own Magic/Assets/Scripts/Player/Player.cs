@@ -65,6 +65,8 @@ public class Player : MonoBehaviour
                 nexttoexp += 10;
                 maxhp += 12;
                 currenthp = maxhp;
+                handdecknum += 1;
+                haveMoney += 7;
                 EnemyControl.enemyControlInstance.LevelUp2Reward();
                 break;
             case 3:

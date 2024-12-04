@@ -33,7 +33,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -631, y: -958}
+  m_AnchoredPosition: {x: -631, y: -944}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &170504952609670124
@@ -863,7 +863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1831, y: -894}
+  m_AnchoredPosition: {x: -1831, y: -925}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2026869237748674921
@@ -1180,8 +1180,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A. \uB9CE\uC740 \uC790\uBCF8 - 10Coin \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C
-    \uCD94\uAC00"
+  m_text: "A. \uAE30\uBCF8 \uCCB4\uB825 - \uD50C\uB808\uC774\uC5B4 Max \uCCB4\uB825
+    10 \uC99D\uAC00\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
   m_sharedMaterial: {fileID: -6806060600753746822, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
@@ -3294,7 +3294,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -302, y: -851}
+  m_AnchoredPosition: {x: -302, y: -878}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7147322212783044356
@@ -3701,8 +3701,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A. \uB9C8\uBC95 \uC18C\uC591 - Level.1 \uCE74\uB4DC 1\uC7A5 \uB79C\uB364
-    \uD68D\uB4DD"
+  m_text: "A. \uB9CE\uC740 \uC790\uBCF8 - 10Coin \uD50C\uB808\uC774\uC5B4\uC5D0\uAC8C
+    \uCD94\uAC00\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
   m_sharedMaterial: {fileID: -6806060600753746822, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
@@ -3927,8 +3927,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A. \uAE30\uBCF8 \uCCB4\uB825 - \uD50C\uB808\uC774\uC5B4 Max \uCCB4\uB825
-    10 \uC99D\uAC00"
+  m_text: "A. \uB9C8\uBC95 \uC18C\uC591 - Level.1 \uCE74\uB4DC 1\uC7A5 \uB79C\uB364
+    \uD68D\uB4DD"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
   m_sharedMaterial: {fileID: -6806060600753746822, guid: 921b76ebc72e1be4fb521f1c59e5bd24, type: 2}
@@ -4899,7 +4899,8 @@ MonoBehaviour:
   playerHealEffectSpawnPoint: {fileID: 5373548658053652180}
   playerAddTurnCardEffectSpawnPoint: {fileID: 4395220311107830311}
   levelupAudio: {fileID: 8300000, guid: 7478151cf36724a7dada558f746c3633, type: 3}
-  levelupSource: {fileID: 22333376299317721}
+  enemyDeathAudio: {fileID: 8300000, guid: 566d2ea6240b489479a6e9fd608c2621, type: 3}
+  audioSource: {fileID: 22333376299317721}
 --- !u!114 &8923019963544821948
 MonoBehaviour:
   m_ObjectHideFlags: 0

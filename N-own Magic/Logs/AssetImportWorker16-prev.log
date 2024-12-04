@@ -15,7 +15,7 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker16.log
 -srvPort
-49302
+63957
 Successfully changed project path to: C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 92.31 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 88.48 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,92 +63,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56212
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56296
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012121 seconds.
+Registered in 0.013063 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 71.01 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 73.13 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.505 seconds
+- Completed reload, in  0.517 seconds
 Domain Reload Profiling:
-	ReloadAssembly (506ms)
-		BeginReloadAssembly (75ms)
+	ReloadAssembly (518ms)
+		BeginReloadAssembly (74ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (342ms)
-			LoadAssemblies (73ms)
+		EndReloadAssembly (332ms)
+			LoadAssemblies (72ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (71ms)
+			SetupTypeCache (69ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (16ms)
-			SetupLoadedEditorAssemblies (211ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (203ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (71ms)
+				RefreshPlugins (73ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (83ms)
-				ProcessInitializeOnLoadMethodAttributes (47ms)
+				ProcessInitializeOnLoadAttributes (79ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010636 seconds.
+Registered in 0.010230 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 76.31 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.895 seconds
+- Completed reload, in  0.917 seconds
 Domain Reload Profiling:
-	ReloadAssembly (895ms)
-		BeginReloadAssembly (99ms)
+	ReloadAssembly (918ms)
+		BeginReloadAssembly (98ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (15ms)
-		EndReloadAssembly (705ms)
-			LoadAssemblies (108ms)
+			CreateAndSetChildDomain (13ms)
+		EndReloadAssembly (727ms)
+			LoadAssemblies (99ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (164ms)
+			SetupTypeCache (178ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (371ms)
+			SetupLoadedEditorAssemblies (388ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
-				BeforeProcessingInitializeOnLoad (76ms)
-				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
+				RefreshPlugins (76ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (190ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (11ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (12ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.94 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4137 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (56.1 KB). Loaded Objects now: 4595.
-Memory consumption went from 156.8 MB to 156.8 MB.
-Total: 2.476400 ms (FindLiveObjects: 0.180200 ms CreateObjectMapping: 0.121600 ms MarkObjects: 2.100200 ms  DeleteObjects: 0.073500 ms)
+Unloading 4116 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.5 KB). Loaded Objects now: 4574.
+Memory consumption went from 155.3 MB to 155.2 MB.
+Total: 2.526300 ms (FindLiveObjects: 0.259200 ms CreateObjectMapping: 0.115600 ms MarkObjects: 2.088100 ms  DeleteObjects: 0.062300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -162,58 +162,34 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 23512.679599 seconds.
-  path: Assets/Various Genres Music Collection/Loop/Ambient Loop/Dreamy Ambient 01.ogg
-  artifactKey: Guid(070d71297493abc4da09a4a44f39c04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Various Genres Music Collection/Loop/Ambient Loop/Dreamy Ambient 01.ogg using Guid(070d71297493abc4da09a4a44f39c04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5debb2717214844735eaf795dea4ef4') in 0.125666 seconds 
+  Time since last request: 13364.171130 seconds.
+  path: Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/character-.png
+  artifactKey: Guid(d9f421eb69991d54bb182d3102b2dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/character-.png using Guid(d9f421eb69991d54bb182d3102b2dfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37954bc75c286874e2fdd492d01d012') in 0.159520 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 245.462213 seconds.
-  path: Assets/Various Genres Music Collection/Loop/Cinema Loop/Emotional Cinema 01.ogg
-  artifactKey: Guid(7a4fdc4b08bab23419cbc44c2800c70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Various Genres Music Collection/Loop/Cinema Loop/Emotional Cinema 01.ogg using Guid(7a4fdc4b08bab23419cbc44c2800c70a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97977b2b7d36f0cd88e80713517b1d63') in 0.014705 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/pointer_one-.png
+  artifactKey: Guid(366afa2151bde144a94667064866ccea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/pointer_one-.png using Guid(366afa2151bde144a94667064866ccea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb1fa36a78f69e90c43385b6e44bb766') in 0.025732 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.612645 seconds.
-  path: Assets/Various Genres Music Collection/Loop/Dance Loop/80-90 Disco Dance 02.ogg
-  artifactKey: Guid(9d84016413470c34894f6148835da7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Various Genres Music Collection/Loop/Dance Loop/80-90 Disco Dance 02.ogg using Guid(9d84016413470c34894f6148835da7d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72fdf3cfca16e76b490e5e18b703bcf3') in 0.021384 seconds 
+  Time since last request: 0.000029 seconds.
+  path: Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/mail-.png
+  artifactKey: Guid(5c93786963d2fc940a5e124d8e6df81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/mail-.png using Guid(5c93786963d2fc940a5e124d8e6df81a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7480d482273bddefe20b4c867527f39a') in 0.027663 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 110.115859 seconds.
-  path: Assets/Various Genres Music Collection/Loop/Electro Loop/Heavy Electro 01.ogg
-  artifactKey: Guid(6eeb80eea90e52f4ca52bab74c991970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Various Genres Music Collection/Loop/Electro Loop/Heavy Electro 01.ogg using Guid(6eeb80eea90e52f4ca52bab74c991970) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2aa59ed615ceee090e360b33e72551') in 0.024264 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/question-.png
+  artifactKey: Guid(4bfb6b6412abf7942a7648c948250533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/question-.png using Guid(4bfb6b6412abf7942a7648c948250533) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f553e24d1a52e2e3e1725f8a8e51e948') in 0.026344 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.506179 seconds.
-  path: Assets/Various Genres Music Collection/Loop/Pops Loop/Sorrowful Pops 01.ogg
-  artifactKey: Guid(9ea568fa2acba164da7b929ddca0df9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Various Genres Music Collection/Loop/Pops Loop/Sorrowful Pops 01.ogg using Guid(9ea568fa2acba164da7b929ddca0df9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6211ef35bdc0a4af242d5b335da6ced6') in 0.021332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 328.201799 seconds.
-  path: Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/13_Ice_explosion_01.wav
-  artifactKey: Guid(1d74880bed4586644a16a79a2d9dc8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/13_Ice_explosion_01.wav using Guid(1d74880bed4586644a16a79a2d9dc8af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89b73c3a12248d5552dc46bbe76645ed') in 0.026129 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/22_Water_02.wav
-  artifactKey: Guid(1eb7cbaf61d23a64bbd36c0a38b5cb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/22_Water_02.wav using Guid(1eb7cbaf61d23a64bbd36c0a38b5cb0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0ff3c559823c4b713fbc92c7b3d3e37') in 0.038208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/25_Wind_01.wav
-  artifactKey: Guid(c91fcf414acc0344cb03b13996f1bf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/25_Wind_01.wav using Guid(c91fcf414acc0344cb03b13996f1bf3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71b5871132b6a5d464319e748122b841') in 0.015332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/46_Poison_01.wav
-  artifactKey: Guid(83829ff414f47a048b5387e4ab33571c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Leohpaz/RPG_Essentials_Free/8_Atk_Magic_SFX/46_Poison_01.wav using Guid(83829ff414f47a048b5387e4ab33571c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03f5aa3c2ce8089b37828b3f3517cbcd') in 0.013542 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/home-.png
+  artifactKey: Guid(c5cf91c030c0dcb458973d240a82c467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Background/GUI/Dark_Brown_GUI_kit/icon/full_simple/home-.png using Guid(c5cf91c030c0dcb458973d240a82c467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807351193bd816af7cb3036d9b555182') in 0.031138 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

@@ -15,7 +15,7 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 -logFile
 Logs/AssetImportWorker21.log
 -srvPort
-49302
+63957
 Successfully changed project path to: C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/user/Documents/GitHub/N-own-Magic/N-own Magic
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 85.45 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 75.11 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.10f1 (1c7d0df0160b)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -63,92 +63,92 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.011708 seconds.
+Registered in 0.007891 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 73.18 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 70.73 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.492 seconds
+- Completed reload, in  0.503 seconds
 Domain Reload Profiling:
-	ReloadAssembly (492ms)
-		BeginReloadAssembly (84ms)
+	ReloadAssembly (504ms)
+		BeginReloadAssembly (80ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (318ms)
-			LoadAssemblies (81ms)
+		EndReloadAssembly (336ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (66ms)
+			SetupTypeCache (78ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (17ms)
-			SetupLoadedEditorAssemblies (195ms)
+			RebuildScriptCaches (18ms)
+			SetupLoadedEditorAssemblies (201ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (7ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (73ms)
+				RefreshPlugins (71ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (79ms)
-				ProcessInitializeOnLoadMethodAttributes (35ms)
+				ProcessInitializeOnLoadAttributes (88ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010001 seconds.
+Registered in 0.007938 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\user\Documents\GitHub\N-own-Magic\N-own Magic\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 70.42 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 74.71 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.884 seconds
+- Completed reload, in  0.920 seconds
 Domain Reload Profiling:
-	ReloadAssembly (885ms)
-		BeginReloadAssembly (114ms)
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (87ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
+			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (14ms)
-		EndReloadAssembly (682ms)
-			LoadAssemblies (115ms)
+			CreateAndSetChildDomain (11ms)
+		EndReloadAssembly (748ms)
+			LoadAssemblies (91ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (161ms)
+			SetupTypeCache (188ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (366ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (394ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (70ms)
+				RefreshPlugins (75ms)
 				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (9ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 1.04 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4137 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 38 unused Assets / (56.1 KB). Loaded Objects now: 4595.
-Memory consumption went from 156.8 MB to 156.8 MB.
-Total: 3.366600 ms (FindLiveObjects: 0.310200 ms CreateObjectMapping: 0.193200 ms MarkObjects: 2.792100 ms  DeleteObjects: 0.069900 ms)
+Unloading 4118 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 38 unused Assets / (56.5 KB). Loaded Objects now: 4576.
+Memory consumption went from 155.3 MB to 155.3 MB.
+Total: 2.997700 ms (FindLiveObjects: 0.171100 ms CreateObjectMapping: 0.084600 ms MarkObjects: 2.677600 ms  DeleteObjects: 0.063600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -160,6 +160,258 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 26562.339141 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50fa1a006a91c40679610e96f8299ce2') in 0.357723 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.850858 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b085eaee43b73d631e494aa7a26c1e46') in 0.271289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.122362 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c479e29e687773e2e1f28c993aef4e') in 0.255278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 86.617690 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '375f658a4b8eb64fac3ee08c113ee430') in 0.243386 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.224019 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '280ec7ad3b43b1042b87298d5df502a6') in 0.239663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.757296 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da22fa31e8fb7822c255cdaa9b5eb289') in 0.240167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.602708 seconds.
+  path: Assets/Emenies/Level5Monster.asset
+  artifactKey: Guid(b107bf84338fbf8409a565258d8a6415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Emenies/Level5Monster.asset using Guid(b107bf84338fbf8409a565258d8a6415) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b0ce9a3621c135b317203e61b1c2e96') in 0.006975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.168241 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3784d93f258a1b0429b4ef561787d2de') in 0.244247 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.313530 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0de8e76110801f1e3767bea8d81897f') in 0.249894 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.914716 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c6def461e0eb59efb2c2aed9cba1a7') in 0.244709 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.635910 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56afb0c2108e4c192529d4c7c9b4decd') in 0.246058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.916089 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ee34de200e6c59806784cdbfd8673f') in 0.242205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.995569 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76c82aa049185a074e06a3da4cee850e') in 0.251054 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.366445 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c6344feb4b7da67769dc8c2f6571d00') in 0.231049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.622519 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80dcbbfdbfbb9fbde32b28a6abae75b4') in 0.229018 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.984159 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '987fee670a27225e5b29afe713b362f2') in 0.242769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.752009 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a98fc87c9a39dcfc659f11dc64895b') in 0.233246 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.576122 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb04e0b97cd528665aa3290a217eaab7') in 0.232257 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.987643 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02c50bcc7979d04677300fba95493eba') in 0.243385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.349457 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ffca472dbb0d936b2819a33df798ca9') in 0.232416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.575901 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54117c64047caa60028f9c28b8aef7ae') in 0.244767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.350419 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e0fd89570b13b18470097ae72c0c31d') in 0.240516 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.784151 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53d09ff56a478137e21eb6a0ff59232e') in 0.244289 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.663574 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9d3b2b5c078ab0fa8963701a4fff03') in 0.236431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.807027 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1754b1199402ce6988dfb0eaf49415a9') in 0.246420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.621374 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01dece7fc7f0e1e37ecddee3f87e9e17') in 0.254857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.026172 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ad0828e303c086daa67c26e7538d5ad') in 0.246436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.088078 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db9470b08bd3a401657174b54bc10909') in 0.244728 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.830484 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cd391f427c62d7e42994b097a88a144') in 0.241240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.510535 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '542a3b666f002d351ef6e5f2de26c115') in 0.242799 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.627001 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6e56d294d4c67e9743905c99a5cf62f') in 0.239746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.841267 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2579b27fb800af4e50e901acd44b8558') in 0.235918 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.892354 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5d864f0cf484e8effae26656d97a3bd') in 0.243115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.242568 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22f8b932846e1ba38b1f77f07755cb9d') in 0.246922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.682529 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99023582735cee06e6d804937181e7e5') in 0.243157 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.391192 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf789f0e75dcd929a2c05d982d966245') in 0.243508 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.152123 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33b441c2873b9435ff541a25949db0d9') in 0.236438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.531728 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc7b7bfe7a89bd80d5088fa41dcc30de') in 0.240950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.891981 seconds.
+  path: Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab
+  artifactKey: Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UsePrefab/PFB_Demon_Earth_Boss_v1_Nightmare.prefab using Guid(83414afca2c047e44b397a3295e74341) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '677cca843a14244635c23f993c5a8e8d') in 0.233543 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.613723 seconds.
+  path: Assets/Leohpaz/RPG_Essentials_Free/8_Buffs_Heals_SFX/44_Sleep_01.wav
+  artifactKey: Guid(aa967a280457c054bb646d57611f5bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/RPG_Essentials_Free/8_Buffs_Heals_SFX/44_Sleep_01.wav using Guid(aa967a280457c054bb646d57611f5bd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af4cdbb5be06d4aa7d4d4d63f7e3a54') in 0.096679 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Various Genres Music Collection/NonLoop/Cinema NonLoop/Battle Cinema Music 01.ogg
+  artifactKey: Guid(3eddcf26ea846694abc7f42b1caf91c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Various Genres Music Collection/NonLoop/Cinema NonLoop/Battle Cinema Music 01.ogg using Guid(3eddcf26ea846694abc7f42b1caf91c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '094598338e709567aadf08ee0484945b') in 0.020521 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/88_Teleport_02.wav
+  artifactKey: Guid(8ff2a2d7e79f81c40ac447512f879374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Leohpaz/RPG_Essentials_Free/12_Player_Movement_SFX/88_Teleport_02.wav using Guid(8ff2a2d7e79f81c40ac447512f879374) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a89faad475d7239800db8eb0913f907') in 0.014907 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

@@ -26,6 +26,7 @@ public class EnemyControl : MonoBehaviour
 
     public GameObject level2reward;
     private bool isLevelup2 = false;
+    //private bool isLevelup6 = false;
 
     public GameObject cardEffectPrefab;
     public Transform attackEffectSpawnPoint;
@@ -38,7 +39,8 @@ public class EnemyControl : MonoBehaviour
     private Animator ani;
 
     public AudioClip levelupAudio;
-    public AudioSource levelupSource;
+    public AudioClip enemyDeathAudio;
+    public AudioSource audioSource;
 
     private void Awake()
     {
@@ -141,6 +143,7 @@ public class EnemyControl : MonoBehaviour
             {
                 Shield(shieldValue);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/EnemyHealShield");
+                HealShieldEffect();
             }
         }
         // 현재 HP가 1/3 이상 2/3 이하일 때
@@ -366,10 +369,14 @@ public class EnemyControl : MonoBehaviour
         enemyShieldNum.text = $"Shield : {currentEnemyShield}";
     }
 
-    private void Die()
+    private IEnumerator Die()
     {
+        yield return new WaitForSeconds(1.0f);
         //보상 선택지 넣기
         ani.SetTrigger("Death");
+        cardEffectPrefab = Resources.Load<GameObject>("Effects/EnemyDeath");
+        HealShieldEffect();
+        audioSource.PlayOneShot(enemyDeathAudio);
         CardGameManager.cardGameManager.ClearHandDeck();
 
         StartCoroutine(DelayedReward());
@@ -425,7 +432,8 @@ public class EnemyControl : MonoBehaviour
         if (currentEnemyHp <= 0)
         {
             currentEnemyHp = 0;
-            Die();
+            StartCoroutine(Die());
+            //Die();
         }
 
         UpdateEnemyHp(currentEnemyHp);
@@ -435,7 +443,7 @@ public class EnemyControl : MonoBehaviour
     {
         isLevelup2 = true;
         level2reward.SetActive(true);
-        levelupSource.Play();
+        audioSource.PlayOneShot(levelupAudio);
         StartCoroutine(DisappearReward());
     }
     private IEnumerator DisappearReward()

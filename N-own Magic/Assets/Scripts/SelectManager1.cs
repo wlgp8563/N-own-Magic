@@ -17,6 +17,9 @@ public class SelectManager1 : MonoBehaviour
     public GameObject disappearGroup;
     public GameObject appearGroup;
 
+    public AudioSource audioSource;
+    public AudioClip buttonClickSound;
+
     private bool isButton1Clicked = false;
     private bool isButton2Clicked = false;
 
@@ -33,8 +36,10 @@ public class SelectManager1 : MonoBehaviour
     void OnButtonClicked(ref bool buttonClicked, string sceneName)
     {
         // 해당 버튼이 클릭된 것으로 설정합니다.
+        audioSource.volume = 0.7f;
+        audioSource.PlayOneShot(buttonClickSound);
         buttonClicked = true;
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("CardGame");
 
         // 두 버튼이 모두 눌렸을 때 세 번째 버튼을 활성화합니다.
         if (isButton1Clicked && isButton2Clicked)
@@ -45,12 +50,20 @@ public class SelectManager1 : MonoBehaviour
 
     void ActivateNextGroup()
     {
+        audioSource.volume = 0.7f;
+        audioSource.PlayOneShot(buttonClickSound);
+
+        SceneManager.LoadScene("InGame3");
+
         buttonGroup.SetActive(false);
         nextGroup.SetActive(true);
     }
 
     void OpenOption()
     {
+        audioSource.volume = 0.7f;
+        audioSource.PlayOneShot(buttonClickSound);
+
         fuseShop.SetActive(true);
         disappearGroup.SetActive(false);
         appearGroup.SetActive(true);

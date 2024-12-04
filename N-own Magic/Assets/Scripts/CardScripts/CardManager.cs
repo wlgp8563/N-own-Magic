@@ -36,7 +36,7 @@ public class CardManager : MonoBehaviour
         AddNewCardToDeck(1, 3);
         AddNewCardToDeck(4, 2);
         AddNewCardToDeck(7, 2);
-        AddNewCardToDeck(10, 1);
+        AddNewCardToDeck(10, 2);
         AddNewCardToDeck(13, 1);
         AddNewCardToDeck(16, 1);
     }

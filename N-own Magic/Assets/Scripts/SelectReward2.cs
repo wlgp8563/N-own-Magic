@@ -11,14 +11,15 @@ public class SelectReward2 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        btns[0].onClick.AddListener(AddRandomLevel1Card);
-        btns[1].onClick.AddListener(AddLightEnergy);
-        btns[2].onClick.AddListener(AddFuse);
+        
+        btns[0].onClick.AddListener(AddLightEnergy);
+        btns[1].onClick.AddListener(AddFuse);
+        btns[2].onClick.AddListener(AddRandomLevel1Card);
     }
 
     private void AddRandomLevel1Card()
     {
-        List<int> level1CardIDs = new List<int> { 1, 4, 7, 10, 13, 16 };
+        List<int> level1CardIDs = new List<int> { 3, 6, 9, 12, 15, 18 };
 
         int randomIndex = Random.Range(0, level1CardIDs.Count);
         int randomCardID = level1CardIDs[randomIndex];
@@ -39,13 +40,13 @@ public class SelectReward2 : MonoBehaviour
 
     private void AddLightEnergy()
     {
-        Player.Instance.lightenergy++;
+        Player.Instance.handdecknum++;
         SceneManager.LoadScene("InGame");
     }
 
     public void AddFuse()
     {
-        Player.Instance.canFuseCard++;
+        Player.Instance.playerturn++;
         SceneManager.LoadScene("InGame");
     }
 }

@@ -12,6 +12,9 @@ public class ShopManager : MonoBehaviour
 
     public GameObject[] purchaseImage;
     public TMP_Text[] purchase;
+
+    public AudioSource shopSound;
+    public AudioClip shopClip;
     
     // Start is called before the first frame update
     void Start()
@@ -33,6 +36,7 @@ public class ShopManager : MonoBehaviour
         if(Player.Instance.haveMoney >= 6)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(1);
             CardManager.CardManagerInstance.AddNewCardToDeck(1, 1);
             Player.Instance.haveMoney -= 6;
@@ -46,6 +50,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 15)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(11);
             CardManager.CardManagerInstance.AddNewCardToDeck(11, 1);
             Player.Instance.haveMoney -= 15;
@@ -60,6 +65,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 10)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(13);
             CardManager.CardManagerInstance.AddNewCardToDeck(13, 1);
             Player.Instance.haveMoney -= 10;
@@ -74,6 +80,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 10)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(16);
             CardManager.CardManagerInstance.AddNewCardToDeck(16, 1);
             Player.Instance.haveMoney -= 10;
@@ -87,6 +94,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 17)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(5);
             CardManager.CardManagerInstance.AddNewCardToDeck(5, 1);
             Player.Instance.haveMoney -= 17;
@@ -100,6 +108,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 20)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(3);
             CardManager.CardManagerInstance.AddNewCardToDeck(3, 1);
             Player.Instance.haveMoney -= 20;
@@ -113,6 +122,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 25)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(9);
             CardManager.CardManagerInstance.AddNewCardToDeck(9, 1);
             Player.Instance.haveMoney -= 25;
@@ -126,6 +136,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 30)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(6);
             CardManager.CardManagerInstance.AddNewCardToDeck(6, 1);
             Player.Instance.haveMoney -= 30;
@@ -139,6 +150,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 18)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(14);
             CardManager.CardManagerInstance.AddNewCardToDeck(14, 1);
             Player.Instance.haveMoney -= 18;
@@ -152,6 +164,7 @@ public class ShopManager : MonoBehaviour
         if (Player.Instance.haveMoney >= 32)
         {
             //카드 추가 + 돈 줄어들기 + 버튼 변경
+            shopSound.PlayOneShot(shopClip);
             Card addCard = CardManager.CardManagerInstance.CreateCardByID(12);
             CardManager.CardManagerInstance.AddNewCardToDeck(12, 1);
             Player.Instance.haveMoney -= 32;

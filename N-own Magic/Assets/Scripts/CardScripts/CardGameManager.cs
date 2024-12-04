@@ -13,7 +13,7 @@ public class CardGameManager : MonoBehaviour
     public GameObject cardUIPrefab;
     public Vector3 handDeckCenterPosition = Vector3.zero;
     public float cardSpacing = 100f;
-    public int maxHandDeckNum = 4;
+    //public int maxHandDeckNum = 4;
 
     public GameObject cardEffectPrefab;
     public Transform attackEffectSpawnPoint;
@@ -59,7 +59,7 @@ public class CardGameManager : MonoBehaviour
         handDeck.Clear();
         List<Card> allCards = playerDeck.Values.SelectMany(card => Enumerable.Repeat(card, card.count)).ToList();
 
-        for (int i = 0; i < maxHandDeckNum && allCards.Count > 0; i++)
+        for (int i = 0; i < Player.Instance.handdecknum && allCards.Count > 0; i++)
         {
             int randomIndex = Random.Range(0, allCards.Count);
             Card randomCard = allCards[randomIndex];
@@ -85,7 +85,7 @@ public class CardGameManager : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        float angleOffset = 15f;
+        float angleOffset = 9f;
         float startAngle = -angleOffset * (handDeck.Count - 1) / 2;
 
         for (int i = 0; i < handDeck.Count; i++)
@@ -96,6 +96,7 @@ public class CardGameManager : MonoBehaviour
             cardUIComponent.SetCardData(card);
 
             float angle = startAngle + i * angleOffset;
+            //Vector3 position = handDeckCenterPosition + new Vector3(Mathf.Cos(Mathf.Deg2Rad * angle) * cardSpacing, Mathf.Sin(Mathf.Deg2Rad * angle) * cardSpacing, 0);
             Vector3 position = handDeckCenterPosition + new Vector3(i * cardSpacing - (cardSpacing * (handDeck.Count - 1) / 2), 0, 0);
             cardUI.transform.localPosition = position;
             cardUI.transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -183,6 +184,7 @@ public class CardGameManager : MonoBehaviour
                 ApplyAttack(card, value);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/Lighting");
                 EnemyControl.enemyControlInstance.PlayerAttackEffect(cardEffectPrefab);
+                //BossControl.bossControlInstance.PlayerAttackEffect(cardEffectPrefab);
                 //cardEffectPrefab = Resources.Load<GameObject>("Effects/Lighting");
                 //AttackEffect();
                 break;
@@ -191,6 +193,7 @@ public class CardGameManager : MonoBehaviour
                 ApplyPierceAttack(card, value);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/Pierce");
                 EnemyControl.enemyControlInstance.PlayerAttackEffect(cardEffectPrefab);
+                //BossControl.bossControlInstance.PlayerAttackEffect(cardEffectPrefab);
                 //cardEffectPrefab = Resources.Load<GameObject>("Effects/Pierce");
                 //AttackEffect();
                 break;
@@ -199,6 +202,7 @@ public class CardGameManager : MonoBehaviour
                 ApplyShield(card, value);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/Healing");
                 EnemyControl.enemyControlInstance.PlayerShieldEffect(cardEffectPrefab);
+                //BossControl.bossControlInstance.PlayerShieldEffect(cardEffectPrefab);
                 //ShieldEffect();
                 break;
 
@@ -206,6 +210,7 @@ public class CardGameManager : MonoBehaviour
                 ApplyHeal(card, value);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/Healing");
                 EnemyControl.enemyControlInstance.PlayerHealEffect(cardEffectPrefab);
+                //BossControl.bossControlInstance.PlayerHealEffect(cardEffectPrefab);
                 //HealEffect();
                 break;
 
@@ -213,6 +218,7 @@ public class CardGameManager : MonoBehaviour
                 DrawRandomCard(card, value);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/AddCardTurn");
                 EnemyControl.enemyControlInstance.PlayerAddTurnCardEffect(cardEffectPrefab);
+                //BossControl.bossControlInstance.PlayerAddTurnCardEffect(cardEffectPrefab);
                 //AddCardTurnEffect();
                 break;
 
@@ -220,6 +226,7 @@ public class CardGameManager : MonoBehaviour
                 AddExtraTurn(card, value);
                 cardEffectPrefab = Resources.Load<GameObject>("Effects/AddCardTurn");
                 EnemyControl.enemyControlInstance.PlayerAddTurnCardEffect(cardEffectPrefab);
+                //BossControl.bossControlInstance.PlayerAddTurnCardEffect(cardEffectPrefab);
                 //AddCardTurnEffect();
                 break;
         }
@@ -232,7 +239,7 @@ public class CardGameManager : MonoBehaviour
         }
     }
 
-    private void HealEffect()
+    /*private void HealEffect()
     {
         if (cardEffectPrefab != null && healEffectSpawnPoint != null)
         {
@@ -287,10 +294,22 @@ public class CardGameManager : MonoBehaviour
         {
             Debug.LogWarning($"카드의 이펙트가 없습니다.");
         }
-    }
+    }*/
 
     public void ApplyAttack(Card card, int value)
     {
+        /*int bossshieldValue = BossControl.bossControlInstance.currentEnemyShield;
+        int bossremainingDamage = value - bossshieldValue;
+        if (bossshieldValue > 0)
+        {
+            BossControl.bossControlInstance.EnemyTakeDamage(value);
+        }
+        if (bossremainingDamage > 0)
+        {
+            BossControl.bossControlInstance.EnemyTakeDamage(bossremainingDamage);
+        }*/
+
+
         /*if (BossControl.bossControlInstance.isboss == false)
         {
             int shieldValue = EnemyControl.enemyControlInstance.currentEnemyShield;
@@ -343,8 +362,8 @@ public class CardGameManager : MonoBehaviour
         if (remainingDamage > 0)
         {
             EnemyControl.enemyControlInstance.EnemyTakeDamage(remainingDamage);
-            /*Debug.Log($"적에게 {remainingDamage}의 공격을 가합니다.");
-            if (!BossControl.bossControlInstance.isboss)
+            Debug.Log($"적에게 {remainingDamage}의 공격을 가합니다.");
+            /*if (!BossControl.bossControlInstance.isboss)
             {
                 EnemyControl.enemyControlInstance.ReduceShield(remainingDamage);
             }
@@ -362,7 +381,7 @@ public class CardGameManager : MonoBehaviour
         /*bool bosscheck = BossControl.bossControlInstance.isboss;
         if (bosscheck == false)
         {
-            EnemyControl.enemyControlInstance.ReduceShield(value);
+            EnemyControl.enemyControlInstance.EnemyTakeDamage(value);
         }
         else
         {
@@ -387,6 +406,7 @@ public class CardGameManager : MonoBehaviour
     {
         handDeck.Remove(card);
         RepositionHandDeck();
+        //DisplayHandDeckUI();
 
         for (int i = 0; i < value; i++)
         {
@@ -411,6 +431,8 @@ public class CardGameManager : MonoBehaviour
         }
         //DisplayHandDeckUI();
         RepositionHandDeck();
+        
+        //RepositionHandDeck();
     }
 
     public void ResetPlayerState()
@@ -430,22 +452,25 @@ public class CardGameManager : MonoBehaviour
     private void RepositionHandDeck()
     {
         // 부채꼴로 재배치
-        float angleOffset = 15f;
+        float angleOffset = 9f;
         float startAngle = -angleOffset * (handDeck.Count - 1) / 2;
         float cardSpacing = 150f; // 카드 간 간격
+
+        CardUI[] cardUIs = handDeckUIParent.GetComponentsInChildren<CardUI>();
 
         for (int i = 0; i < handDeck.Count; i++)
         {
             Card card = handDeck[i];
 
             // 남아있는 UI 카드 객체 찾기
-            CardUI[] cardUIs = handDeckUIParent.GetComponentsInChildren<CardUI>();
+            //CardUI[] cardUIs = handDeckUIParent.GetComponentsInChildren<CardUI>();
             foreach (CardUI cardUI in cardUIs)
             {
                 if (cardUI.cardData == card)
                 {
                     // 카드 위치 및 회전 설정
                     float angle = startAngle + i * angleOffset;
+                    //Vector3 position = handDeckCenterPosition + new Vector3(Mathf.Cos(Mathf.Deg2Rad * angle) * cardSpacing, Mathf.Sin(Mathf.Deg2Rad * angle) * cardSpacing, 0);
                     Vector3 position = handDeckCenterPosition + new Vector3(i * cardSpacing - (cardSpacing * (handDeck.Count - 1) / 2), 0, 0);
                     cardUI.transform.localPosition = position;
                     cardUI.transform.rotation = Quaternion.Euler(0, 0, angle);

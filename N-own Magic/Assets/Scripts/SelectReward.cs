@@ -10,16 +10,17 @@ public class SelectReward : MonoBehaviour
 
     private void Start()
     {
-        btns[0].onClick.AddListener(AddRandomLevel1Card);
-        btns[1].onClick.AddListener(AddHp);
-        btns[2].onClick.AddListener(AddCoin);
+        btns[0].onClick.AddListener(AddCoin);
+        btns[1].onClick.AddListener(AddRandomLevel1Card);
+        btns[2].onClick.AddListener(AddHp);
         //btns[0].onClick.AddListener(AddCoin);
         //btns[0].onClick.AddListener(AddCoin);
     }
 
     public void AddCoin()
     {
-        Player.Instance.haveMoney += 5;
+        //SceneManager.LoadScene("Ending");
+        Player.Instance.haveMoney += 10;
         SceneManager.LoadScene("InGame");
     }
 

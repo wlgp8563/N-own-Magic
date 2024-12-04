@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CardFusionManager : MonoBehaviour
 {
-    public static CardFusionManager Instance;
+    //public static CardFusionManager Instance;
 
     [Header("UI Elements")]
     public GameObject fusionShopUI; // 카드 합성 shop UI
@@ -16,7 +16,7 @@ public class CardFusionManager : MonoBehaviour
     private List<Card> selectedCards = new List<Card>(); // 합성할 카드들
     private Dictionary<int, Card> playerDeck => CardManager.CardManagerInstance.playerDeck; // playerDeck 참조
 
-    private void Awake()
+    /*private void Awake()
     {
         if (Instance == null)
         {
@@ -27,7 +27,7 @@ public class CardFusionManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    }*/
 
     private void Start()
     {

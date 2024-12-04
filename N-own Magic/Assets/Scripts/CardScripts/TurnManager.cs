@@ -61,6 +61,7 @@ public class TurnManager : MonoBehaviour
             BossControl.bossControlInstance.StartPerformActions();
         }*/
         EnemyControl.enemyControlInstance.StartPerformActions();
+        //BossControl.bossControlInstance.StartPerformActions();
     }
 
     public void EndPlayerTurn()
